@@ -71,6 +71,7 @@ function renderProduct(product) {
     product.warranty && product.warranty > 0
       ? `${product.warranty} year${product.warranty > 1 ? "s" : ""}`
       : "";
+  const displayTitle = product.shortName || product.title;
   const description = product.description
     ? `<p class="detail-description">${product.description}</p>`
     : "";
@@ -93,7 +94,7 @@ function renderProduct(product) {
   if (layout) {
     layout.innerHTML = `
       <span class="mobile-badge">${product.company?.name || "Unassigned"} • ${typeLabel}</span>
-      <h1 class="detail-title">${product.title}</h1>
+      <h1 class="detail-title">${displayTitle}</h1>
       ${description}
       ${renderImages(product.images, product.title)}
       <div class="spec-list">
@@ -169,13 +170,12 @@ function createRelatedCard(product) {
   const brandLabel = product.company?.name || "Unassigned";
   const image =
     product.images?.[0] || `https://placehold.co/600x450?text=${encodeURIComponent(typeLabel)}`;
-  const summary = product.shortName || product.description || "—";
+  const displayTitle = product.shortName || product.title;
   card.innerHTML = `
     <img class="mobile-thumb" src="${image}" alt="${product.title}" loading="lazy" />
     <div class="mobile-content">
       <span class="mobile-badge">${brandLabel} • ${typeLabel}</span>
-      <h3 class="mobile-title">${product.title}</h3>
-      <p class="mobile-summary">${summary}</p>
+      <h3 class="mobile-title">${displayTitle}</h3>
     </div>
   `;
   const detailUrl = `/m/product.html?id=${encodeURIComponent(product.id)}`;

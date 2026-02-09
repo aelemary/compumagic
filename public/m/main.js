@@ -113,26 +113,20 @@ function createProductTile(product) {
   const brandLabel = product.company?.name || "Unassigned";
   const image =
     product.images?.[0] || `https://placehold.co/600x450?text=${encodeURIComponent(typeLabel)}`;
-  const summary = product.shortName || product.description || "—";
-  const specLeft =
-    product.type === "laptop"
-      ? `GPU: ${product.gpu || "n/a"}`
-      : `Details: ${summary}`;
-  const specRight =
-    product.type === "laptop"
-      ? `CPU: ${product.cpu || "n/a"}`
-      : `Warranty: ${product.warranty ? `${product.warranty} yr` : "—"}`;
+  const displayTitle = product.shortName || product.title;
+  const specLeft = product.type === "laptop" ? `GPU: ${product.gpu || "n/a"}` : "";
+  const specRight = product.type === "laptop" ? `CPU: ${product.cpu || "n/a"}` : "";
 
   card.innerHTML = `
     <img class="mobile-thumb" src="${image}" alt="${product.title}" loading="lazy" />
     <div class="mobile-content">
       <span class="mobile-badge">${brandLabel} • ${typeLabel}</span>
-      <h3 class="mobile-title">${product.title}</h3>
-      <p class="mobile-summary">${summary}</p>
-      <div class="mobile-meta">
-        <span>${specLeft}</span>
-        <span>${specRight}</span>
-      </div>
+      <h3 class="mobile-title">${displayTitle}</h3>
+      ${
+        specLeft || specRight
+          ? `<div class=\"mobile-meta\"><span>${specLeft}</span><span>${specRight}</span></div>`
+          : ""
+      }
     </div>
   `;
 
