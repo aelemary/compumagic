@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Compu Magic | Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>
+            <span class="brand-name">Compu Magic</span>
+            <span class="brand-tag">Enterprise Hardware</span>
+          </span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          Menu
+        </button>
+        <nav id="site-nav">
+          <a href="/index.html">Catalog</a>
+          <a href="/index.html#capabilities">Capabilities</a>
+          <a href="/contact.html">Contact</a>
+          <a href="/admin.html" data-requires-role="admin">Admin</a>
+          <span id="nav-user" class="nav-user" hidden></span>
+          <a href="/login.html" id="nav-auth">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="panel">
+        <h1 class="section-title" style="margin-top: 0;">Contact Compu Magic</h1>
+        <p class="section-subtitle">
+          Share deployment goals, procurement timelines, or support requirements. We respond with curated
+          options, documentation, and next steps.
+        </p>
+        <div class="detail-layout">
+          <div class="spec-list">
+            <div class="spec-item">
+              <span>Sales Hotline</span>
+              <strong data-contact-field="salesHotline">+1 (000) 000-0000</strong>
+            </div>
+            <div class="spec-item">
+              <span>WhatsApp</span>
+              <strong data-contact-field="whatsapp">+1 (000) 000-0001</strong>
+            </div>
+            <div class="spec-item">
+              <span>Support Email</span>
+              <strong data-contact-field="supportEmail">support@compumagic.example</strong>
+            </div>
+            <div class="spec-item">
+              <span>Operations Address</span>
+              <strong data-contact-field="address">Add your operations office address here</strong>
+            </div>
+          </div>
+          <div class="panel" style="margin: 0;">
+            <h2 class="section-title" style="margin-top: 0;">Availability & Logistics</h2>
+            <p class="field-hint">
+              Keep operating hours, delivery zones, and logistics notes up to date for enterprise clients.
+            </p>
+            <ul id="contact-availability" class="contact-availability">
+              <li>Mon – Fri: 09:00 – 18:00</li>
+              <li>Sat: Scheduled engineering briefings</li>
+              <li>Regional delivery planning by appointment</li>
+              <li>Remote consultations for enterprise clients</li>
+            </ul>
+          </div>
+        </div>
+        <div id="contact-admin-panel" class="panel-lite contact-editor" data-requires-role="admin" hidden>
+          <h3>Edit Contact Details</h3>
+          <p class="field-hint">Only admins can see this form. Updates publish instantly to this page.</p>
+          <form id="contact-form" class="contact-form">
+            <label>
+              Sales Hotline
+              <input type="text" name="salesHotline" placeholder="+1 (000) 000-0000" />
+            </label>
+            <label>
+              WhatsApp
+              <input type="text" name="whatsapp" placeholder="+1 (000) 000-0001" />
+            </label>
+            <label>
+              Support Email
+              <input type="email" name="supportEmail" placeholder="support@compumagic.example" />
+            </label>
+            <label>
+              Operations Address
+              <textarea name="address" rows="2" placeholder="Add your operations office address here"></textarea>
+            </label>
+            <label>
+              Availability Lines (one per row)
+              <textarea name="availability" rows="4" placeholder="Mon – Fri: 09:00 – 18:00"></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary">Save Contact Info</button>
+            <div class="order-status" id="contact-status"></div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      Compu Magic &copy; <span id="year"></span>. Professional systems catalog.
+      <br />
+      For tailored requirements, connect via the contact page.
+    </footer>
+
+    <script src="/auth.js" defer></script>
+    <script src="/contact.js" defer></script>
+    <script src="/nav.js" defer></script>
+  </body>
+</html>

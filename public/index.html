@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Compu Magic | Professional Hardware Catalog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>
+            <span class="brand-name">Compu Magic</span>
+            <span class="brand-tag">Enterprise Hardware</span>
+          </span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          Menu
+        </button>
+        <nav id="site-nav">
+          <a href="/index.html">Catalog</a>
+          <a href="/index.html#capabilities">Capabilities</a>
+          <a href="/contact.html">Contact</a>
+          <a href="/admin.html" data-requires-role="admin">Admin</a>
+          <span id="nav-user" class="nav-user" hidden></span>
+          <a href="/login.html" id="nav-auth">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <div class="eyebrow">Structured Catalog</div>
+          <h1>Professional systems, fully documented for real deployments.</h1>
+          <p>
+            Compu Magic maintains a structured hardware catalog designed for IT teams, procurement, and
+            solution architects. Every listing highlights configuration context, service coverage, and
+            readiness for production environments.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#catalog">Browse Catalog</a>
+            <a class="btn btn-outline" href="/contact.html">Talk to an Engineer</a>
+          </div>
+        </div>
+        <div class="panel-dark">
+          <h2 class="section-title" style="margin-top: 0;">What We Track</h2>
+          <ul class="feature-list">
+            <li>Category-aligned specs with clear role and performance intent.</li>
+            <li>Vendor context, compatible upgrades, and support expectations.</li>
+            <li>Consistent metadata for easy evaluation across teams.</li>
+          </ul>
+          <div class="metrics-grid">
+            <div class="metric">
+              <span>Manufacturers</span>
+              <strong id="stat-brands">0</strong>
+            </div>
+            <div class="metric">
+              <span>Products</span>
+              <strong id="stat-products">0</strong>
+            </div>
+            <div class="metric">
+              <span>Categories</span>
+              <strong id="stat-categories">0</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="capabilities">
+        <h2 class="section-title">Capabilities</h2>
+        <p class="section-subtitle">
+          Compu Magic provides a professional catalog view with the depth needed for planning, budgeting,
+          and deployment alignment.
+        </p>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <h3>Catalog Structure</h3>
+            <p class="field-hint">
+              Normalized categories, brand mappings, and detailed specs keep inventory consistent across
+              teams.
+            </p>
+          </div>
+          <div class="stat-card">
+            <h3>Configuration Clarity</h3>
+            <p class="field-hint">
+              Each listing captures GPU, CPU, memory, storage, and display context where relevant.
+            </p>
+          </div>
+          <div class="stat-card">
+            <h3>Service Readiness</h3>
+            <p class="field-hint">
+              Warranty coverage and operational notes are attached to every product record.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="catalog">
+        <h2 class="section-title">Product Catalog</h2>
+        <p class="section-subtitle">
+          Search by keyword, filter by category, or narrow by manufacturer. Listings open to full detail
+          views for deeper review.
+        </p>
+        <div id="category-jumps" class="category-jumps" aria-label="Catalog categories"></div>
+        <form id="filter-form" class="filters-form">
+          <label>
+            Keywords
+            <input type="search" id="search" name="search" placeholder="Search by title, brand, or specs" />
+          </label>
+          <label>
+            Category
+            <select id="filter-category" name="category">
+              <option value="">All categories</option>
+              <option value="laptop">Laptops</option>
+              <option value="gpu">Graphics</option>
+              <option value="cpu">Processors</option>
+              <option value="hdd">Storage</option>
+              <option value="motherboard">Motherboards</option>
+            </select>
+          </label>
+          <label>
+            Manufacturer
+            <select id="filter-company" name="companyId">
+              <option value="">Any manufacturer</option>
+            </select>
+          </label>
+          <div class="filter-actions">
+            <button type="submit" class="btn btn-primary">Apply Filters</button>
+            <button type="button" class="btn btn-outline" id="filter-reset">Reset</button>
+          </div>
+        </form>
+        <div id="inventory-status" class="order-status"></div>
+        <div id="results" class="catalog-stack"></div>
+        <div id="empty" class="empty-state" hidden>
+          Nothing matched that search. Try a different keyword or check back once the catalog updates.
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2 class="section-title">Engage Compu Magic</h2>
+        <p class="section-subtitle">
+          Need a scoped list, compatibility review, or multi-site deployment plan? Reach the engineering
+          team directly through the contact channel.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="/contact.html">Contact Operations</a>
+          <a class="btn btn-outline" href="#catalog">Return to Catalog</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      Compu Magic &copy; <span id="year"></span>. Professional systems catalog.
+      <br />
+      For tailored requirements, connect via the contact page.
+    </footer>
+
+    <script src="/auth.js" defer></script>
+    <script src="/main.js" defer></script>
+    <script src="/nav.js" defer></script>
+  </body>
+</html>

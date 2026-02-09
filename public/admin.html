@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Compu Magic | Admin Console</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>
+            <span class="brand-name">Compu Magic</span>
+            <span class="brand-tag">Enterprise Hardware</span>
+          </span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          Menu
+        </button>
+        <nav id="site-nav">
+          <a href="/index.html">Catalog</a>
+          <a href="/index.html#capabilities">Capabilities</a>
+          <a href="/contact.html">Contact</a>
+          <a href="/admin.html" data-requires-role="admin">Admin</a>
+          <span id="nav-user" class="nav-user" hidden></span>
+          <a href="/login.html" id="nav-auth">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="panel">
+        <h1 class="section-title" style="margin-top: 0;">Admin Console</h1>
+        <p class="section-subtitle">
+          Manage manufacturers, publish catalog entries, and control staff access. The catalog is a
+          professional showcase only—no sales flows are enabled.
+        </p>
+        <div class="stats-grid" id="admin-stats">
+          <div class="stat-card">
+            <h3>Brands Live</h3>
+            <strong id="stat-admin-brands">0</strong>
+          </div>
+          <div class="stat-card">
+            <h3>Products Listed</h3>
+            <strong id="stat-admin-products">0</strong>
+          </div>
+          <div class="stat-card">
+            <h3>Categories Active</h3>
+            <strong id="stat-admin-categories">0</strong>
+          </div>
+          <div class="stat-card">
+            <h3>Users</h3>
+            <strong id="stat-admin-users">0</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2 class="section-title">Catalog Management</h2>
+        <div class="admin-grid" style="display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
+          <form id="company-form" class="panel-lite">
+            <h3>Add Manufacturer</h3>
+            <label>
+              Brand Name
+              <input type="text" name="name" placeholder="Dell, Lenovo, NVIDIA" required />
+            </label>
+            <label>
+              Brand Overview
+              <textarea name="description" rows="3" placeholder="Optional: service coverage, product focus"></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary">Save Brand</button>
+            <div class="order-status" id="company-status"></div>
+          </form>
+
+          <form id="product-form" class="panel-lite">
+            <h3>Publish Catalog Listing</h3>
+            <input type="hidden" name="id" id="product-id" />
+            <label>
+              Category
+              <select name="category" id="product-category" required>
+                <option value="">Select Category</option>
+                <option value="laptop">Laptop</option>
+                <option value="gpu">Graphics</option>
+                <option value="cpu">Processor</option>
+                <option value="hdd">Storage</option>
+                <option value="motherboard">Motherboard</option>
+              </select>
+            </label>
+            <label>
+              Manufacturer
+              <select name="companyId" id="product-brand" required>
+                <option value="">Select Brand</option>
+              </select>
+            </label>
+            <label>
+              Listing Title
+              <input type="text" name="title" placeholder="Lenovo ThinkPad P1 Gen 7" required />
+            </label>
+            <label>
+              Short Name
+              <input type="text" name="shortName" placeholder="ThinkPad P1 Gen 7" maxlength="80" />
+            </label>
+            <label class="laptop-only">
+              GPU
+              <input type="text" name="gpu" placeholder="NVIDIA RTX 5000 Ada" />
+            </label>
+            <label class="laptop-only">
+              CPU
+              <input type="text" name="cpu" placeholder="Intel Core i9-14900HX" />
+            </label>
+            <label class="laptop-only">
+              RAM
+              <input type="text" name="ram" placeholder="64 GB DDR5" />
+            </label>
+            <label class="laptop-only">
+              Storage
+              <input type="text" name="storage" placeholder="2 TB NVMe SSD" />
+            </label>
+            <label class="laptop-only">
+              Display
+              <input type="text" name="display" placeholder="16\" UHD+ 120Hz" />
+            </label>
+            <label>
+              Warranty (years)
+              <input type="number" name="warranty" min="0" step="1" placeholder="3" />
+            </label>
+            <label>
+              Image Upload
+              <div class="upload-control">
+                <button type="button" class="btn btn-outline" id="image-upload-button">
+                  Upload &amp; Attach Image
+                </button>
+                <input type="file" id="image-file-input" accept="image/*" hidden />
+              </div>
+              <span class="field-hint">PNG, JPG, or WebP up to 5 MB. Uploaded links auto-fill below.</span>
+            </label>
+            <div id="image-preview" class="image-preview"></div>
+            <label>
+              Image URLs (comma separated or one per line)
+              <textarea name="images" rows="3" placeholder="https://placehold.co/800x500?text=Front"></textarea>
+            </label>
+            <label>
+              Product Summary
+              <textarea name="description" rows="3" placeholder="Cooling upgrades, deployment notes, accessories…"></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary">Publish Listing</button>
+            <button type="button" class="btn btn-outline" id="product-cancel" hidden>Cancel Edit</button>
+            <div class="order-status" id="product-status"></div>
+          </form>
+        </div>
+        <div class="admin-grid" style="margin-top: 1.5rem; display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
+          <div class="panel-lite">
+            <h3>Brands on File</h3>
+            <ul id="company-list" class="chip-list"></ul>
+          </div>
+          <div class="panel-lite" style="grid-column: span 2;">
+            <h3>Published Products</h3>
+            <div class="table-scroll">
+              <table class="orders-table catalog-table">
+                <thead>
+                  <tr>
+                    <th>Listing</th>
+                    <th>Category</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody id="catalog-body"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2 class="section-title">User Access</h2>
+        <p class="section-subtitle">Manage staff access and roles for the catalog.</p>
+        <div class="panel-lite" style="margin-bottom: 1.5rem;">
+          <label>
+            Search Users
+            <input type="search" id="user-search" placeholder="Search by username or name" />
+          </label>
+          <div class="order-status" id="users-status"></div>
+        </div>
+        <div class="table-scroll">
+          <table class="orders-table">
+            <thead>
+              <tr>
+                <th>Username</th>
+                <th>Full Name</th>
+                <th>Role</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="users-body"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      Compu Magic &copy; <span id="year"></span>. Professional systems catalog.
+      <br />
+      For tailored requirements, connect via the contact page.
+    </footer>
+
+    <script src="/auth.js" defer></script>
+    <script src="/admin.js" defer></script>
+    <script src="/nav.js" defer></script>
+  </body>
+</html>

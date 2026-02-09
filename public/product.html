@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Compu Magic | Product Detail</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>
+            <span class="brand-name">Compu Magic</span>
+            <span class="brand-tag">Enterprise Hardware</span>
+          </span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          Menu
+        </button>
+        <nav id="site-nav">
+          <a href="/index.html">Catalog</a>
+          <a href="/index.html#capabilities">Capabilities</a>
+          <a href="/contact.html">Contact</a>
+          <a href="/admin.html" data-requires-role="admin">Admin</a>
+          <span id="nav-user" class="nav-user" hidden></span>
+          <a href="/login.html" id="nav-auth">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="panel">
+        <div id="detail-layout" class="detail-layout"></div>
+      </section>
+
+      <section class="panel" id="specs-panel">
+        <h2 class="section-title">Specifications</h2>
+        <div id="spec-list" class="spec-list"></div>
+      </section>
+
+      <section class="panel" id="related-panel" hidden>
+        <h2 class="section-title">Related Products</h2>
+        <div id="related-grid" class="catalog-grid"></div>
+      </section>
+    </main>
+
+    <footer>
+      Compu Magic &copy; <span id="year"></span>. Professional systems catalog.
+      <br />
+      For tailored requirements, connect via the contact page.
+    </footer>
+
+    <script src="/auth.js" defer></script>
+    <script src="/product.js" defer></script>
+    <script src="/nav.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Compu Magic | Access Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>
+            <span class="brand-name">Compu Magic</span>
+            <span class="brand-tag">Enterprise Hardware</span>
+          </span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          Menu
+        </button>
+        <nav id="site-nav">
+          <a href="/index.html">Catalog</a>
+          <a href="/index.html#capabilities">Capabilities</a>
+          <a href="/contact.html">Contact</a>
+          <a href="/admin.html" data-requires-role="admin">Admin</a>
+          <span id="nav-user" class="nav-user" hidden></span>
+          <a href="/login.html" id="nav-auth">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="panel">
+        <h1 class="section-title" style="margin-top: 0;">Access Profile</h1>
+        <p class="section-subtitle">
+          Review your access status and role within the Compu Magic platform.
+        </p>
+        <div id="account-status" class="order-status"></div>
+        <div id="account-details" class="spec-list" hidden>
+          <div class="spec-item">
+            <span>Username</span>
+            <strong data-account-field="username">—</strong>
+          </div>
+          <div class="spec-item">
+            <span>Full Name</span>
+            <strong data-account-field="fullName">—</strong>
+          </div>
+          <div class="spec-item">
+            <span>Role</span>
+            <strong data-account-field="role">—</strong>
+          </div>
+        </div>
+        <div class="panel-lite" style="margin-top: 1.5rem;">
+          <h3>Need Changes?</h3>
+          <p class="field-hint">
+            For role updates or access adjustments, reach out to an administrator or the Compu Magic
+            operations team.
+          </p>
+          <a class="btn btn-outline" href="/contact.html">Contact Operations</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      Compu Magic &copy; <span id="year"></span>. Professional systems catalog.
+      <br />
+      For tailored requirements, connect via the contact page.
+    </footer>
+
+    <script src="/auth.js" defer></script>
+    <script src="/account.js" defer></script>
+    <script src="/nav.js" defer></script>
+  </body>
+</html>
