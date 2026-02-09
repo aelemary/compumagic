@@ -46,7 +46,6 @@ Notes:
 The admin console is available at `/admin.html`. Admin privileges are controlled by the `admin` flag on the `users` table in Supabase.
 
 ## Data Model (Supabase)
-This project expects the same schema as the Nour Tech prototype:
 - `users`
 - `brands`
 - `products`
