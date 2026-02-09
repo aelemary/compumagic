@@ -797,6 +797,115 @@ footer {
   }
 }
 
+@media (max-width: 600px) {
+  body {
+    background: #f7f9fc;
+  }
+
+  .site-header .header-inner {
+    padding: 1rem 1.25rem;
+  }
+
+  .brand-mark {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  .brand-name {
+    font-size: 1.1rem;
+  }
+
+  .brand-tag {
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+  }
+
+  .hero {
+    padding: 2.8rem 0 2rem;
+    gap: 1.8rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 0.98rem;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .panel {
+    padding: 1.5rem;
+  }
+
+  .panel-dark {
+    padding: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .category-jumps {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 0.5rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .category-jumps a {
+    white-space: nowrap;
+  }
+
+  .filters-form {
+    gap: 0.85rem;
+  }
+
+  .filters-form label {
+    font-size: 0.85rem;
+  }
+
+  .catalog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-media {
+    aspect-ratio: 16 / 10;
+  }
+
+  .product-body {
+    padding: 1rem 1.2rem 1.2rem;
+  }
+
+  .detail-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-panel {
+    position: static;
+  }
+
+  .spec-list {
+    grid-template-columns: 1fr;
+  }
+
+  .orders-table {
+    font-size: 0.85rem;
+  }
+
+  footer {
+    padding: 1.5rem 1rem 2.5rem;
+  }
+}
+
 @media (max-width: 720px) {
   .nav-toggle {
     display: inline-flex;
@@ -804,14 +913,15 @@ footer {
 
   #site-nav {
     position: absolute;
-    right: 1.5rem;
-    top: 4.2rem;
+    right: 1.25rem;
+    top: 4.1rem;
     flex-direction: column;
     align-items: flex-start;
     background: rgba(5, 7, 12, 0.98);
     padding: 1rem 1.4rem;
     border-radius: 1rem;
     border: 1px solid rgba(255, 255, 255, 0.08);
+    width: min(90vw, 320px);
     display: none;
   }
 

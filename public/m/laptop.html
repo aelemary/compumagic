@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Compu Magic | Mobile Product</title>
+    <script>
+      (function () {
+        const params = new URLSearchParams(window.location.search);
+        const id = params.get("id");
+        if (id) {
+          window.location.replace(`/m/product.html?id=${encodeURIComponent(id)}`);
+        } else {
+          window.location.replace("/m/index.html");
+        }
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>

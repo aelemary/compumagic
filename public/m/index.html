@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Compu Magic | Mobile Catalog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/m/styles.css" />
+  </head>
+  <body>
+    <header class="mobile-header">
+      <div class="header-inner">
+        <a class="brand" href="/m/index.html">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>
+            <span class="brand-name">Compu Magic</span>
+            <span class="brand-tag">Enterprise Hardware</span>
+          </span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          Menu
+        </button>
+        <nav id="site-nav">
+          <a href="/m/index.html">Catalog</a>
+          <a href="/m/contact.html">Contact</a>
+          <a href="/m/login.html">Login</a>
+          <a href="/admin.html?view=desktop">Admin (Desktop)</a>
+          <a href="/index.html?view=desktop" data-desktop-link>Desktop View</a>
+          <span id="nav-user" class="nav-user" hidden></span>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="mobile-hero">
+        <span class="eyebrow">Structured Catalog</span>
+        <h1>Enterprise hardware, documented for real deployments.</h1>
+        <p>
+          Browse verified configurations, manufacturer context, and service notes. Every listing is
+          curated for professional evaluation.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#catalog">Browse Catalog</a>
+          <a class="btn btn-outline" href="/m/contact.html">Contact Operations</a>
+        </div>
+      </section>
+
+      <section class="panel" id="catalog">
+        <h2 class="section-title">Product Catalog</h2>
+        <p class="section-subtitle">
+          Search by keyword, filter by category, or narrow by manufacturer.
+        </p>
+        <div id="category-jumps" class="category-jumps"></div>
+        <form id="filter-form" class="filters-form">
+          <label>
+            Keywords
+            <input type="search" id="search" name="search" placeholder="Search by title or specs" />
+          </label>
+          <label>
+            Category
+            <select id="filter-category" name="category">
+              <option value="">All categories</option>
+              <option value="laptop">Laptops</option>
+              <option value="gpu">Graphics</option>
+              <option value="cpu">Processors</option>
+              <option value="hdd">Storage</option>
+              <option value="motherboard">Motherboards</option>
+            </select>
+          </label>
+          <label>
+            Manufacturer
+            <select id="filter-company" name="companyId">
+              <option value="">Any manufacturer</option>
+            </select>
+          </label>
+          <div class="filter-actions">
+            <button type="submit" class="btn btn-primary">Apply Filters</button>
+            <button type="button" class="btn btn-outline" id="filter-reset">Reset</button>
+          </div>
+        </form>
+        <div id="inventory-status" class="order-status"></div>
+        <div id="results" class="catalog-stack"></div>
+        <div id="empty" class="empty-state" hidden>
+          Nothing matched that search. Try a different keyword or check back once the catalog updates.
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      Compu Magic &copy; <span id="year"></span>. Professional systems catalog.
+      <br />
+      <a href="/index.html?view=desktop" data-desktop-link>Desktop view</a>
+    </footer>
+
+    <script src="/auth.js" defer></script>
+    <script src="/nav.js" defer></script>
+    <script src="/m/desktop-link.js" defer></script>
+    <script src="/m/main.js" defer></script>
+  </body>
+</html>

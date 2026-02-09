@@ -3,20 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Compu Magic | Login</title>
+    <title>Compu Magic | Mobile Login</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles.css" />
-      <script src="/mobile-redirect.js" defer></script>
+    <link rel="stylesheet" href="/m/styles.css" />
   </head>
   <body>
-    <header class="site-header">
+    <header class="mobile-header">
       <div class="header-inner">
-        <a class="brand" href="/">
+        <a class="brand" href="/m/index.html">
           <span class="brand-mark" aria-hidden="true"></span>
           <span>
             <span class="brand-name">Compu Magic</span>
@@ -33,22 +32,22 @@
           Menu
         </button>
         <nav id="site-nav">
-          <a href="/index.html">Catalog</a>
-          <a href="/index.html#capabilities">Capabilities</a>
-          <a href="/contact.html">Contact</a>
-          <a href="/admin.html" data-requires-role="admin">Admin</a>
+          <a href="/m/index.html">Catalog</a>
+          <a href="/m/contact.html">Contact</a>
+          <a href="/m/login.html">Login</a>
+          <a href="/admin.html?view=desktop">Admin (Desktop)</a>
+          <a href="/login.html?view=desktop" data-desktop-link>Desktop View</a>
           <span id="nav-user" class="nav-user" hidden></span>
-          <a href="/login.html" id="nav-auth">Login</a>
         </nav>
       </div>
     </header>
 
     <main>
-      <section class="panel" style="max-width: 520px; margin: 2.5rem auto;">
-        <h1 class="section-title" style="margin-top: 0;">Team Sign In</h1>
+      <section class="panel">
+        <h1 class="section-title">Team Sign In</h1>
         <p class="section-subtitle">
-          Access the Compu Magic administration console and catalog tools. For credentials, contact
-          your administrator.
+          Access the Compu Magic administration console and catalog tools. For credentials, contact your
+          administrator.
         </p>
         <form id="login-form" class="order-form" autocomplete="on">
           <label>
@@ -68,11 +67,12 @@
     <footer>
       Compu Magic &copy; <span id="year"></span>. Professional systems catalog.
       <br />
-      For tailored requirements, connect via the contact page.
+      <a href="/login.html?view=desktop" data-desktop-link>Desktop view</a>
     </footer>
 
     <script src="/auth.js" defer></script>
     <script src="/login.js" defer></script>
     <script src="/nav.js" defer></script>
+    <script src="/m/desktop-link.js" defer></script>
   </body>
 </html>
