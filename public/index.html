@@ -44,6 +44,20 @@
     </header>
 
     <main>
+      <section class="top-banner" aria-label="Promotional banner">
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          poster="/data/banner-top.png"
+          width="1110"
+          height="448"
+        >
+          <source src="/data/banner-top.mp4" type="video/mp4" />
+        </video>
+      </section>
+
       <section class="hero">
         <div class="hero-content">
           <div class="eyebrow">Structured Catalog</div>
@@ -111,46 +125,66 @@
         </div>
       </section>
 
-      <section class="panel" id="catalog">
-        <h2 class="section-title">Product Catalog</h2>
-        <p class="section-subtitle">
-          Search by keyword, filter by category, or narrow by manufacturer. Listings open to full detail
-          views for deeper review.
-        </p>
-        <div id="category-jumps" class="category-jumps" aria-label="Catalog categories"></div>
-        <form id="filter-form" class="filters-form">
-          <label>
-            Keywords
-            <input type="search" id="search" name="search" placeholder="Search by title, brand, or specs" />
-          </label>
-          <label>
-            Category
-            <select id="filter-category" name="category">
-              <option value="">All categories</option>
-              <option value="laptop">Laptops</option>
-              <option value="gpu">Graphics</option>
-              <option value="cpu">Processors</option>
-              <option value="hdd">Storage</option>
-              <option value="motherboard">Motherboards</option>
-            </select>
-          </label>
-          <label>
-            Manufacturer
-            <select id="filter-company" name="companyId">
-              <option value="">Any manufacturer</option>
-            </select>
-          </label>
-          <div class="filter-actions">
-            <button type="submit" class="btn btn-primary">Apply Filters</button>
-            <button type="button" class="btn btn-outline" id="filter-reset">Reset</button>
+      <div class="catalog-wrap">
+        <aside class="catalog-side-ad catalog-side-ad-left" aria-label="Left promotional banner">
+          <img
+            src="/data/catalog-side-ad.png"
+            alt="Dell Technologies Spring into better workflow side banner"
+            width="160"
+            height="600"
+          />
+        </aside>
+
+        <section class="panel" id="catalog">
+          <h2 class="section-title">Product Catalog</h2>
+          <p class="section-subtitle">
+            Search by keyword, filter by category, or narrow by manufacturer. Listings open to full detail
+            views for deeper review.
+          </p>
+          <div id="category-jumps" class="category-jumps" aria-label="Catalog categories"></div>
+          <form id="filter-form" class="filters-form">
+            <label>
+              Keywords
+              <input type="search" id="search" name="search" placeholder="Search by title, brand, or specs" />
+            </label>
+            <label>
+              Category
+              <select id="filter-category" name="category">
+                <option value="">All categories</option>
+                <option value="laptop">Laptops</option>
+                <option value="gpu">Graphics</option>
+                <option value="cpu">Processors</option>
+                <option value="hdd">Storage</option>
+                <option value="motherboard">Motherboards</option>
+              </select>
+            </label>
+            <label>
+              Manufacturer
+              <select id="filter-company" name="companyId">
+                <option value="">Any manufacturer</option>
+              </select>
+            </label>
+            <div class="filter-actions">
+              <button type="submit" class="btn btn-primary">Apply Filters</button>
+              <button type="button" class="btn btn-outline" id="filter-reset">Reset</button>
+            </div>
+          </form>
+          <div id="inventory-status" class="order-status"></div>
+          <div id="results" class="catalog-stack"></div>
+          <div id="empty" class="empty-state" hidden>
+            Nothing matched that search. Try a different keyword or check back once the catalog updates.
           </div>
-        </form>
-        <div id="inventory-status" class="order-status"></div>
-        <div id="results" class="catalog-stack"></div>
-        <div id="empty" class="empty-state" hidden>
-          Nothing matched that search. Try a different keyword or check back once the catalog updates.
-        </div>
-      </section>
+        </section>
+
+        <aside class="catalog-side-ad catalog-side-ad-right" aria-label="Right promotional banner">
+          <img
+            src="/data/catalog-side-ad-ar.png"
+            alt="Dell Technologies Spring into better workflow Arabic side banner"
+            width="160"
+            height="600"
+          />
+        </aside>
+      </div>
 
       <section class="panel">
         <h2 class="section-title">Engage Compu Magic</h2>

@@ -57,6 +57,19 @@ main {
   padding: 0 3rem 4rem;
 }
 
+.top-banner {
+  padding-top: 2rem;
+}
+
+.top-banner video {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(16, 37, 67, 0.1);
+  box-shadow: var(--shadow);
+  display: block;
+}
+
 .site-header {
   position: sticky;
   top: 0;
@@ -221,6 +234,37 @@ main {
 
 #catalog {
   scroll-margin-top: 6.5rem;
+}
+
+.catalog-wrap {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.catalog-wrap #catalog {
+  margin-bottom: 0;
+}
+
+.catalog-side-ad {
+  position: absolute;
+  top: 0;
+  width: 160px;
+}
+
+.catalog-side-ad-left {
+  left: calc(-160px - 1rem);
+}
+
+.catalog-side-ad-right {
+  right: calc(-160px - 1rem);
+}
+
+.catalog-side-ad img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(16, 37, 67, 0.1);
+  box-shadow: var(--shadow);
 }
 
 .panel-dark {
@@ -787,6 +831,12 @@ footer {
   margin-top: 3rem;
 }
 
+@media (max-width: 1460px) {
+  .catalog-side-ad {
+    display: none;
+  }
+}
+
 @media (max-width: 900px) {
   main {
     padding: 0 2rem 3rem;
@@ -795,6 +845,7 @@ footer {
   .site-header .header-inner {
     padding: 1.1rem 2rem;
   }
+
 }
 
 @media (max-width: 600px) {

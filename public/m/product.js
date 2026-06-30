@@ -116,6 +116,13 @@ function renderProduct(product) {
       fullSpecs.push(renderSpec("Storage", product.storage || "—"));
       fullSpecs.push(renderSpec("Display", product.display || "—"));
     }
+    if (product.specs && typeof product.specs === "object") {
+      Object.entries(product.specs).forEach(([label, value]) => {
+        if (value != null && value !== "") {
+          fullSpecs.push(renderSpec(label, value));
+        }
+      });
+    }
     fullSpecs.push(renderSpec("Model", product.shortName || "—"));
     fullSpecs.push(renderSpec("Warranty", warrantyLabel || "—"));
     specList.innerHTML = fullSpecs.join("");
