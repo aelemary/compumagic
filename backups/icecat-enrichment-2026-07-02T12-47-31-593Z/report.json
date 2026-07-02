@@ -1,0 +1,197 @@
+[
+  {
+    "id": "91adeb35-cfd0-448e-99fc-321e2f0804a7",
+    "title": "Crucial ®/SSD Storage/1TB NVMe\" M2 E100",
+    "status": "web-updated",
+    "query": "direct-source",
+    "specCount": 5,
+    "sources": [
+      {
+        "title": "Crucial E100 1TB specifications",
+        "url": "https://www.crucial.com/ssd/e100/CT1000E100SSD8"
+      }
+    ]
+  },
+  {
+    "id": "28e8bbc1-d695-4275-b0c4-32ccb517aaca",
+    "title": "Crucial ®/SSD Storage/1TB NVMe\" M2 P510",
+    "status": "web-updated",
+    "query": "direct-source",
+    "specCount": 4,
+    "sources": [
+      {
+        "title": "Crucial P510 1TB specifications",
+        "url": "https://www.crucial.com/ssd/p510/CT1000P510SSD8"
+      }
+    ]
+  },
+  {
+    "id": "87c5c11e-a33c-4715-8947-577a17ef7f81",
+    "title": "Crucial ®/SSD Storage/1TGB NVMe\" M2 P3",
+    "status": "web-updated",
+    "query": "direct-source",
+    "specCount": 4,
+    "sources": [
+      {
+        "title": "Crucial P3 1TB specifications",
+        "url": "https://www.crucial.com/ssd/p3/CT1000P3SSD8"
+      }
+    ]
+  },
+  {
+    "id": "0f041889-e30c-4a49-93d4-907ed7cbaf25",
+    "title": "Crucial ®/SSD Storage/2TB NVMe\" M2 E100",
+    "status": "web-updated",
+    "query": "direct-source",
+    "specCount": 5,
+    "sources": [
+      {
+        "title": "Crucial E100 2TB specifications",
+        "url": "https://www.crucial.com/ssd/e100/CT2000E100SSD8"
+      }
+    ]
+  },
+  {
+    "id": "ba14bfec-3c7f-4acc-a89a-069d34af4ee5",
+    "title": "Crucial ®/SSD Storage/2TB NVMe\" M2 P310",
+    "status": "web-updated",
+    "query": "direct-source",
+    "specCount": 4,
+    "sources": [
+      {
+        "title": "Crucial P310 2TB specifications",
+        "url": "https://www.crucial.com/ssd/p310/CT2000P310SSD8"
+      }
+    ]
+  },
+  {
+    "id": "ace5806f-662b-415e-9538-0d926ce1f12e",
+    "title": "Crucial ®/SSD Storage/2TB NVMe\" M2 P510",
+    "status": "web-updated",
+    "query": "direct-source",
+    "specCount": 4,
+    "sources": [
+      {
+        "title": "Crucial P510 2TB specifications",
+        "url": "https://www.crucial.com/ssd/p510/CT2000P510SSD8"
+      }
+    ]
+  },
+  {
+    "id": "de86a07b-36cf-4d8f-84da-ddc00c942ee5",
+    "title": "Crucial ®/SSD Storage/2TB NVMe\" M2 T705",
+    "status": "web-updated",
+    "query": "direct-source",
+    "specCount": 4,
+    "sources": [
+      {
+        "title": "Crucial T705 2TB specifications",
+        "url": "https://www.crucial.com/ssd/t705/CT2000T705SSD3"
+      }
+    ]
+  },
+  {
+    "id": "c00e7fa8-4b1d-4578-a251-0ca9ca46e8a4",
+    "title": "Crucial ®/SSD Storage/480GB NVMe\" M2 E100",
+    "status": "web-updated",
+    "query": "direct-source",
+    "specCount": 5,
+    "sources": [
+      {
+        "title": "Crucial E100 480GB specifications",
+        "url": "https://www.crucial.com/ssd/e100/CT0480E100SSD8"
+      }
+    ]
+  },
+  {
+    "id": "8e24e87d-9521-4545-a17e-7adff97e6aeb",
+    "title": "Crucial ®/SSD Storage/SATA 3 - 2.5\"/BX500 ™ - 1TGB",
+    "status": "web-updated",
+    "query": "direct-source",
+    "specCount": 4,
+    "sources": [
+      {
+        "title": "Crucial BX500 1TB specifications",
+        "url": "https://www.crucial.com/ssd/bx500/CT1000BX500SSD1"
+      }
+    ]
+  },
+  {
+    "id": "6615e841-65e8-4bc9-b73d-d3f18d2e5695",
+    "title": "Crucial ®/SSD Storage/SATA 3 - 2.5\"/BX500 ™ - 240GB",
+    "status": "web-updated",
+    "query": "direct-source",
+    "specCount": 4,
+    "sources": [
+      {
+        "title": "Crucial BX500 240GB specifications",
+        "url": "https://www.crucial.com/ssd/bx500/CT0240BX500SSD1"
+      }
+    ]
+  },
+  {
+    "id": "04b6f146-292f-4d08-8348-bfcfd5008928",
+    "title": "Crucial ®/SSD Storage/SATA 3 - 2.5\"/BX500 ™ - 2TB",
+    "status": "web-updated",
+    "query": "direct-source",
+    "specCount": 4,
+    "sources": [
+      {
+        "title": "Crucial BX500 2TB specifications",
+        "url": "https://www.crucial.com/ssd/bx500/CT2000BX500SSD1"
+      }
+    ]
+  },
+  {
+    "id": "29029d90-51bf-4252-a132-123b17f9d606",
+    "title": "Crucial ®/SSD Storage/SATA 3 - 2.5\"/BX500 ™ - 500GB",
+    "status": "web-updated",
+    "query": "direct-source",
+    "specCount": 4,
+    "sources": [
+      {
+        "title": "Crucial BX500 500GB specifications",
+        "url": "https://www.crucial.com/ssd/bx500/CT0500BX500SSD1"
+      }
+    ]
+  },
+  {
+    "id": "d4d860e1-0e75-4091-8616-0a9c755787d7",
+    "title": "CRUCIAL X9 1TB PORTABLE SSD",
+    "status": "web-updated",
+    "query": "direct-source",
+    "specCount": 4,
+    "sources": [
+      {
+        "title": "Crucial X9 1TB specifications",
+        "url": "https://www.crucial.com/ssd/x9/CT1000X9SSD9"
+      }
+    ]
+  },
+  {
+    "id": "88f97fa6-e0a4-4381-ae53-a76b14c14f77",
+    "title": "CRUCIAL X9 2TB PORTABLE SSD",
+    "status": "web-updated",
+    "query": "direct-source",
+    "specCount": 4,
+    "sources": [
+      {
+        "title": "Crucial X9 2TB specifications",
+        "url": "https://www.crucial.com/ssd/x9/CT2000X9SSD9"
+      }
+    ]
+  },
+  {
+    "id": "e9e71bbb-841e-4ce7-af85-b758754855f9",
+    "title": "CRUCIAL X9 4TB PORTABLE SSD",
+    "status": "web-updated",
+    "query": "direct-source",
+    "specCount": 4,
+    "sources": [
+      {
+        "title": "Crucial X9 4TB specifications",
+        "url": "https://www.crucial.com/ssd/x9/CT4000X9SSD9"
+      }
+    ]
+  }
+]

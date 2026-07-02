@@ -1,0 +1,28 @@
+[
+  {
+    "id": "cefa9fb0-38d0-4325-bd30-e448528e851f",
+    "title": "LAP ASUS V3607VM-PL027W C7 240H-32G-1T-RTX 5060 8G-16\"-W11",
+    "status": "web-updated",
+    "query": "direct-source",
+    "specCount": 29,
+    "sources": [
+      {
+        "title": "ASUS V3607VM official tech specs",
+        "url": "https://www.asus.com/laptops/for-home/vivobook/asus-v16-v3607/techspec/"
+      }
+    ]
+  },
+  {
+    "id": "dad21967-c43b-465f-ab30-b6e73cb9644a",
+    "title": "LAP ASUS X1607CA-MB117W U7 255H 16G-1T-INTEL-16\"-W11",
+    "status": "web-updated",
+    "query": "direct-source",
+    "specCount": 30,
+    "sources": [
+      {
+        "title": "ASUS X1607CA official tech specs",
+        "url": "https://www.asus.com/laptops/for-home/vivobook/asus-vivobook-16-x1607/techspec/"
+      }
+    ]
+  }
+]

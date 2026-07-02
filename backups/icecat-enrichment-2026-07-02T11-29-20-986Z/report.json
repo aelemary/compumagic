@@ -1,0 +1,27 @@
+[
+  {
+    "id": "c8ee9e8b-c2f7-4530-978c-1a49049a010b",
+    "title": "ASUS MONITOR GAMING VA249HG 24\" 120HZ",
+    "status": "dry-run",
+    "icecatId": "129188041",
+    "icecatTitle": "ASUS VA249HG computer monitor 60.5 cm (23.8\") 1920 x 1080 pixels Full HD LCD Black",
+    "source": "code:VA249HG",
+    "score": 25.4,
+    "specCount": 48
+  },
+  {
+    "id": "d92137e4-b25d-4325-af9f-2aa54ee6232a",
+    "title": "ASUS MONITOR TUF GAMING VG259Q5A 24\" 200HZ",
+    "status": "dry-run",
+    "icecatId": "131258746",
+    "icecatTitle": "ASUS TUF Gaming VG259Q5A computer monitor 62.2 cm (24.5\") 1920 x 1080 pixels Full HD LED Black",
+    "source": "code:VG259Q5A",
+    "score": 26.4,
+    "specCount": 48
+  },
+  {
+    "id": "226de052-2afe-4c2f-93c1-01129ecb6f02",
+    "title": "Dell ®/LED Monitors/ 22\"/Model No. E2225HM",
+    "status": "miss"
+  }
+]

@@ -1,0 +1,626 @@
+[
+  {
+    "id": "21e3624c-44e9-4a19-817a-fb1f7b8aac63",
+    "title": "ASUS A31 PLUS Case",
+    "status": "miss"
+  },
+  {
+    "id": "7d965c55-6add-4103-b513-c45c2ed1a6e2",
+    "title": "ASUS Prime LC 360 aRGB CPU Liquid Cooler",
+    "status": "miss"
+  },
+  {
+    "id": "8dc42f51-70cf-4f8e-b4de-bef47735d670",
+    "title": "LAP DELL PRO 14 PC14250 C5 120U/8G/512G/14\"",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 1,
+    "sources": []
+  },
+  {
+    "id": "b5d526c0-0b12-4af0-97e2-99053829ea1d",
+    "title": "LAP DELL PRO 14 PC14250 U5 225U/16G/512G/14\"/INTEL",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 1,
+    "sources": []
+  },
+  {
+    "id": "743406b0-777a-403f-8ad1-b67bcf0a6045",
+    "title": "LAP DELL PRO 14 PC14250 U5 235U/16G/512G/14\"/INTEL 3Y",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 1,
+    "sources": []
+  },
+  {
+    "id": "f28d6cc1-1db2-4259-84f4-fc5efa2cab98",
+    "title": "LAP DELL PRO 14 PC14250 U7 255U/8G/512G/14\"/INTEL 2Y",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 1,
+    "sources": []
+  },
+  {
+    "id": "431f9e72-402d-4067-9b95-a1c0d8060bff",
+    "title": "LAP DELL Pro 14 PC16250 U5 235U 8G/512/3Y",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "49a53d3f-99d2-4aef-b48d-5430ae044edc",
+    "title": "lAP DELL PRO 14 PLUS PB 14250 U5 235U/16G/512G/14\"/INTEL 3Y",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 1,
+    "sources": []
+  },
+  {
+    "id": "f21c88a4-25b8-4aa5-8e34-2f4f9165ecbd",
+    "title": "LAP DELL PRO 16 PC16250 C5 120U/8G/512G/16\"",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 1,
+    "sources": []
+  },
+  {
+    "id": "0c6d6eb0-6e5c-4079-8006-c5eb67c3d8e9",
+    "title": "LAP DELL Pro 16 PC16250 U5 235U 8G/512/3Y",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "2799267b-f14c-4ab9-9834-38f3a0a66728",
+    "title": "LAP DELL PRO 16 PC16250 U5 235U/16G/512/INTEL 3Y",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "02a15f27-4921-40e9-9013-37013c4017b5",
+    "title": "LAP DELL PRO 16 PC16250 U5 235U/8G/512/INTEL",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "36c0adcf-2c59-4215-bf1b-3f833a9fbc37",
+    "title": "LAP DELL PRO 16 PC16250 U7 265U/16G/512G/16`/INTEL 3Y",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 1,
+    "sources": []
+  },
+  {
+    "id": "5a655ab1-561a-4eb8-b597-f0924cdd8ae7",
+    "title": "LAP DELL PRO 16 PLUS PB16250 U5 235U 16G/512G/16\"/INTEL 3Y",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 1,
+    "sources": []
+  },
+  {
+    "id": "edb18661-6773-482d-8503-206fd2976179",
+    "title": "LAP DELL PRO 16 PLUS PB16250 U7 265U/16G/512G/16`/INTEL 3Y",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 1,
+    "sources": []
+  },
+  {
+    "id": "8511cb84-a4c9-4324-beb6-0b163f0dd7fe",
+    "title": "LAP DELL U7-155U Latitude 3450 16G/512/14\" /Iris",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 1,
+    "sources": []
+  },
+  {
+    "id": "c943e5db-565b-4e05-ae4e-b26943358bc7",
+    "title": "LAP HP  Ci7 M-450 G10/Probook/8G/SSD512/1355U/V Iris",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "c20fc545-2f0a-4848-90a1-02dc852edb48",
+    "title": "LAP HP  Ci7 M-450 G10/Probook/R16G/SSD512/1355U/V Iris",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 1,
+    "sources": []
+  },
+  {
+    "id": "9926164d-5db8-4404-a323-fe76827ad3c4",
+    "title": "LAP HP 460 G11/Probook/ ULTRA5 125U/16G/512G/INTEL",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 1,
+    "sources": []
+  },
+  {
+    "id": "37150cca-c520-4ff2-b5af-91d13d512cec",
+    "title": "LAP HP 460 G11/Probook/ULTRA 5 125U/8G/SSD512/INTL-BAG",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 1,
+    "sources": []
+  },
+  {
+    "id": "947585e1-ba60-4377-9530-cc835e0c4003",
+    "title": "LAP HP 460 G11/Probook/ULTRA 7 155H /16G/SSD512/RTX 2050 4G",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "fffe6fae-5396-4fe5-b5bc-fea7efe1e940",
+    "title": "LAP HP 460 G11/Probook/ULTRA 7 155U /16G/SSD512/DOS/INTL",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 1,
+    "sources": []
+  },
+  {
+    "id": "f7b4c607-1d3c-496f-abaa-2d8a18255d95",
+    "title": "LAP HP 460 G11/Probook/ULTRA 7 155U /8G/SSD512/DOS/INTL",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 1,
+    "sources": []
+  },
+  {
+    "id": "878f943c-dd2f-4f57-a304-5f8854212bfc",
+    "title": "LAP HP Victus 15-fa2013dx Ci5-13420H 8GB 512GB SSD 15.6\" RTX 3050 6GB w11",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 4,
+    "sources": []
+  },
+  {
+    "id": "cfa902af-098c-4fe0-9e87-0fcf45074c38",
+    "title": "LAP HP VICTUS 15-FA2082WM I5-13420H-16G-512G-RTX 4050 6G-W11",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 5,
+    "sources": []
+  },
+  {
+    "id": "5a37ee83-8f73-4a81-80f6-ca2d8e6037f2",
+    "title": "LAP HP VICTUS 15-FA2392TX I7 13620H/16G/512G/RTX 4050 6G/INTEL",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 4,
+    "sources": []
+  },
+  {
+    "id": "841c3911-fba2-4dd4-aa67-a38c3335b951",
+    "title": "LAP HP VICTUS FA2394TX  I7-13620H/16GB/512GB RTX™ 3050 6GB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "8eb5125d-a01f-4d4b-82c5-832d023d2ef0",
+    "title": "LAP HP VICTUS fa2787nr C i7-13620H-16GB-512GB-RTX 5060 8G-15.6\"W11",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 4,
+    "sources": []
+  },
+  {
+    "id": "6bc7d0b1-1318-487f-8054-818a5830d04f",
+    "title": "LAP LENOVO  C I5 M-LOQ 12/SSD 512/V 6 RTX 3050/12450HX E",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 1,
+    "sources": []
+  },
+  {
+    "id": "3244bb3a-3b35-4e9b-9cc3-e74ec165a438",
+    "title": "LAP LENOVO  C I5 M-LOQ 16G/SSD 512/V 6 RTX 3050/13450HX",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "943e3f55-3a27-4aeb-88ac-70c97c116adb",
+    "title": "LAP LENOVO  C I5 M-LOQ 16G/SSD 512/V 8 RTX 5050/13450HX-E",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "c5eb488c-ca6a-4d3d-8aa3-1e6d89f2833e",
+    "title": "LAP LENOVO  C I5 M-LOQ 8G/SSD 512/V 6 RTX 4050/12450HX/E  W11",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "c61e52ad-247e-4d76-9327-785ae650d82c",
+    "title": "LAP LENOVO  C I7 M-LOQ 16/SSD 512/V 6 RTX 3050/13650HX",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 1,
+    "sources": []
+  },
+  {
+    "id": "22c32461-1e0d-4ec2-b5c4-10d2f56e351f",
+    "title": "LAP LENOVO  C I7 M-LOQ 16G/SSD 512/V 6 RTX 4050/13650HX",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "013354b6-8029-4816-a275-6303ddddc513",
+    "title": "LAP LENOVO  C I7 M-LOQ 16G/SSD 512/V 6 RTX 4050/13650HX-A",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "92bc99b6-416b-44c5-8ede-fce70c52b35c",
+    "title": "LAP LENOVO  C I7 M-LOQ 24/512 SSD/V 8G RTX 5060/14700HX W11-A",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 4,
+    "sources": []
+  },
+  {
+    "id": "7301a9a4-f731-40fe-bdb7-4b88531a1632",
+    "title": "LAP LENOVO  C I7 M-LOQ 24/512GB/V 8 RTX 5060/14700HX",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 1,
+    "sources": []
+  },
+  {
+    "id": "0003ba21-b411-4249-99c0-e4a08a452e6f",
+    "title": "LAP LENOVO  C I7 M-LOQ 24G/SSD 512/V 6 RTX 4050/13650HX",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "58735e88-97ac-48d9-a895-91c65ef763db",
+    "title": "LAP LENOVO  R7 250 LOQ 16G/SSD 512/V8 RTX 5060-A",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "7e0d1e37-a317-4350-ba7a-7692c0199c74",
+    "title": "LAP LENOVO  ULTRA 5 THINKPAD E14 G6 125U 16/512SSD/Vga Intel",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "73889e5f-db78-4827-91ce-d779da4cff78",
+    "title": "LAP LENOVO  ULTRA 5 THINKPAD E14 G6 125U 8/512SSD/Vga Intel",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "56944b61-59ae-4cec-97c6-2f07d9f77a06",
+    "title": "LAP LENOVO  ULTRA 5 THINKPAD E16 G2 125U 16/512SSD/Intel",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "65aebfc8-b95e-4139-920d-24461a00f579",
+    "title": "LAP LENOVO  ULTRA 7 THINKPAD E14 G6 155H 16/512SSD/Vga Intel",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "16807637-fcd6-4740-8a10-86c3d5b5a1e3",
+    "title": "LAP LENOVO  ULTRA 7 THINKPAD E16 G2 155H 16/512SSD/Intel",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "973734be-7c7e-4cbb-bdcc-2da9bb813c31",
+    "title": "LAP LENOVO C I7 Legion PRO 5 16G/512G/ RTX 5050 8G/14650HX 16 W11-A",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "c8cc153a-3466-44a4-a873-904aa2a9e261",
+    "title": "LAP LENOVO C I7-LOQ 16G/512G/V8 RTX 5050-13650HX/E/W11-A",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "9f3156a3-e132-4441-84b2-173bc1713a87",
+    "title": "LAP LENOVO C i7-LOQ-16GB-512GB-RTX 5060 8GB/14700HX-A",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 1,
+    "sources": []
+  },
+  {
+    "id": "1cf3c34c-250c-4683-aec7-5b9e77214626",
+    "title": "LAP LENOVO CI7 LEGION 5 16G/512G/V8 RTX 5060/14700HX/W11",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "9a6fbde2-ebee-42ee-bfe9-07a7dd939e1c",
+    "title": "LAP LENOVO IPS3 CI5-13420H 8G/512/INTEL",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "c3fcfe78-80fa-4f46-8b82-2e2ee98ede47",
+    "title": "LAP LENOVO IPS3 I7-13620H 8G-512G-INTEL",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "0bef9edc-b7da-4060-b247-42f830747d88",
+    "title": "LAP LENOVO Legion 5 i7-14700HX 32GB 1TB  RTX 5060 8GB 15.1\" Win11-A",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "1be71edf-5540-46b1-af55-8888936e0130",
+    "title": "LAP LENOVO Legion 5 i9-14900HX 32GB 1TB RTX 5070 8GB 15.1\" W11",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "fa6f7807-1927-4f21-9fe9-7a22fc26e17a",
+    "title": "LAP LENOVO Legion 5 Ryzen 7 260-32GB -1TB -RTX 5060 8GB 15.3\"-A",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 1,
+    "sources": []
+  },
+  {
+    "id": "33d4786f-119f-4d4e-a54d-8528c553208b",
+    "title": "LAP LENOVO Legion 5 Ultra 7 255HX 32GB -1TB RTX 5060 8GB 15.1\"-A",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 1,
+    "sources": []
+  },
+  {
+    "id": "7d06bb1d-ccc9-433d-b08c-5da36f7ace9d",
+    "title": "LAP LENOVO Legion 5 Ultra 7 255HX 32GB- 512GB RTX 5060 8GB 15.1\" Win 11",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 1,
+    "sources": []
+  },
+  {
+    "id": "c37cb4f8-6c49-44ed-abbf-80d6a0654d7a",
+    "title": "LAP Lenovo Legion PRO 5 C i9 14900HX - RTX 5070 8GB - 32GB- 1TB - 16",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "a61442d7-326f-495c-b109-419956f56174",
+    "title": "LAP LENOVO LEGION PRO 7 U9 275HX 64G/1T/RTX 5090 24G/16 W11",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "28793d79-55ce-420e-a5fb-7ecf8c3688fa",
+    "title": "LAP LENOVO R5 7235HS LOQ 16GB-512GB-RTX 3050 6GB-15.6\" W11-A",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "5ebacf29-ed5c-4a5e-832f-0cb328c6d0b8",
+    "title": "LAP LENOVO ULTRA 7 THINKPAD E14 G7 255H 16/512/INTEL",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "4a8c2eda-92e2-4cc7-9da2-a56188a96ce1",
+    "title": "LAP LENOVO ULTRA 7 THINKPAD E16 G3 255H 16/512/INTEL",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "d8151623-1b36-4d69-a225-81bab3587918",
+    "title": "LAP MSI CYBORG 15 A13UC I5-13420H 8G/512G/RTX 3050 4G",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 4,
+    "sources": []
+  },
+  {
+    "id": "b17f3308-98f5-46a6-8799-07e6b60b19a3",
+    "title": "LAP MSI CYBORG 15 A13UC I7-13620H 16G/512G/RTX 3050 4G",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 4,
+    "sources": []
+  },
+  {
+    "id": "3064bc2e-8008-4df9-8e80-2880e30c6626",
+    "title": "LAP MSI CYBORG 15 A13VE I7-13620H 16G/512G/RTX 4050 6G",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 4,
+    "sources": []
+  },
+  {
+    "id": "dbde8615-e266-4031-b4ce-4e82a92d1e08",
+    "title": "Lexar ®/NVME/NQ700 ™ - 1TB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "87b3b8f1-9cdc-4ab5-a8b1-bb2a97f78cc5",
+    "title": "Lexar ®/NVME/NQ700 ™ - 2TB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "a08fd3c8-564f-4c7e-a2c1-f11cb93c98ae",
+    "title": "Lexar ®/SSD Storage/NVME /NM610 PRO ™ - 1TB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "fb828b37-95a4-47a7-9b2c-f801d886614d",
+    "title": "Lexar ®/SSD Storage/NVME /NM610 PRO ™ - 2TB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "728b2d3c-f395-4c20-be1f-4cb96d9feb45",
+    "title": "Lexar ®/SSD Storage/NVME /NQ780 - 1TB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "dc757bcf-edba-4eb1-94e3-a668632513d4",
+    "title": "Lexar ®/SSD Storage/NVME/NM610™ - 500GB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "7270736a-00d1-4a28-99d9-44bc6e55c74a",
+    "title": "Lexar ®/SSD Storage/SATA  - 2.5\"/NS100™ - 512 GB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "7c9215b8-8f98-49ea-a391-f9ec14246f5e",
+    "title": "Lexar ®/SSD Storage/SATA - 2.5\"/NS100 ™ - 128 GB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "5fc8eaff-489b-4531-96fc-551eddce4c92",
+    "title": "Lexar ®/SSD Storage/SATA - 2.5\"/NS100 ™ - 1TB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "cf3a23c2-02ce-446f-9022-39b0aaefdf33",
+    "title": "Lexar ®/SSD Storage/SATA - 2.5\"/NS100 ™ - 256 GB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "a007e603-f16e-4897-ae91-342d56f87ccb",
+    "title": "Lexar ®/SSD Storage/SATA 3 - 2.5\"/NQ100 ™ - 1 TB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "956e0914-4ee4-4ad2-9831-600d320d0b02",
+    "title": "Lexar ®/SSD Storage/SATA 3 - 2.5\"/NQ100 ™ - 2 TB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "4354b090-44f8-46a3-b587-b4253063db0a",
+    "title": "Lexar ®/SSD Storage/SATA 3 - 2.5\"/NQ100 ™ - 240 GB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "d5441cca-17c6-4046-8e9f-327768354c40",
+    "title": "Lexar ®/SSD Storage/SATA 3 - 2.5\"/NQ100 ™ - 480 GB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "5b058a09-a16c-42d1-bb34-4bbe5046406f",
+    "title": "Lexar SL300 USB 3.2 Gen 2 Type-C Portable SSD Black - 1TB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "f7e7b061-a9d7-4376-ad5a-fb65e9c511d3",
+    "title": "MOTHERBOARD ASUS B850 MAX GAMING WIFI-W",
+    "status": "miss",
+    "icecatError": "fetch failed"
+  }
+]

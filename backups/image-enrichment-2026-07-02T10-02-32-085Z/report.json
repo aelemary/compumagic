@@ -1,0 +1,706 @@
+[
+  {
+    "id": "09852131-9606-41e2-be87-ca6ebd9f6897",
+    "title": "AMD®/Processor/Ryzen™ 5 3400G BOX",
+    "status": "updated",
+    "image": "https://m.media-amazon.com/images/I/71rKDRYq77L._AC_.jpg",
+    "source": "https://www.amazon.es/AMD-Ryzen-3400G-Procesador-Disipador/dp/B07SXNDKNM",
+    "score": 10
+  },
+  {
+    "id": "c4194571-78d5-4a51-a63e-924bbd367321",
+    "title": "AMD®/Processor/Ryzen™ 9 7900X BOX",
+    "status": "updated",
+    "image": "https://tetrabyte.gr/wp-content/uploads/2023/01/ryzen9-7900x_02.jpg",
+    "source": "https://tetrabyte.gr/product/amd-ryzen-9-7900x-4-7ghz-am5-box/",
+    "score": 10
+  },
+  {
+    "id": "21e3624c-44e9-4a19-817a-fb1f7b8aac63",
+    "title": "ASUS A31 PLUS Case",
+    "status": "updated",
+    "image": "https://dlcdnwebimgs.asus.com/files/media/fa00bc94-c735-4405-b57b-3ff92217597b/v1/img/asus-a31-plus-color-1.png",
+    "source": "https://www.asus.com/us/motherboards-components/cases/asus/asus-a31-plus-case/",
+    "score": 12
+  },
+  {
+    "id": "d92137e4-b25d-4325-af9f-2aa54ee6232a",
+    "title": "ASUS MONITOR TUF GAMING VG259Q5A 24\" 200HZ",
+    "status": "updated",
+    "image": "https://www.scan.co.uk/images/products/xlarge/3766267-xl-c.jpg",
+    "source": "https://www.scan.co.uk/products/24-asus-tuf-vg259q5a-monitor-fast-ips-1920x1080-03ms-200hz-freesync-premium-10001-300cd-m",
+    "score": 15
+  },
+  {
+    "id": "7d965c55-6add-4103-b513-c45c2ed1a6e2",
+    "title": "ASUS Prime LC 360 aRGB CPU Liquid Cooler",
+    "status": "updated",
+    "image": "https://www.wootware.co.za/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/a/s/asus-prime-lc-360-argb-lcd-6.jpg",
+    "source": "https://www.wootware.co.za/asus-prime-lc-360-argb-lcd-360mm-black-liquid-cpu-cooler.html",
+    "score": 15
+  },
+  {
+    "id": "91adeb35-cfd0-448e-99fc-321e2f0804a7",
+    "title": "Crucial ®/SSD Storage/1TB NVMe\" M2 E100",
+    "status": "updated",
+    "image": "https://i.pepita.hu/images/product/21147290/ssd-crucial-e100-1tb-pci-express-40-x4-m2-2280-ct1000e100ssd8_129511245_1200x630.jpg",
+    "source": "https://pepita.com/ro/solid-state-drive-ssd-c3906/ssd-crucial-e100-1tb-pci-express-40-x4-m2-2280-ct1000e100ssd8-p21147290",
+    "score": 11
+  },
+  {
+    "id": "0f041889-e30c-4a49-93d4-907ed7cbaf25",
+    "title": "Crucial ®/SSD Storage/2TB NVMe\" M2 E100",
+    "status": "updated",
+    "image": "https://www.mastertech.com.py/wp-content/uploads/2025/11/55022.jpg",
+    "source": "https://www.mastertech.com.py/producto/ssd-m-2-2tb-crucial-e100-2280-nvme-pcie-gen4-ct2000e100ssd8-5000-4500-mb-s/",
+    "score": 11
+  },
+  {
+    "id": "ace5806f-662b-415e-9538-0d926ce1f12e",
+    "title": "Crucial ®/SSD Storage/2TB NVMe\" M2 P510",
+    "status": "updated",
+    "image": "https://www.mrmemory.co.uk/images/groups-high/crucial-p510-2280-m2-ssd-3.jpg",
+    "source": "https://www.mrmemory.co.uk/ssd-solid-state-drive-products/2tb-crucial-p510-2280-m.2-nvme-pcie-ssd",
+    "score": 11
+  },
+  {
+    "id": "3b6896d3-d080-48ae-ba87-3c2c45d4ed3c",
+    "title": "Dell ®/LED Monitors/23.5\"/Model No. E2423HN",
+    "status": "updated",
+    "image": "https://tech.co.za/wp-content/uploads/2023/03/E2423HN-a.png",
+    "source": "https://tech.co.za/product/dell-e2423hn-monitor-23-8-1920x1080-60hz-8ms/",
+    "score": 10
+  },
+  {
+    "id": "b5f288f0-8d15-49ef-9a7e-d555715ae617",
+    "title": "Dell ®/LED Monitors/27\"/Model No. SE2725HM",
+    "status": "updated",
+    "image": "https://m.media-amazon.com/images/I/71mffiFrbDL._AC_SL1500_.jpg",
+    "source": "https://www.amazon.co.uk/Dell-27-Monitor-1920x1080-100x100mm/dp/B0F2N1CFPS",
+    "score": 10
+  },
+  {
+    "id": "da483be8-4d96-49a7-82f6-43d02a488edc",
+    "title": "Dell ®/LED Monitors/IPS 23.8\"/Model No. P2425H",
+    "status": "updated",
+    "image": "https://compratecno.cl/44106-large_default/dell-p2425h-led-backlit-lcd-monitor-23-8-22-1920-x-1080-ips-displayport-2f-hdmi-2f-vga-2f-usb.jpg",
+    "source": "https://compratecno.cl/monitores/12997-dell-p2425h-led-backlit-lcd-monitor-23-8-22-1920-x-1080-ips-displayport-2f-hdmi-2f-vga-2f-usb.html",
+    "score": 11
+  },
+  {
+    "id": "7dbfd997-fa3f-4df0-8ecc-99a0e60be616",
+    "title": "Dell ®/LED Monitors/IPS 27\"/Model No. P2725H",
+    "status": "updated",
+    "image": "https://www.bhphotovideo.com/images/fb/dell_p2725h_27_full_hd_16_9_1822419.jpg",
+    "source": "https://www.bhphotovideo.com/c/product/1822419-REG/dell_p2725h_27_full_hd_16_9.html",
+    "score": 10
+  },
+  {
+    "id": "5681c385-cb25-49f8-87ef-7625d033aa79",
+    "title": "Dell ®/LED Monitors/IPS* 27\"/Model No. S2725H",
+    "status": "updated",
+    "image": "https://m.media-amazon.com/images/I/71Cn8N4oo4L._AC_.jpg",
+    "source": "https://www.amazon.com/Dell-S2725H-Monitor-Integrated-Adjustability/dp/B0D1Z5QN6D",
+    "score": 10
+  },
+  {
+    "id": "c2525c54-45ea-4988-91f2-b3a3ab45d33e",
+    "title": "HP PRINTER LJ M111W",
+    "status": "updated",
+    "image": "https://sg-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/7/M/7MD68A-1_T1678886575.png",
+    "source": "https://www.hp.com/sg-en/shop/hp-laserjet-m111w-printer-7md68a.html",
+    "score": 10
+  },
+  {
+    "id": "9f3b803d-8fc3-43f4-99f1-54ce37518752",
+    "title": "Intel ®/Processor/Core™ i5-14400F/20MB Cache - TRAY",
+    "status": "updated",
+    "image": "https://gitec.ge/images/thumbs/0074279_i5-14400f.jpeg",
+    "source": "https://gitec.ge/en/processor-intel-core-i5-14400f-20mb-cache-470ghz-tray",
+    "score": 11
+  },
+  {
+    "id": "5a07dd2e-534d-4f23-96d4-9122e1a774b4",
+    "title": "Intel ®/Processor/Core™ i7-14700F/33MB Cache - BOX",
+    "status": "updated",
+    "image": "https://tinhocanhphat.vn/media/product/20606_02.jpg",
+    "source": "https://tinhocanhphat.vn/cpu-intel-core-i7-14700f-up-to-5.4ghz-20-nhan-28-luong-33mb-cache-65w-socket-intel-lga-1700-raptor-lake.html",
+    "score": 11
+  },
+  {
+    "id": "6b289d17-527b-4aea-916e-4f2ddb863ebc",
+    "title": "Intel ®/Processor/Core™ i9-14900K/36MB Cache - BOX",
+    "status": "updated",
+    "image": "https://m.media-amazon.com/images/I/51S-Da9EWpL.jpg",
+    "source": "https://www.amazon.eg/-/en/Intel-Processor-CoreTM-i9-14900K-Cache/dp/B0CGJDKLB8",
+    "score": 13
+  },
+  {
+    "id": "7ec57d88-ba8b-4fc5-8865-cebafd929c20",
+    "title": "Intel® Core™Ultra 7-265KF processor 5.5GHz30MB LGA1851 BOX",
+    "status": "updated",
+    "image": "https://www.asashimall.com/wp-content/uploads/2025/05/8840e689d9f0c45ecc2beb835c72f3a8-600x600.jpeg",
+    "source": "https://www.asashimall.com/product/intel-core-ultra-7-265k-ultra-7-265kf-30m-cache-up-to-5-50-ghz-lga1851-processor/",
+    "score": 12
+  },
+  {
+    "id": "8f69e359-3a9a-4bda-ac57-5d9038eb4992",
+    "title": "KIOXIA LXD20K001TG8 EXTERNAL SSD 1TB",
+    "status": "updated",
+    "image": "https://www.rdveikals.lv/images/full/07bf3288b04bb67a2679cb360c960e05.jpg",
+    "source": "https://www.rdveikals.lv/products/lv/416/883939/sort/5/filter/0_0_0_0/Exceria-Plus-G2-Portable-1TB-External-LXD20K001TG8-SSD-disks.html",
+    "score": 13
+  },
+  {
+    "id": "cd85ec39-a7b7-4657-8b5f-e575ac9040c0",
+    "title": "KIOXIA LXD20K002TG8 EXTERNAL SSD 2TB",
+    "status": "updated",
+    "image": "https://m.media-amazon.com/images/I/815HmVp++oL.jpg",
+    "source": "https://bangladesh.desertcart.com/products/391374841-kioxia-exceria-plus-portable-ssd-2tb-external-drive-with-usb",
+    "score": 12
+  },
+  {
+    "id": "1cf7105f-59ca-4bf2-ae82-ce3db65e2287",
+    "title": "KIOXIA/SSD STORAGE/M2 NVME 2TB",
+    "status": "updated",
+    "image": "https://www.scan.co.uk/images/products/xlarge/3761472-xl-a.jpg",
+    "source": "https://www.scan.co.uk/products/2tb-kioxia-exceria-7300-m2-2280-pcie-40-x4-nvme-ssd-7300mb-s-read-6800mb-s-write-1000k-1250k-iops-oe",
+    "score": 10
+  },
+  {
+    "id": "02ae0344-cd6e-45af-97a2-ad155268dfe5",
+    "title": "LAP ALIENNWARE 16X-AC16251 U9 275HX-1T-32G-RTX5070 8G-16",
+    "status": "updated",
+    "image": "https://microless.com/cdn/products/37fe79f553be85c674bb1bfd3e049345-hi.jpg",
+    "source": "https://kuwait.microless.com/product/dell-alienware-16x-aurora-gaming-laptop-16-wqxga-240hz-display-intel-core-ultra-9-275hx-32gb-ram-1tb-ssd-geforce-rtx-5070-8gb-english-k-b-win11-interstellar-indigo-aw-16x-ac16251-013-eng/",
+    "score": 6
+  },
+  {
+    "id": "baf031a7-c94d-477a-adef-90e7b3da603a",
+    "title": "LAP ASUS  FA506NCQ-HN167W  R7 170 16G/512G/RTX 3050 4G 15.6\" W11",
+    "status": "updated",
+    "image": "https://microless.com/cdn/products/cd9bde743b3da4a08488763e3b0cf493-hi.jpg",
+    "source": "https://qatar.microless.com/product/asus-tuf-gaming-a15-fa506ncq-hn167w-laptop-15-6-fhd-ips-144hz-display-amd-ryzen-7-170-16gb-ram-512gb-ssd-geforce-rtx-3050-4gb-gpu-eng-arabic-k-b-win11-graphics-black-90nr0qe7-m002r0/",
+    "score": 14
+  },
+  {
+    "id": "e91559fc-3892-4420-bd0a-31c103c68600",
+    "title": "LAP ASUS FX607VU-RL167W C7 240H 16G-512G-RTX 4050 6G-16\"-W11",
+    "status": "updated",
+    "image": "https://www.dubaiphone.net/wp-content/uploads/2026/04/ASUS-TUF-Gaming-F16-FX607VU-RL167W-GeForce-RTX-4050-Core-7-240H-16GB-512GB-SSD-16-Inch-FHD-144Hz-Windows-11.webp",
+    "source": "https://www.dubaiphone.net/ar/shop/asus-tuf-gaming-f16-fx607vu-rl167w-geforce-rtx-4050-core-7-240h-16gb-512gb-ssd-16-inch-fhd-144hz-windows-11/",
+    "score": 12
+  },
+  {
+    "id": "38776d03-8e0b-4b52-8a59-55125cafbe99",
+    "title": "LAP ASUS FX608JMR-RV017W  i7 14650HX 16G-1T RTX 5060 16 W11",
+    "status": "updated",
+    "image": "https://static.egprices.com/img/asus-tuf-gaming-f16-laptop-1.jpg?t=webp&s=500x250",
+    "source": "https://www.egprices.com/en/product/asus-tuf-gaming-f16-fx608jmr-rv017w-i7-14650hx-16gb-1tb-ssd-nvidia-rtx-5060-8gb-16-inch-w11-laptop",
+    "score": 15
+  },
+  {
+    "id": "086e9f4e-3aa7-42e2-9b65-37741fa9f0d7",
+    "title": "LAP ASUS G16 G614PR-RV132W Ryzen 9 8940HX - RTX 5070 Ti 12GB - 32GB RAM - 1TB SSD - W 11",
+    "status": "updated",
+    "image": "https://2b.com.eg/media/catalog/product/cache/661473ab953cdcdf4c3b607144109b90/z/u/zu549.jpg",
+    "source": "https://2b.com.eg/en/asus-rog-strix-g16-g614pr-rv132w-laptop-amd-ryzentm-9-8940hx-32gb-1tb-ssd-nvidiar-geforce-rtxtm-5070-ti-12gb-16-fhd-165hz-win11-eclipse-gray.html",
+    "score": 16
+  },
+  {
+    "id": "c62b0fbf-8fb2-4320-96f4-91fd6a473b3e",
+    "title": "LAP ASUS G614FM-RV169W-R9 9955HX-16G/1TB/RTX 5060 8GB 16\" W11",
+    "status": "updated",
+    "image": "https://microless.com/cdn/products/e4c52d321d9307dcd1ca9041c1076391-hi.jpg",
+    "source": "https://saudi.microless.com/product/asus-rog-strix-g16-g614fm-gaming-laptop-16-wqxga-ips-display-amd-ryzen-9-9955hx-16gb-ram-1tb-ssd-geforce-rtx-5060-8gb-gpu-english-k-b-win11-eclipse-gray-g614fm-rv169w/",
+    "score": 13
+  },
+  {
+    "id": "d69733a1-b01a-4225-97b7-f5eb83dca40b",
+    "title": "LAP ASUS G614FP-GR169W R9 9955HX-16GB/ 1TB/RTX 5070 8GB- W 11",
+    "status": "updated",
+    "image": "https://2b.com.eg/media/catalog/product/cache/661473ab953cdcdf4c3b607144109b90/z/u/zu541.jpg",
+    "source": "https://2b.com.eg/en/asus-rog-strix-g16-g614fp-gr169w-laptop-amd-ryzentm-9-9955hx-16gb-1tb-ssd-nvidiar-geforce-rtxtm-5070-8gb-16-fhd-165hz-win11-eclipse-gray.html",
+    "score": 13
+  },
+  {
+    "id": "565f3c66-15b7-4a0d-bf09-3db36a76dc26",
+    "title": "LAP ASUS G614PR-G016W Ryzen™ 9 8940HX 16G-1T-RTX™ 5070 Ti 16 W11",
+    "status": "updated",
+    "image": "https://2b.com.eg/media/catalog/product/cache/661473ab953cdcdf4c3b607144109b90/z/u/zu578-2_2_1.jpg",
+    "source": "https://2b.com.eg/en/asus-rog-strix-g16-g614pr-g016w-laptop-amd-ryzentm-9-8940hx-16gb-1tb-ssd-nvidiar-geforce-rtxtm-5070-ti-12gb-16-fhd-165hz-win11-eclipse-gray.html",
+    "score": 14
+  },
+  {
+    "id": "baaa1b0b-a9fc-45aa-b1cf-deabd2beaecd",
+    "title": "LAP ASUS G615LR-RV052W  Ultra 7 255HX 32G-1T RTX™ 5070 Ti 16 W11",
+    "status": "updated",
+    "image": "https://microless.com/cdn/products/8de726b280fb1a42abbfa6f25844abb5-hi.jpg",
+    "source": "https://oman.microless.com/product/asus-rog-strix-g16-g615lr-gaming-laptop-16-wuxga-165hz-ips-display-intel-core-ultra-7-255hx-16gb-ram-1tb-ssd-geforce-rtx-5070-ti-12gb-gpu-english-arabic-kb-win11-volt-green-g615lr-rv052w/",
+    "score": 15
+  },
+  {
+    "id": "0e3c3a4f-5708-4c83-90c6-03480619061a",
+    "title": "LAP DELL C I7 Latitude 3450 8/512/14\" /Iris/1355U",
+    "status": "updated",
+    "image": "https://microless.com/cdn/products/a1dd68c4cc774bb3ca4e418b77f419e8-hi.jpg",
+    "source": "https://uae.microless.com/product/dell-latitude-3450-laptop-14-0-fhd-ips-display-intel-core-i7-1355u-processor-8gb-ram-512gb-ssd-integrated-intel-graphics-backlit-english-keyboard-ubuntu-22-04-lts-gray-xctol345014emea/",
+    "score": 12
+  },
+  {
+    "id": "f32cd9fb-3bfd-4e16-bbee-2088a1b1edee",
+    "title": "LAP DELL C I7 Latitude 3450 8/512/14\" /MX570/1355U",
+    "status": "updated",
+    "image": "https://www.sitio2.cl/imagenes_productos/8764-a-1737324173-500h.jpg",
+    "source": "https://www.agilstore.cl/producto.php?id=6951349&nombre=Laptop-DELL-LATITUDE-3450-PROCESADOR-I7-1355U-MEMORIA-RAM-16GB-512-SSD-WINDOWS-11PRO",
+    "score": 12
+  },
+  {
+    "id": "55d906fc-10bc-44d2-b166-177b777b1440",
+    "title": "LAP DELL I5 LATITUDE 3550 8G/512G/15`/INTEL/1335U",
+    "status": "updated",
+    "image": "https://c1.neweggimages.com/productimage/nb1280/B295D2504240GPO3DDE.jpg",
+    "source": "https://www.newegg.com/dell-latitude-15-6-full-hd-intel-iris-xe-graphics-16gb-memory-512-gb-ssd-black/p/1TS-000A-14E28",
+    "score": 12
+  },
+  {
+    "id": "f7b4c607-1d3c-496f-abaa-2d8a18255d95",
+    "title": "LAP HP 460 G11/Probook/ULTRA 7 155U /8G/SSD512/DOS/INTL",
+    "status": "updated",
+    "image": "https://microless.com/cdn/products/8681823409bd801910e0deff9156de6f-hi.jpg",
+    "source": "https://uae.microless.com/product/hp-probook-460-g11-laptop-16-wuxga-ips-display-intel-core-ultra-7-155u-processor-32gb-ram-512gb-ssd-integrated-intel-iris-graphics-eng-backlit-k-b-windows-11-natural-silver-probook-460-g11/",
+    "score": 11
+  },
+  {
+    "id": "878f943c-dd2f-4f57-a304-5f8854212bfc",
+    "title": "LAP HP Victus 15-fa2013dx Ci5-13420H 8GB 512GB SSD 15.6\" RTX 3050 6GB w11",
+    "status": "updated",
+    "image": "https://microless.com/cdn/products/bac666976c914571651e9aafef3349d1-hi.jpg",
+    "source": "https://uae.microless.com/product/hp-victus-15-fa2013dx-gaming-laptop-15-6-fhd-144hz-display-intel-core-i5-13420h-8gb-ram-512gb-ssd-geforce-rtx-3050-6gb-gpu-english-keyboard-windows-11-home-mica-silver-b95whua-aba/?offer_id=397272",
+    "score": 15
+  },
+  {
+    "id": "5a37ee83-8f73-4a81-80f6-ca2d8e6037f2",
+    "title": "LAP HP VICTUS 15-FA2392TX I7 13620H/16G/512G/RTX 4050 6G/INTEL",
+    "status": "updated",
+    "image": "https://m.media-amazon.com/images/I/81obPsMhewL.jpg",
+    "source": "https://www.hotstock.io/us/p/hp-victus-15-6-inch-fhd-144hz-gaming-laptop-intel-core-i5-13420h-nvidia-geforce-rtx-4050-6gb-16gb-ddr4-512gb-ssd-mica",
+    "score": 11
+  },
+  {
+    "id": "65aebfc8-b95e-4139-920d-24461a00f579",
+    "title": "LAP LENOVO  ULTRA 7 THINKPAD E14 G6 155H 16/512SSD/Vga Intel",
+    "status": "updated",
+    "image": "https://5.imimg.com/data5/SELLER/Default/2025/10/554486727/WI/WC/UQ/40852255/lenovo-thinkpad-e14-intel-core-ultra-7-155h-16gb-ram-512gb-ssd-14-wuxga-laptop-21m70098ig-1000x1000.jpg",
+    "source": "https://www.indiamart.com/proddetail/lenovo-thinkpad-e14-intel-core-ultra-7-155h-16gb-ram-512gb-ssd-14-wuxga-laptop-21m70098ig-2857746183448.html",
+    "score": 15
+  },
+  {
+    "id": "1cf3c34c-250c-4683-aec7-5b9e77214626",
+    "title": "LAP LENOVO CI7 LEGION 5 16G/512G/V8 RTX 5060/14700HX/W11",
+    "status": "updated",
+    "image": "https://m.media-amazon.com/images/I/51N8Mx3-IfL._AC_.jpg",
+    "source": "https://www.amazon.com.mx/Lenovo-Laptop-Gaming-Legion-GeForce/dp/B08VSB8WR3",
+    "score": 13
+  },
+  {
+    "id": "5ebacf29-ed5c-4a5e-832f-0cb328c6d0b8",
+    "title": "LAP LENOVO ULTRA 7 THINKPAD E14 G7 255H 16/512/INTEL",
+    "status": "updated",
+    "image": "https://microless.com/cdn/products/81fe4d74574c1f52069bf07ca06506e2-hi.jpg",
+    "source": "https://uae.microless.com/product/lenovo-thinkpad-e14-gen-7-laptop-14-wuxga-ips-60hz-display-intel-core-ultra-7-255h-16gb-ram-512gb-ssd-intel-arc-140t-graphics-english-uk-keyboard-freedos-black-21sx001tgp/",
+    "score": 14
+  },
+  {
+    "id": "b17f3308-98f5-46a6-8799-07e6b60b19a3",
+    "title": "LAP MSI CYBORG 15 A13UC I7-13620H 16G/512G/RTX 3050 4G",
+    "status": "updated",
+    "image": "https://images.khmer24.co/26-02-20/new-laptop-msi-cyborg-15-a13uc-i7-13620h-16gb-512gb-15-6-quot-rtx3050-819--798738177155956034824159-b.jpg",
+    "source": "https://m.khmer24.com/en/new-laptop---msi-cyborg-15-a13uc---i7-13620h-16gb-512gb-15-6--rtx3050---819--adid-13200645",
+    "score": 14
+  },
+  {
+    "id": "fb828b37-95a4-47a7-9b2c-f801d886614d",
+    "title": "Lexar ®/SSD Storage/NVME /NM610 PRO ™ - 2TB",
+    "status": "updated",
+    "image": "https://www.mastertech.com.py/wp-content/uploads/2026/03/56667.jpg",
+    "source": "https://www.mastertech.com.py/producto/ssd-lexar-m-2-2tb-nm610-pro-nvme-lnm610p002t-rnnng/",
+    "score": 12
+  },
+  {
+    "id": "a007e603-f16e-4897-ae91-342d56f87ccb",
+    "title": "Lexar ®/SSD Storage/SATA 3 - 2.5\"/NQ100 ™ - 1 TB",
+    "status": "updated",
+    "image": "https://www.mastertech.com.py/wp-content/uploads/2025/11/55013_sec_2.jpg",
+    "source": "https://www.mastertech.com.py/producto/ssd-lexar-1tb-nq100-2-5-sata-3-lnq100x001t-rnnng/",
+    "score": 10
+  },
+  {
+    "id": "4354b090-44f8-46a3-b587-b4253063db0a",
+    "title": "Lexar ®/SSD Storage/SATA 3 - 2.5\"/NQ100 ™ - 240 GB",
+    "status": "updated",
+    "image": "https://mgrtechno.com.ar/wp-content/uploads/2024/03/LEXAR-TR.png",
+    "source": "https://mgrtechno.com.ar/product/ssd-sata-lexar-nq100-240gb/",
+    "score": 11
+  },
+  {
+    "id": "d5441cca-17c6-4046-8e9f-327768354c40",
+    "title": "Lexar ®/SSD Storage/SATA 3 - 2.5\"/NQ100 ™ - 480 GB",
+    "status": "updated",
+    "image": "https://img.advice.co.th/images_nas/pic_product4/A0154411/A0154411OK_BIG_5.jpg",
+    "source": "https://www.advice.co.th/product/ssd-solid-state-drive-/ssd-sata-2-5-512-gb/480-gb-ssd-sata-lexar-nq100",
+    "score": 11
+  },
+  {
+    "id": "93a22c9e-c4ee-4c04-9a65-cc1225424eb2",
+    "title": "MOTHERBOARD ASUS PRIME B650M-A II-CSM",
+    "status": "updated",
+    "image": "https://dlcdnwebimgs.asus.com/files/media/b9be98e8-cf94-4d4f-a0d9-3e9b2e54e48a/img/new_product_imgs/02_Cooling/Cooler_by_design/1-PRIME-B650M-A-WIFI-II-2D.png",
+    "source": "https://www.asus.com/motherboards-components/motherboards/csm/prime-b650m-a-wifi-ii-csm/",
+    "score": 13
+  },
+  {
+    "id": "61d1a3fe-d0c5-4bbc-804f-0358085fe4e5",
+    "title": "MOTHERBOARD ASUS PRIME B760M-A D4-CSM",
+    "status": "updated",
+    "image": "https://media.pangoly.com/img/4/b/1/9/4b197e60-d654-4188-804b-8241cc6cb70b.jpg",
+    "source": "https://pangoly.com/en/product/asus-prime-b760m-a-d4-csm",
+    "score": 13
+  },
+  {
+    "id": "e93e4f96-3130-48fc-86ef-050fa80464d5",
+    "title": "MOTHERBOARD ASUS PRIME X870-P",
+    "status": "updated",
+    "image": "https://microless.com/cdn/products/276e9ae0565a4010a5b5f6bd62485fcd-hi.jpg",
+    "source": "https://saudi.microless.com/product/asus-prime-x870-p-wifi-atx-motherboard-amd-x870-chipset-4x-dimm-ddr5-slots-192gb-max-memory-realtek-2-5gb-ethernet-4x-m-2-slots-1x-pcie-5-0-3x-pcie-4-0-x16-bt-5-4-hdmi-90mb1is0-m0eay0/",
+    "score": 12
+  },
+  {
+    "id": "2861c037-019e-4da5-8990-2e33bb6dfd8e",
+    "title": "MOTHERBOARD ASUS TUF GAMING B650M-E WIFI",
+    "status": "updated",
+    "image": "https://uae.microless.com/cdn/category_files/657945427a812a70b9b2fe901540d54a.png",
+    "source": "https://uae.microless.com/product/asus-tuf-gaming-b650m-e-wifi-micro-atx-am5-motherboard-amd-b650-chipset-4x-dimm-ddr5-slots-192gb-max-memory-2x-m-2-slots-2x-dp-1x-hdmi-3x-audio-jacks-1x-realtek-2-5gb-port-90mb1fv0-m0eay0/",
+    "score": 14
+  },
+  {
+    "id": "7ad00c0e-9641-4ca4-83cb-96004a764376",
+    "title": "Motherboard/ASUS®  X870 MAX GAMING WIFI7 ATX AM5",
+    "status": "updated",
+    "image": "https://microless.com/cdn/products/e27feeeebfa2f4d7d907664b14ebea44-hi.jpg",
+    "source": "https://saudi.microless.com/product/asus-x870-max-gaming-wifi7-am5-atx-motherboard-amd-x870-chipset-4x-ddr5-dimm-slots-up-to-256gb-max-memory-1x-pcie-5-0-x16-3x-m-2-slots-wi-fi-7-bluetooth-v5-4-90mb1ly0-m0eay0/",
+    "score": 14
+  },
+  {
+    "id": "193851fe-bde5-45f5-84cf-53c944862489",
+    "title": "Motherboard/ASUS® TUF-B650M-PLUS WIFI",
+    "status": "updated",
+    "image": "https://wp.easypc.com.ph/wp-content/uploads/2025/02/ASUS_TUF_B650M-PLUS_wifi_D5.jpg",
+    "source": "https://wp.easypc.com.ph/product/asus-tuf-b650m-plus-wifi-d5-am5-ddr5-motherboard/",
+    "score": 10
+  },
+  {
+    "id": "12e7acbc-ac84-4734-93c8-423a109b4666",
+    "title": "Motherboard/ASUS®PRIME-B760-PLUS",
+    "status": "updated",
+    "image": "https://exo.ir/image/cache/catalog/Products/ASUS/Motherboards/Intel/700-Series/Prime-Series/B760-Plus/Asus-Prime-B760-Plus-1-1500x1500.jpg",
+    "source": "https://exo.ir/product/asus-prime-b760-plus",
+    "score": 8
+  },
+  {
+    "id": "06e9508b-7c9e-4127-8388-35c3eef729ce",
+    "title": "Motherboard/ASUS®PRIME-B760M-R D4",
+    "status": "updated",
+    "image": "https://www.wootware.co.za/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/a/s/asus-prime-b760m-r-d4-5.jpg",
+    "source": "https://www.wootware.co.za/asus-prime-b760m-r-d4-intel-b760-raptor-lake-lga1700-micro-atx-desktop-motherboard.html",
+    "score": 8
+  },
+  {
+    "id": "ec4162fa-56be-4a9b-b5d2-49250e293885",
+    "title": "PC DELL PRO TOWER I5-14500/8G/512G",
+    "status": "updated",
+    "image": "https://www.tpstech.in/cdn/shop/files/41qkN34XVaL.jpg?v=1761725745&width=1946",
+    "source": "https://www.tpstech.in/products/dell-optiplex-7020-mini-tower-intel-core-i5-14500-v-pro-8gb-ddr5-ram-512gb-ssd",
+    "score": 11
+  },
+  {
+    "id": "331bfbb4-e3e6-48f2-94d4-4fba3f712896",
+    "title": "PC DELL PRO TOWER QCT1250 I7-14700/8G/512G 3Y",
+    "status": "updated",
+    "image": "https://m.media-amazon.com/images/I/61ZKX63puHL._AC_SL1500_.jpg",
+    "source": "https://www.amazon.ae/Dell-Pro-Tower-QCT1250-Desktop/dp/B0G2CSFQ2L",
+    "score": 12
+  },
+  {
+    "id": "8e4623b9-5943-42ef-a6db-fa0aef892004",
+    "title": "PC DELL Pro Tower QCT1250 U7 265 8G 512G 3Y",
+    "status": "updated",
+    "image": "https://www.netsia.it/wp-content/uploads/2025/09/bG9jYWw6Ly8vaW1hZ2VzX2dhbGxlcnkvOS8zLzYvOTM2MjFmYTg1ZjgzNjBjMWRkYWVjODFiZWNlNjAyMGEvYzBmZWIxYzc1MjczODc1ZTFhZWEwMGFiODJlZWE2ZGFjNjVkOWVjMi5qcGc-1.jpg",
+    "source": "https://www.netsia.it/prodotto/dell-pro-tower-qct1250-180w-tpm-u7-265-16gb-512gb/",
+    "score": 14
+  },
+  {
+    "id": "c079ee9a-d2c3-43fe-b2e4-a39dbbdc7a89",
+    "title": "RAM 16G ACER 5600 PC DDR5",
+    "status": "updated",
+    "image": "https://m.media-amazon.com/images/I/619ZLWg2pjL._AC_SL1500_.jpg",
+    "source": "https://www.amazon.com/SD200-Single-Computer-Memory-Laptop/dp/B0DSM8XPPJ",
+    "score": 13
+  },
+  {
+    "id": "ffa1c87f-79cb-47aa-b098-2ec6e3b352d2",
+    "title": "RAM 16G CRUCIAL 5600 LAP DDR5",
+    "status": "updated",
+    "image": "https://m.media-amazon.com/images/I/819OdHGCicL._SL1500_.jpg",
+    "source": "https://www.amazon.in/Crucial-16Gbit-Laptop-Memory-CT16G56C46S5/dp/B0BLTGMCB7",
+    "score": 14
+  },
+  {
+    "id": "92a9f7c3-68fd-4afc-8e03-51231c2e3471",
+    "title": "RAM 16G CRUCIAL 5600 PC DDR5",
+    "status": "updated",
+    "image": "https://m.media-amazon.com/images/I/819OdHGCicL._SX679_.jpg",
+    "source": "https://www.amazon.in/Crucial-16Gbit-Laptop-Memory-CT16G56C46S5/dp/B0BLTGMCB7",
+    "score": 13
+  },
+  {
+    "id": "a38f5567-bef8-4217-aafe-7043dd58b905",
+    "title": "RAM 16G Crucial-3200 PC  DDR4",
+    "status": "updated",
+    "image": "https://m.media-amazon.com/images/I/516R-HtUrQL._AC_.jpg",
+    "source": "https://www.amazon.in/Crucial-3200MHz-3000MHz-2666MHz-CP2K16G4DFRA32A/dp/B0C29R9LNL",
+    "score": 12
+  },
+  {
+    "id": "92ddbfe0-51d5-4d9c-8448-d6c33abba388",
+    "title": "RAM 16G HIKSEMI 3200 PC DDR4",
+    "status": "updated",
+    "image": "https://img.advice.co.th/images_nas/pic_product4/A0163657/A0163657OK_BIG_4.jpg",
+    "source": "https://www.advice.co.th/product/A0163657",
+    "score": 13
+  },
+  {
+    "id": "0d425f1a-2ca1-45fb-b26f-47de04ddff7e",
+    "title": "RAM 16G Lexar 5600 PC DDR5",
+    "status": "updated",
+    "image": "https://www.mastertech.com.py/wp-content/uploads/2025/07/53040_sec_2.jpg",
+    "source": "https://www.mastertech.com.py/producto/mem-ddr5-16gb-5600mhz-lexar-ld5u16g56c46st-bgs/",
+    "score": 13
+  },
+  {
+    "id": "274459d0-c0fd-4ddc-b24c-03a743182082",
+    "title": "RAM 16G LEXAR-3200 PC  DDR4",
+    "status": "updated",
+    "image": "https://m.media-amazon.com/images/I/61n-gmo9AuL._AC_SL1500_.jpg",
+    "source": "https://www.amazon.sa/-/en/Lexar-3200MHz-Performance-Computer-LD4AU016G-B3200ASST/dp/B0C7Z279CP",
+    "score": 12
+  },
+  {
+    "id": "035acaed-8ad6-4b74-957c-be74f00d7553",
+    "title": "RAM 16G ZION 5600 LAP DDR5",
+    "status": "updated",
+    "image": "https://microless.com/cdn/products/21d80794f37338d72dcfccb28d9b6188-hi.jpg",
+    "source": "https://uae.microless.com/product/zion-tech-zm16gsd560-ddr5-laptop-memory-16gb-capacity-5600-mhz-memory-speed-cl16-cas-latency-262-pins-1-1v-voltage-non-ecc-unbuffered-design-black-zm16gsd560/",
+    "score": 13
+  },
+  {
+    "id": "070cfd37-99e3-49ad-bd47-9f3eabae03fe",
+    "title": "RAM 32G CORSAIR 3200 DDR4 PC",
+    "status": "updated",
+    "image": "https://redtech.lk/wp-content/uploads/2019/12/32-GB-Corsair-Dominator-Platinum-RGB-DDR4-3200MHz-RAM-Memory-Kit-16x2-1.png",
+    "source": "https://redtech.lk/product/32-gb-corsair-dominator-platinum-rgb-ddr4-3200mhz-ram-memory-kit-16x2/",
+    "score": 13
+  },
+  {
+    "id": "5ecbd66c-de5f-4c51-a620-fac751d3d5c1",
+    "title": "RAM 32G CRUCIAL 3200 PC DDR4",
+    "status": "updated",
+    "image": "https://m.media-amazon.com/images/I/61FsaYbk3UL._AC_SL1080_.jpg",
+    "source": "https://www.amazon.es/Crucial-3200MHz-Ordenador-Port%C3%A1til-Rendimiento/dp/B07ZLC7VNH",
+    "score": 13
+  },
+  {
+    "id": "ed109cef-198f-41e9-a187-0433fbb092d6",
+    "title": "RAM 32G LEXAR 3200 LAP DDR4",
+    "status": "updated",
+    "image": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/c8d1d2a2-1925-4a66-b315-f9f27368d891.__CR0,0,970,600_PT0_SX970_V1___.jpg",
+    "source": "https://www.amazon.co.uk/Lexar-260-Pin-High-Performance-Computer-LD4AS032G-B3200ASST/dp/B0DXKHS8H2",
+    "score": 14
+  },
+  {
+    "id": "431ac939-abb7-4a42-a527-aa95f0223926",
+    "title": "RAM 8G Crucial-3200 PC  DDR4",
+    "status": "updated",
+    "image": "https://m.media-amazon.com/images/I/61FsaYbk3UL._AC_.jpg",
+    "source": "https://www.amazon.com/Crucial-3200MHz-2933MHz-2666MHz-CT8G4DFRA32A/dp/B0DFTVPZV3",
+    "score": 11
+  },
+  {
+    "id": "a678cd55-22c7-4e55-a99a-7a68fa740061",
+    "title": "samsung ®/LED Monitors /27\"/120HZ/LS27F320GAUXEN",
+    "status": "updated",
+    "image": "https://www.rdveikals.lv/images/full/3f7f4557cf32b9830d2d796e5b5cef96.jpg",
+    "source": "https://www.rdveikals.lv/products/lv/146/805989/sort/5/filter/0_0_0_0/Essential-S3-LS27F320GAUXEN-27-IPS-16-9-monitors.html",
+    "score": 10
+  },
+  {
+    "id": "f898a104-8ef4-459a-8cfb-200252a6844e",
+    "title": "Samsung ®/LED Monitors/Curved-32G5\"/Model No. S32CG552EM",
+    "status": "updated",
+    "image": "https://www.nextstore.com.kw/media/.renditions/wysiwyg/_1__541.jpg",
+    "source": "https://www.nextstore.com.kw/samsung-odyssey-g5-s32cg552em-32-2k-qhd-va-165hz-1ms-curved-gaming-monitor-with-amd-freesync.html",
+    "score": 10
+  },
+  {
+    "id": "33387e49-2639-49ec-b1c1-91da42b10a59",
+    "title": "Samsung 32-Inch Odyssey G3 Series FHD Gaming Monitor LS32DG302EMXUE",
+    "status": "updated",
+    "image": "https://m.media-amazon.com/images/I/81HN5m6HR8L.jpg",
+    "source": "https://www.amazon.com/SAMSUNG-Adjustable-Equalizer-Flicker-Free-LS32DG302ENXZA/dp/B0D5Z565D5",
+    "score": 15
+  },
+  {
+    "id": "3bbfcca8-913b-43d4-bd27-ae65011e0b80",
+    "title": "SAMSUNG MONITOR 24 LS24F330EAUXEN",
+    "status": "updated",
+    "image": "https://static01.galaxus.com/productimages/2/9/5/3/6/9/7/1/1/0/5/7/0/4/9/8/0/7/8/019a2d93-ec85-7090-8981-ce6d1c58e886_720.jpeg",
+    "source": "https://www.galaxus.ch/en/s1/product/samsung-ls24f330eauxen-1920-x-1080-pixels-24-monitor-64643539",
+    "score": 11
+  },
+  {
+    "id": "08fc6f63-8303-46c8-a7f7-01abbb431190",
+    "title": "Transcend ESD310 512GB External SSD USB/TYPE C",
+    "status": "updated",
+    "image": "https://lzd-img-global.slatic.net/g/p/5614ae1beb35cea36b5924f730efd112.jpg_720x720q80.jpg",
+    "source": "https://www.lazada.co.th/products/transcend-ts512gesd310c-esd310c-portable-ssd-512gb-usb-type-a-usb-type-c-external-ssd-i4724947607.html",
+    "score": 13
+  },
+  {
+    "id": "6e2d72c8-bda9-4baa-9a74-2b1a4b91b9f4",
+    "title": "Transcend®/Slim Portable Hard Drive Storage USB 3.1/StoreJet 25M3 ™ - 1TB",
+    "status": "updated",
+    "image": "https://m.media-amazon.com/images/I/71ANWItmjuL._AC_SL1500_.jpg",
+    "source": "https://www.amazon.eg/-/en/Transcend_Slim-Portable-Storage-3-1_StoreJet-25M3-1TB/dp/B07B4CJ4KS",
+    "score": 14
+  },
+  {
+    "id": "100b881b-d2a2-4440-a180-94bf6e233656",
+    "title": "Transcend®/Slim Portable Hard Drive Storage USB 3.1/StoreJet 25M3 ™ - 2TB",
+    "status": "updated",
+    "image": "https://m.media-amazon.com/images/I/71ANWItmjuL._AC_SL1500_.jpg",
+    "source": "https://www.amazon.eg/-/en/Transcend_Slim-Portable-Storage-3-1_StoreJet-25M3-1TB/dp/B07B4CJ4KS",
+    "score": 14
+  },
+  {
+    "id": "fa10c3a0-2996-456e-a4b0-3aca070960da",
+    "title": "VGA ASUS Dual GeForce RTX™ 5060 8GB GDDR7 OC Edition",
+    "status": "updated",
+    "image": "https://media-cdn.bnn.in.th/500331/asus-dual-rtx5060ti-8g-oc-edition-6-square_medium.jpg",
+    "source": "https://www.bnn.in.th/en/p/computer-hardware-diy/graphic-card-computer-hardware-diy/nvidia-graphic-card-computer-hardware-diy/asus-vga-dual-rtx5060ti-o8g-8gb-gddr7-128-bit-4711387994290_z965mg",
+    "score": 16
+  },
+  {
+    "id": "f47678d9-ab78-43e2-9af6-b4193f16f076",
+    "title": "VGA ASUS Dual GeForce RTX™ 5060 Ti 16GB GDDR7 White OC Edition",
+    "status": "updated",
+    "image": "https://media-cdn.bnn.in.th/568867/asus-dual-rtx5060ti-16g-white-oc-5-square_medium.jpg",
+    "source": "https://www.bnn.in.th/th/p/asus-vga-dual-rtx5060ti-o16g-white-gddr7-128-bit-4711636179973_d898ll",
+    "score": 16
+  },
+  {
+    "id": "5667d13a-9dfa-43fd-9a8c-2efddf239b3e",
+    "title": "VGA ASUS Dual GeForce RTX™ 5060 Ti 8GB GDDR7 OC Edition",
+    "status": "updated",
+    "image": "https://media-cdn.bnn.in.th/500331/asus-dual-rtx5060ti-8g-oc-edition-6-square_medium.jpg",
+    "source": "https://www.bnn.in.th/en/p/computer-hardware-diy/graphic-card-computer-hardware-diy/nvidia-graphic-card-computer-hardware-diy/asus-vga-dual-rtx5060ti-o8g-8gb-gddr7-128-bit-4711387994290_z965mg",
+    "score": 16
+  },
+  {
+    "id": "a8c851f0-4c47-4c99-9e88-432187fecee0",
+    "title": "VGA ASUS DUL GEFORCE RTX3060 V2 OC 12G",
+    "status": "updated",
+    "image": "http://kccshop.vn/media/lib/11-06-2023/vgaasusdualgeforcertx3060v2oc12gbgddr6-2.png",
+    "source": "http://www.kccshop.vn/card-man-hinh-asus-dual-rtx-3060-o12g/",
+    "score": 13
+  },
+  {
+    "id": "315a5c57-f300-4c08-9a62-d5a0dcb474d5",
+    "title": "VGA ASUS PRIME GeForce RTX™ 5060 8GB GDDR7 OC Edition",
+    "status": "updated",
+    "image": "https://media-cdn.bnn.in.th/496401/asus-prime-rtx5060ti-8gb-gddr7-oc-edition-1-square_medium.jpg",
+    "source": "https://www.bnn.in.th/th/p/computer-hardware-diy/computer-hardware-diy-0/graphic-card-0/asus-vga-prime-rtx5060ti-o8g-8gb-gddr7-128-bit-4711387994207_zgk0eq",
+    "score": 16
+  },
+  {
+    "id": "3e9be9c8-7bba-450c-865f-04ba5bf6eb40",
+    "title": "VGA ASUS PRIME GeForce RTX™ 5060 Ti 16GB OC Edition",
+    "status": "updated",
+    "image": "https://media.pangoly.com/img/1/0/7/e/107e55dc-852f-4676-bdf4-e55eff5154b5.jpg",
+    "source": "https://pangoly.com/en/compare/vga/asus-prime-geforce-rtx-5060-ti-oc-edition-16gb-vs-xfx-swift-radeon-rx-9060xt-oc-16gb",
+    "score": 16
+  },
+  {
+    "id": "af2f679f-2eca-47e6-918f-59cf5f941383",
+    "title": "VGA ASUS PRIME Radeon™ RX 9060 XT 16GB GDDR6 OC",
+    "status": "updated",
+    "image": "https://media-cdn.bnn.in.th/502215/asus-prime-rx9060xt-16g-oc-6-square_medium.jpg",
+    "source": "https://www.bnn.in.th/th/p/asus-vga-prime-rx9060xt-o16g-16gb-gddr6-128-bit-4711387994214_rqegov",
+    "score": 15
+  },
+  {
+    "id": "c9237047-4900-46de-b954-b49bbc809172",
+    "title": "Western Digital ®/Desktop Hard Disk Drive/ 2 TB - Blue ™",
+    "status": "updated",
+    "image": "https://m.media-amazon.com/images/I/61ErAVf-IXL._AC_SL1500_.jpg",
+    "source": "https://www.amazon.eg/-/en/Western-Digital-Desktop-Hard-Drive/dp/B0C4X1JLD4",
+    "score": 15
+  },
+  {
+    "id": "2d4d7891-06e6-42b8-b741-1bef623c10d1",
+    "title": "Western Digital ®/Portable Hard Drive Storage USB 3.0/My Passport ™ - 1TB",
+    "status": "updated",
+    "image": "https://m.media-amazon.com/images/I/81sVCZZo91L._AC_SL1500_.jpg",
+    "source": "https://www.amazon.eg/-/en/Western-Digital-Portable-Storage-Passport/dp/B01LQQHI8I",
+    "score": 14
+  },
+  {
+    "id": "67801490-c635-4b7e-9d5f-67fd624a6aa7",
+    "title": "Western Digital ®/Portable Hard Drive Storage USB 3.0/My Passport ™ - 2TB",
+    "status": "updated",
+    "image": "https://m.media-amazon.com/images/I/81sVCZZo91L._AC_SL1500_.jpg",
+    "source": "https://www.amazon.eg/-/en/Western-Digital-Portable-Storage-Passport/dp/B01LQQHI8I",
+    "score": 14
+  },
+  {
+    "id": "991be714-0445-4ecd-a263-af46c2034211",
+    "title": "Western Digital ®/Portable Hard Drive Storage USB 3.0/My Passport ™ - 5TB",
+    "status": "updated",
+    "image": "https://m.media-amazon.com/images/I/81sVCZZo91L._AC_SL1500_.jpg",
+    "source": "https://www.amazon.eg/-/en/Western-Digital-Portable-Storage-Passport/dp/B01LQQHI8I",
+    "score": 14
+  },
+  {
+    "id": "e04f8951-6e44-469f-add7-9a249c9a62fb",
+    "title": "Western Digital ®/Surveillance Hard Disk Drive/ 10 TB - Purple™",
+    "status": "updated",
+    "image": "https://cloudsecurity.com.ng/wp-content/uploads/2019/01/1TB-WD-HDD.png",
+    "source": "https://cloudsecurity.com.ng/product/western-digital-wd-purple-1tb-surveillance-hard-disk-drive/",
+    "score": 14
+  },
+  {
+    "id": "7f007043-4d42-4e4b-a2c6-63adc7a45801",
+    "title": "Western Digital ®/Surveillance Hard Disk Drive/ 4 TB - Purple™",
+    "status": "updated",
+    "image": "https://cloudsecurity.com.ng/wp-content/uploads/2019/01/1TB-WD-HDD.png",
+    "source": "https://cloudsecurity.com.ng/product/western-digital-wd-purple-1tb-surveillance-hard-disk-drive/",
+    "score": 14
+  },
+  {
+    "id": "9ab04661-533b-4838-8a8b-1fcdbc8cbbc2",
+    "title": "Western Digital ®/Surveillance Hard Disk Drive/ 6 TB - Purple™",
+    "status": "updated",
+    "image": "https://cloudsecurity.com.ng/wp-content/uploads/2019/01/1TB-WD-HDD.png",
+    "source": "https://cloudsecurity.com.ng/product/western-digital-wd-purple-1tb-surveillance-hard-disk-drive/",
+    "score": 14
+  }
+]

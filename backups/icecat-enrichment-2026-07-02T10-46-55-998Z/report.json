@@ -1,0 +1,26 @@
+[
+  {
+    "id": "21e3624c-44e9-4a19-817a-fb1f7b8aac63",
+    "title": "ASUS A31 PLUS Case",
+    "status": "miss"
+  },
+  {
+    "id": "7d965c55-6add-4103-b513-c45c2ed1a6e2",
+    "title": "ASUS Prime LC 360 aRGB CPU Liquid Cooler",
+    "status": "miss"
+  },
+  {
+    "id": "8e24e87d-9521-4545-a17e-7adff97e6aeb",
+    "title": "Crucial ®/SSD Storage/SATA 3 - 2.5\"/BX500 ™ - 1TGB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "226de052-2afe-4c2f-93c1-01129ecb6f02",
+    "title": "Dell ®/LED Monitors/ 22\"/Model No. E2225HM",
+    "status": "miss",
+    "icecatError": "fetch failed"
+  }
+]

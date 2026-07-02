@@ -1,0 +1,127 @@
+[
+  {
+    "id": "f7e7b061-a9d7-4376-ad5a-fb65e9c511d3",
+    "title": "MOTHERBOARD ASUS B850 MAX GAMING WIFI-W",
+    "status": "miss"
+  },
+  {
+    "id": "7d19c0db-f3af-4da2-8616-56cf98e3d8b8",
+    "title": "MOTHERBOARD ASUS B850M MAX GAMING WIFI",
+    "status": "miss"
+  },
+  {
+    "id": "264c6b75-c587-484e-85d0-1fefcb854e44",
+    "title": "MOTHERBOARD ASUS PRIME A620AM-K",
+    "status": "miss"
+  },
+  {
+    "id": "93a22c9e-c4ee-4c04-9a65-cc1225424eb2",
+    "title": "MOTHERBOARD ASUS PRIME B650M-A II-CSM",
+    "status": "updated",
+    "icecatId": "101955794",
+    "icecatTitle": "ASUS PRIME B650M-A AMD B650 Socket AM5 micro ATX",
+    "source": "code:B650M-A",
+    "score": 35.4,
+    "specCount": 48
+  },
+  {
+    "id": "a65ec0bb-6249-4325-bf98-cbd8b90be271",
+    "title": "MOTHERBOARD ASUS PRIME B650M-K",
+    "status": "updated",
+    "icecatId": "101955793",
+    "icecatTitle": "ASUS TUF GAMING B650M-PLUS WIFI AMD B650 Socket AM5 micro ATX",
+    "source": "code:B650M",
+    "score": 23.4,
+    "specCount": 48
+  },
+  {
+    "id": "61d1a3fe-d0c5-4bbc-804f-0358085fe4e5",
+    "title": "MOTHERBOARD ASUS PRIME B760M-A D4-CSM",
+    "status": "miss"
+  },
+  {
+    "id": "dd387a3e-3c83-4cec-87dc-53b232326b6b",
+    "title": "MOTHERBOARD ASUS PRIME B760M-K D4",
+    "status": "miss"
+  },
+  {
+    "id": "80fa701f-8ca9-403a-8016-0612a10614f4",
+    "title": "MOTHERBOARD ASUS PRIME B850M-A -CSM",
+    "status": "miss"
+  },
+  {
+    "id": "29b8253c-43d8-4625-856c-e65943a3b1df",
+    "title": "MOTHERBOARD ASUS PRIME B850M-A WIFI",
+    "status": "miss"
+  },
+  {
+    "id": "e93e4f96-3130-48fc-86ef-050fa80464d5",
+    "title": "MOTHERBOARD ASUS PRIME X870-P",
+    "status": "miss"
+  },
+  {
+    "id": "2861c037-019e-4da5-8990-2e33bb6dfd8e",
+    "title": "MOTHERBOARD ASUS TUF GAMING B650M-E WIFI",
+    "status": "updated",
+    "icecatId": "101955793",
+    "icecatTitle": "ASUS TUF GAMING B650M-PLUS WIFI AMD B650 Socket AM5 micro ATX",
+    "source": "code:B650M",
+    "score": 25.4,
+    "specCount": 48
+  },
+  {
+    "id": "c0a85f00-f284-422a-b1ef-55e42cfd2f0e",
+    "title": "MOTHERBOARD PRIME A520M-K",
+    "status": "miss"
+  },
+  {
+    "id": "7ad00c0e-9641-4ca4-83cb-96004a764376",
+    "title": "Motherboard/ASUS®  X870 MAX GAMING WIFI7 ATX AM5",
+    "status": "miss"
+  },
+  {
+    "id": "ec049375-c21d-41b5-a7c8-0b57b9824ecd",
+    "title": "Motherboard/ASUS® PRIME-B650M-R-AMD",
+    "status": "miss"
+  },
+  {
+    "id": "ff0b115f-dbce-460b-916f-9f4e07c0a285",
+    "title": "Motherboard/ASUS® TUF -Z790-PLUS WIFI",
+    "status": "miss"
+  },
+  {
+    "id": "193851fe-bde5-45f5-84cf-53c944862489",
+    "title": "Motherboard/ASUS® TUF-B650M-PLUS WIFI",
+    "status": "updated",
+    "icecatId": "101955793",
+    "icecatTitle": "ASUS TUF GAMING B650M-PLUS WIFI AMD B650 Socket AM5 micro ATX",
+    "source": "code:B650M",
+    "score": 33.4,
+    "specCount": 48
+  },
+  {
+    "id": "a684fdca-d9ac-48ca-8317-3692617521a1",
+    "title": "Motherboard/ASUS®PRIME B760M-A-CSM",
+    "status": "miss"
+  },
+  {
+    "id": "ca53ca92-c470-481e-8860-a8cc1d91065b",
+    "title": "Motherboard/ASUS®PRIME B760M-A-WIFI",
+    "status": "miss"
+  },
+  {
+    "id": "3891924f-f3d1-4697-abe6-ff1ed9549dbc",
+    "title": "Motherboard/ASUS®PRIME Z790-P",
+    "status": "updated",
+    "icecatId": "101955873",
+    "icecatTitle": "ASUS PRIME Z790-P Intel Z790 LGA 1700 ATX",
+    "source": "code:Z790-P",
+    "score": 23.4,
+    "specCount": 48
+  },
+  {
+    "id": "12e7acbc-ac84-4734-93c8-423a109b4666",
+    "title": "Motherboard/ASUS®PRIME-B760-PLUS",
+    "status": "miss"
+  }
+]

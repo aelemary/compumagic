@@ -5,8 +5,24 @@ const TYPE_LABELS = {
   gpu: "Graphics",
   cpu: "Processor",
   hdd: "Storage",
+  storage: "Storage",
   motherboard: "Motherboard",
+  ram: "Memory",
+  monitor: "Monitor",
+  printer: "Printer",
+  desktop: "Desktop",
+  power: "Power",
+  accessory: "Accessory",
+  other: "Product",
 };
+
+function escapeHtml(value = "") {
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
 
 async function fetchJSON(url, options = {}) {
   const response = await fetch(url, { credentials: "include", ...options });
@@ -40,10 +56,14 @@ function renderImages(images = [], title = "Product image") {
   const hasMultiple = images.length > 1;
   const slides = images
     .map(
-      (url, index) =>
-        `<figure class="gallery-slide" data-index="${index}">
-          <img src="${url}" alt="${title} ${index + 1}" loading="${index === 0 ? "eager" : "lazy"}" />
-        </figure>`
+      (url, index) => {
+        const imageUrl = window.catalogImageUrl
+          ? window.catalogImageUrl(url, { width: 900, height: 680, quality: 74 })
+          : url;
+        return `<figure class="gallery-slide" data-index="${index}">
+          <img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(title)} ${index + 1}" loading="${index === 0 ? "eager" : "lazy"}" decoding="async" referrerpolicy="no-referrer" />
+        </figure>`;
+      }
     )
     .join("");
   return `
@@ -61,7 +81,61 @@ function renderImages(images = [], title = "Product image") {
 
 function renderSpec(label, value) {
   if (!value) return "";
-  return `<div class="spec-item"><span>${label}</span><strong>${value}</strong></div>`;
+  return `<div class="spec-item"><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong></div>`;
+}
+
+function renderSpecRow(label, value) {
+  if (!value) return "";
+  return `<div class="detail-row"><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong></div>`;
+}
+
+function normalizeText(value = "") {
+  return String(value || "")
+    .toLowerCase()
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function getKeySpecEntries(product) {
+  const fields = window.catalogSpecFields ? window.catalogSpecFields(product.type) : [];
+  const entries = [];
+  const seen = new Set();
+  fields.forEach((field) => {
+    const value = window.catalogPickSpec ? window.catalogPickSpec(product, field.keys) : "";
+    const valueText = String(value || "").trim();
+    if (!valueText) return;
+    const fingerprint = `${normalizeText(field.label)}:${normalizeText(valueText)}`;
+    if (seen.has(fingerprint)) return;
+    seen.add(fingerprint);
+    entries.push({ label: field.label, value: valueText });
+  });
+  return entries;
+}
+
+function buildFullSpecs(product, keySpecEntries, warrantyLabel, titleNormalized) {
+  const fullSpecs = [];
+  const seen = new Set();
+  const addSpec = (label, value) => {
+    const valueText = String(value || "").trim();
+    if (!label || !valueText || valueText.toLowerCase() === titleNormalized) return;
+    if (String(label).trim() === "sourceTitle") return;
+    const fingerprint = `${normalizeText(label)}:${normalizeText(valueText)}`;
+    if (seen.has(fingerprint)) return;
+    seen.add(fingerprint);
+    fullSpecs.push(renderSpec(label, valueText));
+  };
+
+  keySpecEntries.forEach((entry) => addSpec(entry.label, entry.value));
+  if (product.specs && typeof product.specs === "object") {
+    Object.entries(product.specs).forEach(([label, value]) => addSpec(label, value));
+  }
+  if (normalizeText(product.shortName) !== normalizeText(product.title)) {
+    addSpec("Model", product.shortName);
+  }
+  if (product.icecatId) addSpec("Icecat ID", product.icecatId);
+  if (product.price) addSpec("Reference Price", Number(product.price).toLocaleString());
+  addSpec("Warranty", warrantyLabel);
+  return fullSpecs;
 }
 
 function showStatus(message, type = "success") {
@@ -84,68 +158,44 @@ function renderProduct(product) {
     product.warranty && product.warranty > 0
       ? `${product.warranty} year${product.warranty > 1 ? "s" : ""}`
       : "";
-  const description = product.description
-    ? `<p class="detail-description">${product.description}</p>`
+  const titleNormalized = String(product.title || "").trim().toLowerCase();
+  const description = product.description && String(product.description).trim().toLowerCase() !== titleNormalized
+    ? `<p class="detail-description">${escapeHtml(product.description)}</p>`
     : "";
 
-  const keySpecs = [];
-  if (product.type === "laptop") {
-    keySpecs.push(renderSpec("GPU", product.gpu));
-    keySpecs.push(renderSpec("CPU", product.cpu));
-    keySpecs.push(renderSpec("Memory", product.ram));
-    keySpecs.push(renderSpec("Storage", product.storage));
-    keySpecs.push(renderSpec("Display", product.display));
+  const keySpecEntries = getKeySpecEntries(product);
+  const keySpecs = keySpecEntries.map((entry) => renderSpecRow(entry.label, entry.value));
+  if (product.shortName && normalizeText(product.shortName) !== normalizeText(product.title)) {
+    keySpecs.push(renderSpecRow("Model", product.shortName));
   }
-  if (product.shortName) {
-    keySpecs.push(renderSpec("Model", product.shortName));
+  if (product.price) {
+    keySpecs.push(renderSpecRow("Reference Price", Number(product.price).toLocaleString()));
   }
   if (warrantyLabel) {
-    keySpecs.push(renderSpec("Warranty", warrantyLabel));
+    keySpecs.push(renderSpecRow("Warranty", warrantyLabel));
   }
 
   if (layout) {
     layout.innerHTML = `
-      <div class="detail-main">
-        <h1>${product.title}</h1>
-        <p class="badge">${product.company?.name || "Unassigned"} • ${typeLabel}</p>
-        ${description}
-        <div class="detail-gallery" style="margin: 1.5rem 0;">
+      <div class="product-detail-page">
+        <div class="detail-gallery">
           ${renderImages(product.images, product.title)}
         </div>
-        <div class="spec-list" style="margin-top: 1.5rem;">
-          ${keySpecs.join("") || `<div class="field-hint">No specifications listed yet.</div>`}
+        <div class="detail-buybox">
+          <p class="badge">${escapeHtml(product.company?.name || "Unassigned")} • ${escapeHtml(typeLabel)}</p>
+          <h1>${escapeHtml(product.title)}</h1>
+          ${description}
+          <div class="detail-key-specs">
+            ${keySpecs.join("") || `<div class="field-hint">No specifications listed yet.</div>`}
+          </div>
+          <a class="btn btn-outline detail-back" href="/index.html">Back to catalog</a>
         </div>
       </div>
-      <aside class="panel-lite detail-panel">
-        <h2 style="margin-top: 0;">Engage Compu Magic</h2>
-        <p class="field-hint">
-          Request compatibility notes, deployment guidance, or an updated spec sheet from the team.
-        </p>
-        <a class="btn btn-primary" href="/contact.html">Contact Operations</a>
-        <a class="btn btn-outline" href="/index.html">Return to Catalog</a>
-        <div id="detail-status" class="order-status"></div>
-      </aside>
     `;
   }
 
   if (specList) {
-    const fullSpecs = [];
-    if (product.type === "laptop") {
-      fullSpecs.push(renderSpec("GPU", product.gpu || "—"));
-      fullSpecs.push(renderSpec("CPU", product.cpu || "—"));
-      fullSpecs.push(renderSpec("Memory", product.ram || "—"));
-      fullSpecs.push(renderSpec("Storage", product.storage || "—"));
-      fullSpecs.push(renderSpec("Display", product.display || "—"));
-    }
-    if (product.specs && typeof product.specs === "object") {
-      Object.entries(product.specs).forEach(([label, value]) => {
-        if (value != null && value !== "") {
-          fullSpecs.push(renderSpec(label, value));
-        }
-      });
-    }
-    fullSpecs.push(renderSpec("Model", product.shortName || "—"));
-    fullSpecs.push(renderSpec("Warranty", warrantyLabel || "—"));
+    const fullSpecs = buildFullSpecs(product, keySpecEntries, warrantyLabel, titleNormalized);
     specList.innerHTML = fullSpecs.join("");
   }
 
@@ -196,17 +246,20 @@ function createRelatedCard(product) {
   card.className = "product-card";
   const typeLabel = TYPE_LABELS[product.type] || "Product";
   const brandLabel = product.company?.name || "Unassigned";
-  const image =
-    product.images?.[0] || `https://placehold.co/600x450?text=${encodeURIComponent(typeLabel)}`;
-  const summary = product.shortName || product.description || "—";
+  const rawImage =
+    product.images?.[0] || (window.catalogPlaceholder ? window.catalogPlaceholder(typeLabel) : `https://placehold.co/600x450?text=${encodeURIComponent(typeLabel)}`);
+  const image = window.catalogImageUrl
+    ? window.catalogImageUrl(rawImage, { width: 360, height: 270, quality: 62 })
+    : rawImage;
+  const summary = window.catalogSummary ? window.catalogSummary(product) : "";
   card.innerHTML = `
     <div class="product-media">
-      <img src="${image}" alt="${product.title}" loading="lazy" />
+      <img src="${image}" alt="${product.title}" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
     </div>
     <div class="product-body">
       <span class="badge">${brandLabel} • ${typeLabel}</span>
       <h3 class="product-title">${product.title}</h3>
-      <p class="product-summary">${summary}</p>
+      ${summary ? `<p class="product-summary">${summary}</p>` : ""}
     </div>
   `;
   const detailUrl = `/product.html?id=${encodeURIComponent(product.id)}`;

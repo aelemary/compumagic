@@ -1,0 +1,471 @@
+[
+  {
+    "id": "5c6592d7-c77b-4745-a72d-139d04095304",
+    "title": "ACER ®/SSD Storage/SATA III- 2.5\"/RE100 ™ - 1TB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "5d1b682d-bdc7-410c-8faa-918ebaa4ec44",
+    "title": "ACER ®/SSD Storage/SATA III- 2.5\"/RE100 ™ - 256GB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "24f25248-fe89-43a2-be75-f7c8af971d28",
+    "title": "ACER ®/SSD Storage/SATA III- 2.5\"/SA100 ™ - 240GB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "dda414fe-56ea-4633-a990-931e51d81a61",
+    "title": "AMD®/Processor/Ryzen™ 5  3400G TRAY",
+    "status": "miss"
+  },
+  {
+    "id": "09852131-9606-41e2-be87-ca6ebd9f6897",
+    "title": "AMD®/Processor/Ryzen™ 5 3400G BOX",
+    "status": "miss"
+  },
+  {
+    "id": "86c2a325-dcd1-4115-b7b5-dc7dddc6e932",
+    "title": "AMD®/Processor/Ryzen™ 5 7600/TRAY+FAN",
+    "status": "miss"
+  },
+  {
+    "id": "05cb2e5d-1b88-42c7-83f7-1907a07fe7b3",
+    "title": "AMD®/Processor/Ryzen™ 5 8400F MPK/TRAY+FAN",
+    "status": "miss"
+  },
+  {
+    "id": "c1ae65ad-94de-431e-a679-60a0c6c050e3",
+    "title": "AMD®/Processor/Ryzen™ 5 9500F TRAY",
+    "status": "miss"
+  },
+  {
+    "id": "1fae1acb-bab5-423a-a81c-03491798023b",
+    "title": "AMD®/Processor/Ryzen™ 7 7800X3D BOX",
+    "status": "miss"
+  },
+  {
+    "id": "726ab43e-570a-4736-ba5f-d1f07176f795",
+    "title": "AMD®/Processor/Ryzen™ 7 8700G TRAY",
+    "status": "miss"
+  },
+  {
+    "id": "52fa2016-154d-4826-b819-30cd270c62fa",
+    "title": "AMD®/Processor/Ryzen™ 7 9800X3D BOX",
+    "status": "miss"
+  },
+  {
+    "id": "c4194571-78d5-4a51-a63e-924bbd367321",
+    "title": "AMD®/Processor/Ryzen™ 9 7900X BOX",
+    "status": "miss"
+  },
+  {
+    "id": "6d009ddb-9054-4932-a171-decf1bcae682",
+    "title": "AMD®/Processor/Ryzen™ 9 9900X BOX",
+    "status": "miss"
+  },
+  {
+    "id": "f09a0be6-ef68-43a5-a776-bcfe75db3d4d",
+    "title": "AMD®/Processor/Ryzen™ 9 9900X TRAY",
+    "status": "miss"
+  },
+  {
+    "id": "0f4b2cff-9063-4c38-8bd8-0704a2a86601",
+    "title": "AMD®/Processor/Ryzen™ 9 9900X3D BOX",
+    "status": "miss"
+  },
+  {
+    "id": "105abf44-5c72-433f-a2a6-24ed9ffef772",
+    "title": "APACER/SSD Storage/M2 NVME- 256GB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "21e3624c-44e9-4a19-817a-fb1f7b8aac63",
+    "title": "ASUS A31 PLUS Case",
+    "status": "miss"
+  },
+  {
+    "id": "7d965c55-6add-4103-b513-c45c2ed1a6e2",
+    "title": "ASUS Prime LC 360 aRGB CPU Liquid Cooler",
+    "status": "miss"
+  },
+  {
+    "id": "91adeb35-cfd0-448e-99fc-321e2f0804a7",
+    "title": "Crucial ®/SSD Storage/1TB NVMe\" M2 E100",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "28e8bbc1-d695-4275-b0c4-32ccb517aaca",
+    "title": "Crucial ®/SSD Storage/1TB NVMe\" M2 P510",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "87c5c11e-a33c-4715-8947-577a17ef7f81",
+    "title": "Crucial ®/SSD Storage/1TGB NVMe\" M2 P3",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "0f041889-e30c-4a49-93d4-907ed7cbaf25",
+    "title": "Crucial ®/SSD Storage/2TB NVMe\" M2 E100",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "ba14bfec-3c7f-4acc-a89a-069d34af4ee5",
+    "title": "Crucial ®/SSD Storage/2TB NVMe\" M2 P310",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "ace5806f-662b-415e-9538-0d926ce1f12e",
+    "title": "Crucial ®/SSD Storage/2TB NVMe\" M2 P510",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "de86a07b-36cf-4d8f-84da-ddc00c942ee5",
+    "title": "Crucial ®/SSD Storage/2TB NVMe\" M2 T705",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "c00e7fa8-4b1d-4578-a251-0ca9ca46e8a4",
+    "title": "Crucial ®/SSD Storage/480GB NVMe\" M2 E100",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "8e24e87d-9521-4545-a17e-7adff97e6aeb",
+    "title": "Crucial ®/SSD Storage/SATA 3 - 2.5\"/BX500 ™ - 1TGB",
+    "status": "miss"
+  },
+  {
+    "id": "6615e841-65e8-4bc9-b73d-d3f18d2e5695",
+    "title": "Crucial ®/SSD Storage/SATA 3 - 2.5\"/BX500 ™ - 240GB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "04b6f146-292f-4d08-8348-bfcfd5008928",
+    "title": "Crucial ®/SSD Storage/SATA 3 - 2.5\"/BX500 ™ - 2TB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "29029d90-51bf-4252-a132-123b17f9d606",
+    "title": "Crucial ®/SSD Storage/SATA 3 - 2.5\"/BX500 ™ - 500GB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "d4d860e1-0e75-4091-8616-0a9c755787d7",
+    "title": "CRUCIAL X9 1TB PORTABLE SSD",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "88f97fa6-e0a4-4381-ae53-a76b14c14f77",
+    "title": "CRUCIAL X9 2TB PORTABLE SSD",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "e9e71bbb-841e-4ce7-af85-b758754855f9",
+    "title": "CRUCIAL X9 4TB PORTABLE SSD",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "226de052-2afe-4c2f-93c1-01129ecb6f02",
+    "title": "Dell ®/LED Monitors/ 22\"/Model No. E2225HM",
+    "status": "miss"
+  },
+  {
+    "id": "b6c6be21-358c-45d1-a674-5eeae65bb656",
+    "title": "Dell ®/LED Monitors/ 22\"/Model No. SE2225HM",
+    "status": "miss"
+  },
+  {
+    "id": "35118eca-e871-4ca5-bc93-1bf87b14514e",
+    "title": "Dell ®/LED Monitors/ 24\"/Model No. SE2425HM",
+    "status": "miss"
+  },
+  {
+    "id": "b5f288f0-8d15-49ef-9a7e-d555715ae617",
+    "title": "Dell ®/LED Monitors/27\"/Model No. SE2725HM",
+    "status": "miss"
+  },
+  {
+    "id": "8dd926e0-6237-448c-bc21-21038511cedc",
+    "title": "HIKSEMI ®/ELITE  PORTABLE SSD 1050MB 1024GB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "3cfa9135-f40d-46c8-9c4b-1cdb02c5e245",
+    "title": "HIKSEMI ®/ELITE PORTABLE SSD 1050MB 2048GB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "c7f3b009-24b4-4149-86ef-b81ef1a011c1",
+    "title": "HIKSEMI ®/ESSD-T100 PORTABLE 1024GB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "bd3ad045-eaad-490b-afb8-a5b17d8525be",
+    "title": "HIKSEMI ®/ESSD-T100 PORTABLE 512GB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "323ae6b3-2186-446d-aaf9-2a0b5ca298df",
+    "title": "HIKSEMI ®/EX-SSD Storage/T300S\"/BLACK  ™ - 512 GB",
+    "status": "miss"
+  },
+  {
+    "id": "ab66e472-3b6b-4518-a90f-dcdf68e8bb19",
+    "title": "HIKSEMI ®/HS-ESSD PORTABLE/T300S\"/BLACK  ™ - 2T",
+    "status": "miss"
+  },
+  {
+    "id": "48ae8e59-6e3d-47c1-8f68-955f64bfef27",
+    "title": "HIKSEMI ®/HS-ESSD Storage/T300S\"/BLACK  ™ - 1T",
+    "status": "miss"
+  },
+  {
+    "id": "3ced96a2-1f53-4e72-9496-ec48dd2c2db7",
+    "title": "HIKSEMI ®/SSD Storage/M2 NVME \"/PCle 3.0 ™ - 2048GB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "a606e8a9-9b7f-4061-826d-cd5ba25561d5",
+    "title": "HIKSEMI ®/SSD Storage/M2 NVME \"/PCle 3.0 ™ - 256GB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "d49f8342-f499-4b92-b784-f94e5dcbd57a",
+    "title": "HIKSEMI ®/SSD Storage/M2 NVME \"/PCle 3.0 ™ - 512GB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "eb017e42-278f-421c-8755-204925d277f5",
+    "title": "HIKSEMI ®/SSD Storage/SATA 6 - 2.5\"/Wave (s) ™ - 1024GB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "90056f8e-e9e1-4a43-88c7-5b52f7bf5811",
+    "title": "HIKSEMI ®/SSD Storage/SATA 6 - 2.5\"/Wave (s) ™ - 128GB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "c42dfb10-e782-4ea3-8933-e5990ed2968b",
+    "title": "HIKSEMI ®/SSD Storage/SATA 6 - 2.5\"/Wave (s) ™ - 2048GB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "2ca90ebe-06c4-44ae-be74-8a8e44ef730e",
+    "title": "HIKSEMI ®/SSD Storage/SATA 6 - 2.5\"/Wave (s) ™ - 256GB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "af09c0bb-1c4a-4483-82f4-baf234fb96b3",
+    "title": "HIKSEMI ®/SSD Storage/SATA 6 - 2.5\"/Wave (s) ™ - 512GB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "29c9cba5-5cd5-4fa5-b33a-8271e8b95da5",
+    "title": "HP PRINTER LJ M111A",
+    "status": "miss"
+  },
+  {
+    "id": "c2525c54-45ea-4988-91f2-b3a3ab45d33e",
+    "title": "HP PRINTER LJ M111W",
+    "status": "miss"
+  },
+  {
+    "id": "d9b64ab3-8a6d-4cdf-8367-82739ce1cab5",
+    "title": "HP PRINTER LJ M137FNW",
+    "status": "miss"
+  },
+  {
+    "id": "fa83f8fe-e7cb-40b8-863f-4fcc442601c1",
+    "title": "HP PRINTER LJ M141A",
+    "status": "miss"
+  },
+  {
+    "id": "68b10e16-8727-40c1-a202-24b24a7e0d3c",
+    "title": "HP PRINTER LJ M141W",
+    "status": "miss"
+  },
+  {
+    "id": "c9e06b99-54d6-44c2-b033-2281f45c61e6",
+    "title": "HP PRINTER SMART W/L INKTANK-581-ALO",
+    "status": "miss"
+  },
+  {
+    "id": "ff23cfda-0432-4204-864e-fbdf3b2db9a0",
+    "title": "HP®/LED Monitors/TN 18.5\"/Model No. P19b",
+    "status": "miss"
+  },
+  {
+    "id": "31023d61-0f14-443b-b7cc-b9d1401d5df9",
+    "title": "HP®/Printer LaserJet - 4103dw",
+    "status": "miss"
+  },
+  {
+    "id": "9ca677b1-68dd-40a0-9d3b-defc076fe039",
+    "title": "HP®/Printer LaserJet - 4103FDN",
+    "status": "miss"
+  },
+  {
+    "id": "dd90119c-9845-4d77-b0e3-6926e7391ae7",
+    "title": "Intel ®/Processor/Core™ i5-12400F/18MB Cache - BOX",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "37c59bc3-48b4-49b7-8c47-c1e1576eb269",
+    "title": "Intel ®/Processor/Core™ i5-12400F/18MB Cache - TRAY",
+    "status": "error",
+    "error": "fetch failed"
+  },
+  {
+    "id": "7057d65a-6bab-4701-803d-5c12ebf3bf91",
+    "title": "Intel ®/Processor/Core™ i5-14400F/20MB Cache - BOX",
+    "status": "error",
+    "error": "fetch failed"
+  },
+  {
+    "id": "9f3b803d-8fc3-43f4-99f1-54ce37518752",
+    "title": "Intel ®/Processor/Core™ i5-14400F/20MB Cache - TRAY",
+    "status": "error",
+    "error": "fetch failed"
+  },
+  {
+    "id": "5a07dd2e-534d-4f23-96d4-9122e1a774b4",
+    "title": "Intel ®/Processor/Core™ i7-14700F/33MB Cache - BOX",
+    "status": "error",
+    "error": "fetch failed"
+  },
+  {
+    "id": "a0a7789a-07b5-4501-87e5-f2e541032b7f",
+    "title": "Intel ®/Processor/Core™ i7-14700KF/33MB Cache - BOX",
+    "status": "error",
+    "error": "fetch failed"
+  },
+  {
+    "id": "6b289d17-527b-4aea-916e-4f2ddb863ebc",
+    "title": "Intel ®/Processor/Core™ i9-14900K/36MB Cache - BOX",
+    "status": "error",
+    "error": "fetch failed"
+  },
+  {
+    "id": "73d1beee-f154-4954-8103-30e03a48d7ce",
+    "title": "Intel ®/Processor/Core™ i9-14900KF/36MB Cache - BOX",
+    "status": "error",
+    "error": "fetch failed"
+  },
+  {
+    "id": "460c5def-c7c4-4ade-8588-be03c51b34b9",
+    "title": "Intel® Core™ Ultra 5 245k processor  5.20GHz24MB / LGA1851BOX",
+    "status": "error",
+    "error": "fetch failed"
+  },
+  {
+    "id": "92c70690-2684-43e2-86da-adcd117837e3",
+    "title": "Intel® Core™Ultra 5-225 processor 3.30GHz20MB LGA1851  BOX",
+    "status": "error",
+    "error": "fetch failed"
+  },
+  {
+    "id": "07c52d97-2608-4ae0-b4aa-b12da1620be0",
+    "title": "Intel® Core™Ultra 5-225F processor 3.30GHz20MB LGA1851 BOX",
+    "status": "error",
+    "error": "fetch failed"
+  },
+  {
+    "id": "5369d4e5-211c-4fd5-a9fe-00ca48ee9bc5",
+    "title": "Intel® Core™Ultra 5-245KF processor 4.20GHz24MB LGA1851 BOX",
+    "status": "error",
+    "error": "fetch failed"
+  }
+]

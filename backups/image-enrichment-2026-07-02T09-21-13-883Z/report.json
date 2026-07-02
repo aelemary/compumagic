@@ -1,0 +1,42 @@
+[
+  {
+    "id": "5c6592d7-c77b-4745-a72d-139d04095304",
+    "title": "ACER ®/SSD Storage/SATA III- 2.5\"/RE100 ™ - 1TB",
+    "status": "dry-run",
+    "image": "https://lagihitech.vn/wp-content/uploads/2023/11/SSD-Acer-RE100-1TB-2.5-inch-SATA-iii-RE100-25-1TB-hinh-3.jpg",
+    "source": "https://lagihitech.vn/shop/ssd-acer-re100-1tb-2-5-inch-sata-iii-re100-25-1tb/",
+    "score": 12
+  },
+  {
+    "id": "5d1b682d-bdc7-410c-8faa-918ebaa4ec44",
+    "title": "ACER ®/SSD Storage/SATA III- 2.5\"/RE100 ™ - 256GB",
+    "status": "dry-run",
+    "image": "https://www.idcmayoristas.com/wp-content/uploads/2026/02/ssd-acer-re100-256gb-ssd-2-5pulg-sata-iii-hasta-bl-9bwwa-107-idc-mayorista-6.png",
+    "source": "https://www.idcmayoristas.com/producto/ssd-acer-re100-256gb-ssd-2-5pulg-sata-iii-hasta-bl-9bwwa-107-idc-mayorista/",
+    "score": 12
+  },
+  {
+    "id": "24f25248-fe89-43a2-be75-f7c8af971d28",
+    "title": "ACER ®/SSD Storage/SATA III- 2.5\"/SA100 ™ - 240GB",
+    "status": "dry-run",
+    "image": "https://www.3b.co.th/wp-content/uploads/2021/11/SSD-ACER-SA100-01-1024x1024.jpg",
+    "source": "https://www.3b.co.th/product/ssd-acer-sata-2-5-sa100-240gb",
+    "score": 11
+  },
+  {
+    "id": "dda414fe-56ea-4633-a990-931e51d81a61",
+    "title": "AMD®/Processor/Ryzen™ 5  3400G TRAY",
+    "status": "dry-run",
+    "image": "https://mctechcomputers.lk/wp-content/uploads/2025/09/ca81af9a-f80a-4694-80e7-10677793a964_1.07d341416035be57ecc078cb7b6ffede-removebg-preview.png",
+    "source": "https://mctechcomputers.lk/product/amd-ryzen-5-3400g-tray-processor/",
+    "score": 10
+  },
+  {
+    "id": "09852131-9606-41e2-be87-ca6ebd9f6897",
+    "title": "AMD®/Processor/Ryzen™ 5 3400G BOX",
+    "status": "dry-run",
+    "image": "https://m.media-amazon.com/images/I/71rKDRYq77L._AC_.jpg",
+    "source": "https://www.amazon.es/AMD-Ryzen-3400G-Procesador-Disipador/dp/B07SXNDKNM",
+    "score": 10
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "086e9f4e-3aa7-42e2-9b65-37741fa9f0d7",
+    "title": "LAP ASUS G16 G614PR-RV132W Ryzen 9 8940HX - RTX 5070 Ti 12GB - 32GB RAM - 1TB SSD - W 11",
+    "status": "web-dry-run",
+    "query": "direct-source",
+    "specCount": 25,
+    "sources": [
+      {
+        "title": "ASUS G614PR official tech specs",
+        "url": "https://rog.asus.com/laptops/rog-strix/rog-strix-g16-2025-g614/spec/"
+      }
+    ]
+  },
+  {
+    "id": "c62b0fbf-8fb2-4320-96f4-91fd6a473b3e",
+    "title": "LAP ASUS G614FM-RV169W-R9 9955HX-16G/1TB/RTX 5060 8GB 16\" W11",
+    "status": "web-dry-run",
+    "query": "direct-source",
+    "specCount": 24,
+    "sources": [
+      {
+        "title": "ASUS G614FM official tech specs",
+        "url": "https://rog.asus.com/laptops/rog-strix/rog-strix-g16-2025-g614/spec/"
+      }
+    ]
+  }
+]

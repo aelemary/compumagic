@@ -1,0 +1,42 @@
+[
+  {
+    "id": "29c9cba5-5cd5-4fa5-b33a-8271e8b95da5",
+    "title": "HP PRINTER LJ M111A",
+    "status": "miss"
+  },
+  {
+    "id": "c2525c54-45ea-4988-91f2-b3a3ab45d33e",
+    "title": "HP PRINTER LJ M111W",
+    "status": "miss"
+  },
+  {
+    "id": "d9b64ab3-8a6d-4cdf-8367-82739ce1cab5",
+    "title": "HP PRINTER LJ M137FNW",
+    "status": "miss"
+  },
+  {
+    "id": "fa83f8fe-e7cb-40b8-863f-4fcc442601c1",
+    "title": "HP PRINTER LJ M141A",
+    "status": "miss"
+  },
+  {
+    "id": "68b10e16-8727-40c1-a202-24b24a7e0d3c",
+    "title": "HP PRINTER LJ M141W",
+    "status": "miss"
+  },
+  {
+    "id": "c9e06b99-54d6-44c2-b033-2281f45c61e6",
+    "title": "HP PRINTER SMART W/L INKTANK-581-ALO",
+    "status": "miss"
+  },
+  {
+    "id": "31023d61-0f14-443b-b7cc-b9d1401d5df9",
+    "title": "HP®/Printer LaserJet - 4103dw",
+    "status": "miss"
+  },
+  {
+    "id": "9ca677b1-68dd-40a0-9d3b-defc076fe039",
+    "title": "HP®/Printer LaserJet - 4103FDN",
+    "status": "miss"
+  }
+]

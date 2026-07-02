@@ -1,0 +1,62 @@
+[
+  {
+    "id": "02ae0344-cd6e-45af-97a2-ad155268dfe5",
+    "title": "LAP ALIENNWARE 16X-AC16251 U9 275HX-1T-32G-RTX5070 8G-16",
+    "status": "miss"
+  },
+  {
+    "id": "23427724-839d-4dcf-8e69-b3aad8396238",
+    "title": "LAP ALIENWARE 16-AC16250 C7 240H-16G-1T-RTX 4050 6G-16",
+    "status": "miss"
+  },
+  {
+    "id": "792e05c1-6767-4152-a0ce-470a172c73c5",
+    "title": "LAP ALIENWARE 16-AC16250- C7 240H-32G-1T-RTX5060 8G-16",
+    "status": "miss"
+  },
+  {
+    "id": "baf031a7-c94d-477a-adef-90e7b3da603a",
+    "title": "LAP ASUS  FA506NCQ-HN167W  R7 170 16G/512G/RTX 3050 4G 15.6\" W11",
+    "status": "miss"
+  },
+  {
+    "id": "d0be3204-187f-4997-adc3-252a6c2abeca",
+    "title": "LAP ASUS FA401KM-RG014W R AI 7 350/16G/1T/RTX 5060 8G/14`/W11",
+    "status": "miss"
+  },
+  {
+    "id": "c6c5d99a-3a98-4d38-b3d5-04f9045301fc",
+    "title": "LAP ASUS FA506NCG-HN807W 15.6 Ryzen 7-7445HS-8GB RAM- 512GB-RTX 3050 4GB W11",
+    "status": "miss"
+  },
+  {
+    "id": "82c80003-c654-4e5e-88da-ff00c3cd632e",
+    "title": "LAP ASUS FX607VJB-RL165W C5-210H/16G/512G/RTX 3050 6G/16`/W11",
+    "status": "miss"
+  },
+  {
+    "id": "d60a8542-7a5f-431f-a821-6fbabd6f9bfe",
+    "title": "LAP ASUS FX607VJB-RL805W C5-210H/8G/512G/RTX 3050 6G/16`/W11",
+    "status": "miss"
+  },
+  {
+    "id": "d95a1fee-4603-425c-8a77-afec6203df48",
+    "title": "LAP ASUS FX607VU-RL121 i7-13620H 16G/1T/RTX 4050 6G 16\" DOS",
+    "status": "miss"
+  },
+  {
+    "id": "e91559fc-3892-4420-bd0a-31c103c68600",
+    "title": "LAP ASUS FX607VU-RL167W C7 240H 16G-512G-RTX 4050 6G-16\"-W11",
+    "status": "miss"
+  },
+  {
+    "id": "96a4ef44-3865-4c84-9fd1-51208ddb7204",
+    "title": "LAP ASUS FX608JHR-RV057W-CI7-14650HX-RTX 5050 8GB-16G-512GB -16\"-W11",
+    "status": "miss"
+  },
+  {
+    "id": "3348eccd-8c69-4141-817d-ac33edbe2616",
+    "title": "LAP ASUS FX608JMR-F16  i7 14650HX 32G-1T RTX 5060 8G 16 W11",
+    "status": "miss"
+  }
+]

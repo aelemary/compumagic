@@ -1,0 +1,41 @@
+[
+  {
+    "id": "21e3624c-44e9-4a19-817a-fb1f7b8aac63",
+    "title": "ASUS A31 PLUS Case",
+    "status": "miss"
+  },
+  {
+    "id": "7d965c55-6add-4103-b513-c45c2ed1a6e2",
+    "title": "ASUS Prime LC 360 aRGB CPU Liquid Cooler",
+    "status": "miss"
+  },
+  {
+    "id": "3e783390-53a4-4498-b782-be6172a1e64c",
+    "title": "LAP DELL I5 LATITUDE 3450 8G/512G/14`/INTEL/1335U",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 1,
+    "sources": []
+  },
+  {
+    "id": "55d906fc-10bc-44d2-b166-177b777b1440",
+    "title": "LAP DELL I5 LATITUDE 3550 8G/512G/15`/INTEL/1335U",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 1,
+    "sources": []
+  },
+  {
+    "id": "2925e7a8-76df-44ca-b463-aa1d5543451e",
+    "title": "LAP DELL I7 LATITUDE 3550 8G/512G/15`/INTEL/1355U",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 1,
+    "sources": []
+  },
+  {
+    "id": "8dc42f51-70cf-4f8e-b4de-bef47735d670",
+    "title": "LAP DELL PRO 14 PC14250 C5 120U/8G/512G/14\"",
+    "status": "miss"
+  }
+]

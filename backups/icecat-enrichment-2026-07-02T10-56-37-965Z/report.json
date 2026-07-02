@@ -1,0 +1,33 @@
+[
+  {
+    "id": "21e3624c-44e9-4a19-817a-fb1f7b8aac63",
+    "title": "ASUS A31 PLUS Case",
+    "status": "miss"
+  },
+  {
+    "id": "7d965c55-6add-4103-b513-c45c2ed1a6e2",
+    "title": "ASUS Prime LC 360 aRGB CPU Liquid Cooler",
+    "status": "miss"
+  },
+  {
+    "id": "69d1c437-522c-48ff-90b9-df73b4738798",
+    "title": "LAP DELL C I5 Latitude 5450 8/512SSD/14\" HD/Iris/1335U",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "3be5b83e-c63f-4c4e-bc69-491dee467b0c",
+    "title": "LAP DELL C I5 Latitude 5550 8/512SSD/15.6\" HD/Iris/1335U",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "5f771826-ab58-4d24-8ceb-90574d191729",
+    "title": "LAP DELL C I7 Latitude 3450 16/512/14\" /Iris/1355U",
+    "status": "miss"
+  }
+]

@@ -4,8 +4,24 @@ const TYPE_LABELS = {
   gpu: "Graphics",
   cpu: "Processor",
   hdd: "Storage",
+  storage: "Storage",
   motherboard: "Motherboard",
+  ram: "Memory",
+  monitor: "Monitor",
+  printer: "Printer",
+  desktop: "Desktop",
+  power: "Power",
+  accessory: "Accessory",
+  other: "Product",
 };
+
+function escapeHtml(value = "") {
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
 
 async function fetchJSON(url, options = {}) {
   const response = await fetch(url, { credentials: "include", ...options });
@@ -39,10 +55,14 @@ function renderImages(images = [], title = "Product image") {
   const hasMultiple = images.length > 1;
   const slides = images
     .map(
-      (url, index) =>
-        `<figure class="gallery-slide" data-index="${index}">
-          <img src="${url}" alt="${title} ${index + 1}" loading="${index === 0 ? "eager" : "lazy"}" />
-        </figure>`
+      (url, index) => {
+        const imageUrl = window.catalogImageUrl
+          ? window.catalogImageUrl(url, { width: 760, height: 570, quality: 72 })
+          : url;
+        return `<figure class="gallery-slide" data-index="${index}">
+          <img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(title)} ${index + 1}" loading="${index === 0 ? "eager" : "lazy"}" decoding="async" referrerpolicy="no-referrer" />
+        </figure>`;
+      }
     )
     .join("");
   return `
@@ -60,7 +80,56 @@ function renderImages(images = [], title = "Product image") {
 
 function renderSpec(label, value) {
   if (!value) return "";
-  return `<div class="spec-item"><span>${label}</span><strong>${value}</strong></div>`;
+  return `<div class="spec-item"><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong></div>`;
+}
+
+function normalizeText(value = "") {
+  return String(value || "")
+    .toLowerCase()
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function getKeySpecEntries(product) {
+  const fields = window.catalogSpecFields ? window.catalogSpecFields(product.type) : [];
+  const entries = [];
+  const seen = new Set();
+  fields.forEach((field) => {
+    const value = window.catalogPickSpec ? window.catalogPickSpec(product, field.keys) : "";
+    const valueText = String(value || "").trim();
+    if (!valueText) return;
+    const fingerprint = `${normalizeText(field.label)}:${normalizeText(valueText)}`;
+    if (seen.has(fingerprint)) return;
+    seen.add(fingerprint);
+    entries.push({ label: field.label, value: valueText });
+  });
+  return entries;
+}
+
+function buildFullSpecs(product, keySpecEntries, warrantyLabel, titleNormalized) {
+  const fullSpecs = [];
+  const seen = new Set();
+  const addSpec = (label, value) => {
+    const valueText = String(value || "").trim();
+    if (!label || !valueText || valueText.toLowerCase() === titleNormalized) return;
+    if (String(label).trim() === "sourceTitle") return;
+    const fingerprint = `${normalizeText(label)}:${normalizeText(valueText)}`;
+    if (seen.has(fingerprint)) return;
+    seen.add(fingerprint);
+    fullSpecs.push(renderSpec(label, valueText));
+  };
+
+  keySpecEntries.forEach((entry) => addSpec(entry.label, entry.value));
+  if (product.specs && typeof product.specs === "object") {
+    Object.entries(product.specs).forEach(([label, value]) => addSpec(label, value));
+  }
+  if (normalizeText(product.shortName) !== normalizeText(product.title)) {
+    addSpec("Model", product.shortName);
+  }
+  if (product.icecatId) addSpec("Icecat ID", product.icecatId);
+  if (product.price) addSpec("Reference Price", Number(product.price).toLocaleString());
+  addSpec("Warranty", warrantyLabel);
+  return fullSpecs;
 }
 
 function renderProduct(product) {
@@ -71,21 +140,19 @@ function renderProduct(product) {
     product.warranty && product.warranty > 0
       ? `${product.warranty} year${product.warranty > 1 ? "s" : ""}`
       : "";
-  const displayTitle = product.shortName || product.title;
-  const description = product.description
-    ? `<p class="detail-description">${product.description}</p>`
+  const displayTitle = product.title || product.shortName;
+  const titleNormalized = String(product.title || "").trim().toLowerCase();
+  const description = product.description && String(product.description).trim().toLowerCase() !== titleNormalized
+    ? `<p class="detail-description">${escapeHtml(product.description)}</p>`
     : "";
 
-  const keySpecs = [];
-  if (product.type === "laptop") {
-    keySpecs.push(renderSpec("GPU", product.gpu));
-    keySpecs.push(renderSpec("CPU", product.cpu));
-    keySpecs.push(renderSpec("Memory", product.ram));
-    keySpecs.push(renderSpec("Storage", product.storage));
-    keySpecs.push(renderSpec("Display", product.display));
-  }
-  if (product.shortName) {
+  const keySpecEntries = getKeySpecEntries(product);
+  const keySpecs = keySpecEntries.map((entry) => renderSpec(entry.label, entry.value));
+  if (product.shortName && normalizeText(product.shortName) !== normalizeText(product.title)) {
     keySpecs.push(renderSpec("Model", product.shortName));
+  }
+  if (product.price) {
+    keySpecs.push(renderSpec("Reference Price", Number(product.price).toLocaleString()));
   }
   if (warrantyLabel) {
     keySpecs.push(renderSpec("Warranty", warrantyLabel));
@@ -93,38 +160,18 @@ function renderProduct(product) {
 
   if (layout) {
     layout.innerHTML = `
-      <span class="mobile-badge">${product.company?.name || "Unassigned"} • ${typeLabel}</span>
-      <h1 class="detail-title">${displayTitle}</h1>
+      <span class="mobile-badge">${escapeHtml(product.company?.name || "Unassigned")} • ${escapeHtml(typeLabel)}</span>
+      <h1 class="detail-title">${escapeHtml(displayTitle)}</h1>
       ${description}
       ${renderImages(product.images, product.title)}
       <div class="spec-list">
         ${keySpecs.join("") || `<div class="field-hint">No specifications listed yet.</div>`}
       </div>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="/m/contact.html">Contact Operations</a>
-        <a class="btn btn-outline" href="/m/index.html">Back to Catalog</a>
-      </div>
     `;
   }
 
   if (specList) {
-    const fullSpecs = [];
-    if (product.type === "laptop") {
-      fullSpecs.push(renderSpec("GPU", product.gpu || "—"));
-      fullSpecs.push(renderSpec("CPU", product.cpu || "—"));
-      fullSpecs.push(renderSpec("Memory", product.ram || "—"));
-      fullSpecs.push(renderSpec("Storage", product.storage || "—"));
-      fullSpecs.push(renderSpec("Display", product.display || "—"));
-    }
-    if (product.specs && typeof product.specs === "object") {
-      Object.entries(product.specs).forEach(([label, value]) => {
-        if (value != null && value !== "") {
-          fullSpecs.push(renderSpec(label, value));
-        }
-      });
-    }
-    fullSpecs.push(renderSpec("Model", product.shortName || "—"));
-    fullSpecs.push(renderSpec("Warranty", warrantyLabel || "—"));
+    const fullSpecs = buildFullSpecs(product, keySpecEntries, warrantyLabel, titleNormalized);
     specList.innerHTML = fullSpecs.join("");
   }
 
@@ -175,14 +222,17 @@ function createRelatedCard(product) {
   card.className = "mobile-card";
   const typeLabel = TYPE_LABELS[product.type] || "Product";
   const brandLabel = product.company?.name || "Unassigned";
-  const image =
-    product.images?.[0] || `https://placehold.co/600x450?text=${encodeURIComponent(typeLabel)}`;
+  const rawImage =
+    product.images?.[0] || (window.catalogPlaceholder ? window.catalogPlaceholder(typeLabel) : `https://placehold.co/600x450?text=${encodeURIComponent(typeLabel)}`);
+  const image = window.catalogImageUrl
+    ? window.catalogImageUrl(rawImage, { width: 300, height: 225, quality: 60 })
+    : rawImage;
   const displayTitle = product.shortName || product.title;
   card.innerHTML = `
-    <img class="mobile-thumb" src="${image}" alt="${product.title}" loading="lazy" />
+    <img class="mobile-thumb" src="${escapeHtml(image)}" alt="${escapeHtml(product.title)}" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
     <div class="mobile-content">
-      <span class="mobile-badge">${brandLabel} • ${typeLabel}</span>
-      <h3 class="mobile-title">${displayTitle}</h3>
+      <span class="mobile-badge">${escapeHtml(brandLabel)} • ${escapeHtml(typeLabel)}</span>
+      <h3 class="mobile-title">${escapeHtml(displayTitle)}</h3>
     </div>
   `;
   const detailUrl = `/m/product.html?id=${encodeURIComponent(product.id)}`;

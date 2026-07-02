@@ -1,0 +1,35 @@
+[
+  {
+    "id": "80f1c825-b19c-42cc-98f8-7d4c301ebcd4",
+    "is_registered": true,
+    "admin": true,
+    "hashed_password": "1823698faba75c9ac635438b9832c511598a607ae064a5474c93ca9f4855a3ea",
+    "full_name": "Site Admin",
+    "email": null,
+    "phone": null,
+    "created_at": "2025-11-18T17:29:55.566451+00:00",
+    "username": "admin"
+  },
+  {
+    "id": "cdcaf702-79f3-4ac7-bfea-08d4aca79654",
+    "is_registered": true,
+    "admin": false,
+    "hashed_password": "d943c487e288b0dfc8f625f04e0db640957730e9edc9b1d802f693a028eefeaf",
+    "full_name": "Amr Badr Guest",
+    "email": null,
+    "phone": null,
+    "created_at": "2026-02-06T15:21:02.079608+00:00",
+    "username": "aelemary"
+  },
+  {
+    "id": "9a151c5d-62f9-4d1c-868e-9d1a4ecad2e9",
+    "is_registered": true,
+    "admin": false,
+    "hashed_password": "8821bd4b327f8bbd60baf5df70f88d0f41ad3b86bcf46a07585bd6288e50bd1b",
+    "full_name": "Khaled Ramdan",
+    "email": null,
+    "phone": null,
+    "created_at": "2026-02-28T20:09:29.141568+00:00",
+    "username": "khaled"
+  }
+]

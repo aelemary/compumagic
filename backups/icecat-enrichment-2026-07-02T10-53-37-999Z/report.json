@@ -1,0 +1,561 @@
+[
+  {
+    "id": "21e3624c-44e9-4a19-817a-fb1f7b8aac63",
+    "title": "ASUS A31 PLUS Case",
+    "status": "miss"
+  },
+  {
+    "id": "7d965c55-6add-4103-b513-c45c2ed1a6e2",
+    "title": "ASUS Prime LC 360 aRGB CPU Liquid Cooler",
+    "status": "miss"
+  },
+  {
+    "id": "29c9cba5-5cd5-4fa5-b33a-8271e8b95da5",
+    "title": "HP PRINTER LJ M111A",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "c2525c54-45ea-4988-91f2-b3a3ab45d33e",
+    "title": "HP PRINTER LJ M111W",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "d9b64ab3-8a6d-4cdf-8367-82739ce1cab5",
+    "title": "HP PRINTER LJ M137FNW",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "fa83f8fe-e7cb-40b8-863f-4fcc442601c1",
+    "title": "HP PRINTER LJ M141A",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "68b10e16-8727-40c1-a202-24b24a7e0d3c",
+    "title": "HP PRINTER LJ M141W",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "c9e06b99-54d6-44c2-b033-2281f45c61e6",
+    "title": "HP PRINTER SMART W/L INKTANK-581-ALO",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 1,
+    "sources": []
+  },
+  {
+    "id": "ff23cfda-0432-4204-864e-fbdf3b2db9a0",
+    "title": "HP®/LED Monitors/TN 18.5\"/Model No. P19b",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "31023d61-0f14-443b-b7cc-b9d1401d5df9",
+    "title": "HP®/Printer LaserJet - 4103dw",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "9ca677b1-68dd-40a0-9d3b-defc076fe039",
+    "title": "HP®/Printer LaserJet - 4103FDN",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "37c59bc3-48b4-49b7-8c47-c1e1576eb269",
+    "title": "Intel ®/Processor/Core™ i5-12400F/18MB Cache - TRAY",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "7057d65a-6bab-4701-803d-5c12ebf3bf91",
+    "title": "Intel ®/Processor/Core™ i5-14400F/20MB Cache - BOX",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "9f3b803d-8fc3-43f4-99f1-54ce37518752",
+    "title": "Intel ®/Processor/Core™ i5-14400F/20MB Cache - TRAY",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "5a07dd2e-534d-4f23-96d4-9122e1a774b4",
+    "title": "Intel ®/Processor/Core™ i7-14700F/33MB Cache - BOX",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "a0a7789a-07b5-4501-87e5-f2e541032b7f",
+    "title": "Intel ®/Processor/Core™ i7-14700KF/33MB Cache - BOX",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "6b289d17-527b-4aea-916e-4f2ddb863ebc",
+    "title": "Intel ®/Processor/Core™ i9-14900K/36MB Cache - BOX",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "73d1beee-f154-4954-8103-30e03a48d7ce",
+    "title": "Intel ®/Processor/Core™ i9-14900KF/36MB Cache - BOX",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "460c5def-c7c4-4ade-8588-be03c51b34b9",
+    "title": "Intel® Core™ Ultra 5 245k processor  5.20GHz24MB / LGA1851BOX",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 1,
+    "sources": []
+  },
+  {
+    "id": "92c70690-2684-43e2-86da-adcd117837e3",
+    "title": "Intel® Core™Ultra 5-225 processor 3.30GHz20MB LGA1851  BOX",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "07c52d97-2608-4ae0-b4aa-b12da1620be0",
+    "title": "Intel® Core™Ultra 5-225F processor 3.30GHz20MB LGA1851 BOX",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "5369d4e5-211c-4fd5-a9fe-00ca48ee9bc5",
+    "title": "Intel® Core™Ultra 5-245KF processor 4.20GHz24MB LGA1851 BOX",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "7ec57d88-ba8b-4fc5-8865-cebafd929c20",
+    "title": "Intel® Core™Ultra 7-265KF processor 5.5GHz30MB LGA1851 BOX",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "d45fc76b-30ae-4d53-b4d2-1a766e52bf0c",
+    "title": "Intel® Core™Ultra 9-285K processor 3.9GHz36MB LGA1851 BOX",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "61fdc6e2-0f4c-458d-8a4a-8ee5111d7a21",
+    "title": "KINGSTON  XS2000 EXTERNAL SSD 500GB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "c4a05143-73cd-4b60-b1af-31666aec30e5",
+    "title": "KINGSTON XS1000 EXTERNAL SSD 1TB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "8e6a496d-48a6-479d-87d5-9f2fe69d2b0e",
+    "title": "KINGSTON XS1000 EXTERNAL SSD 2TB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "ba81f0d3-6aac-4df4-8f5f-133630271c7c",
+    "title": "KINGSTON XS2000 EXTERNAL SSD 1TB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "2b671b32-a60e-4eee-8315-3c6d0e4fb8d8",
+    "title": "KINGSTON XS2000 EXTERNAL SSD 2TB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "a23869da-2c89-4e06-bc32-2ad1d4fe0d39",
+    "title": "KingSton®/SSD Storage NV3/1TB NVMe\" M2",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "41762fdf-4441-4d22-8e06-f317fc3da521",
+    "title": "KingSton®/SSD Storage NV3/1TB NVMe\" M2-TRAY",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "8f69e359-3a9a-4bda-ac57-5d9038eb4992",
+    "title": "KIOXIA LXD20K001TG8 EXTERNAL SSD 1TB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "cd85ec39-a7b7-4657-8b5f-e575ac9040c0",
+    "title": "KIOXIA LXD20K002TG8 EXTERNAL SSD 2TB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "c2490e7a-4bc8-4df4-957f-d7c198ddf6b5",
+    "title": "KIOXIA/SSD STORAGE/HEATSINK/M2 NVME 2TB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "d1db3d59-b5fa-44af-b6b2-d33ec1a34628",
+    "title": "KIOXIA/SSD STORAGE/HEATSINK/M2 NVME 4TB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "5ef0a785-ef8e-4dc2-b4fb-c51fb4d89fac",
+    "title": "KIOXIA/SSD STORAGE/M2 NVME 1TB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "1cf7105f-59ca-4bf2-ae82-ce3db65e2287",
+    "title": "KIOXIA/SSD STORAGE/M2 NVME 2TB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "02ae0344-cd6e-45af-97a2-ad155268dfe5",
+    "title": "LAP ALIENNWARE 16X-AC16251 U9 275HX-1T-32G-RTX5070 8G-16",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "23427724-839d-4dcf-8e69-b3aad8396238",
+    "title": "LAP ALIENWARE 16-AC16250 C7 240H-16G-1T-RTX 4050 6G-16",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "792e05c1-6767-4152-a0ce-470a172c73c5",
+    "title": "LAP ALIENWARE 16-AC16250- C7 240H-32G-1T-RTX5060 8G-16",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "baf031a7-c94d-477a-adef-90e7b3da603a",
+    "title": "LAP ASUS  FA506NCQ-HN167W  R7 170 16G/512G/RTX 3050 4G 15.6\" W11",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 4,
+    "sources": []
+  },
+  {
+    "id": "d0be3204-187f-4997-adc3-252a6c2abeca",
+    "title": "LAP ASUS FA401KM-RG014W R AI 7 350/16G/1T/RTX 5060 8G/14`/W11",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "c6c5d99a-3a98-4d38-b3d5-04f9045301fc",
+    "title": "LAP ASUS FA506NCG-HN807W 15.6 Ryzen 7-7445HS-8GB RAM- 512GB-RTX 3050 4GB W11",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "82c80003-c654-4e5e-88da-ff00c3cd632e",
+    "title": "LAP ASUS FX607VJB-RL165W C5-210H/16G/512G/RTX 3050 6G/16`/W11",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 4,
+    "sources": []
+  },
+  {
+    "id": "d60a8542-7a5f-431f-a821-6fbabd6f9bfe",
+    "title": "LAP ASUS FX607VJB-RL805W C5-210H/8G/512G/RTX 3050 6G/16`/W11",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 4,
+    "sources": []
+  },
+  {
+    "id": "d95a1fee-4603-425c-8a77-afec6203df48",
+    "title": "LAP ASUS FX607VU-RL121 i7-13620H 16G/1T/RTX 4050 6G 16\" DOS",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "e91559fc-3892-4420-bd0a-31c103c68600",
+    "title": "LAP ASUS FX607VU-RL167W C7 240H 16G-512G-RTX 4050 6G-16\"-W11",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 5,
+    "sources": []
+  },
+  {
+    "id": "96a4ef44-3865-4c84-9fd1-51208ddb7204",
+    "title": "LAP ASUS FX608JHR-RV057W-CI7-14650HX-RTX 5050 8GB-16G-512GB -16\"-W11",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "3348eccd-8c69-4141-817d-ac33edbe2616",
+    "title": "LAP ASUS FX608JMR-F16  i7 14650HX 32G-1T RTX 5060 8G 16 W11",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 4,
+    "sources": []
+  },
+  {
+    "id": "38776d03-8e0b-4b52-8a59-55125cafbe99",
+    "title": "LAP ASUS FX608JMR-RV017W  i7 14650HX 16G-1T RTX 5060 16 W11",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 4,
+    "sources": []
+  },
+  {
+    "id": "79b3e9ab-baf2-488a-be4e-bef5d4343a9a",
+    "title": "LAP ASUS FX608JMR-RV057W I7 14650HX-16G-512G-RTX5060 8G-16\"-W11",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 5,
+    "sources": []
+  },
+  {
+    "id": "33e18d7b-e749-4dec-a98a-618ea1aec89b",
+    "title": "LAP ASUS FX608JPR-RV084 I7 14650 16G/1T/RTX 5070 8G DOS",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "086e9f4e-3aa7-42e2-9b65-37741fa9f0d7",
+    "title": "LAP ASUS G16 G614PR-RV132W Ryzen 9 8940HX - RTX 5070 Ti 12GB - 32GB RAM - 1TB SSD - W 11",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 5,
+    "sources": []
+  },
+  {
+    "id": "c62b0fbf-8fb2-4320-96f4-91fd6a473b3e",
+    "title": "LAP ASUS G614FM-RV169W-R9 9955HX-16G/1TB/RTX 5060 8GB 16\" W11",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "d69733a1-b01a-4225-97b7-f5eb83dca40b",
+    "title": "LAP ASUS G614FP-GR169W R9 9955HX-16GB/ 1TB/RTX 5070 8GB- W 11",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "e818531e-4779-4516-853e-623b361438ae",
+    "title": "LAP ASUS G614PH-RV161W R9-8940HX/16G/1T/RTX 5050 8G/16`/W11",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "565f3c66-15b7-4a0d-bf09-3db36a76dc26",
+    "title": "LAP ASUS G614PR-G016W Ryzen™ 9 8940HX 16G-1T-RTX™ 5070 Ti 16 W11",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 4,
+    "sources": []
+  },
+  {
+    "id": "baaa1b0b-a9fc-45aa-b1cf-deabd2beaecd",
+    "title": "LAP ASUS G615LR-RV052W  Ultra 7 255HX 32G-1T RTX™ 5070 Ti 16 W11",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "ba16589f-2a29-4a39-86dd-dd342d42c560",
+    "title": "LAP ASUS G635LX-RW036W Ultra 9 275HX 64G-1T  Radeon™ 8060S W11",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "b13eff25-ce52-489c-b514-b43fe9ea5397",
+    "title": "LAP ASUS G835LX-AI464W U9 275HX 64G-4T-5090 24G-18`-W11",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "48c04bd9-daed-4061-95ba-b4f9676577ff",
+    "title": "LAP ASUS N6506CU-MA014W U9 285H-24GB-2TB-RTX 4050 6G-15.6\"-W11",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "1fe0f2db-6ada-490f-9a04-7578381477ae",
+    "title": "LAP ASUS S3407CA-LY007W - U7 255H-16G-1T-INTEL-14\"-W 11",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "6eaeceea-f90f-468e-9200-ffea555ddf6f",
+    "title": "LAP ASUS S3407CA-LY065W U5 225H-16G-512G-INTEL-14\"-W11",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "10961ac3-a722-41f5-83a7-27bbbf906dbb",
+    "title": "LAP ASUS S3607CA-SH070W U7 255H-16-1T-INTEL ARC-16\"-W11",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "09a6eaeb-3b9e-49c1-9a75-9e3649514eb4",
+    "title": "LAP ASUS TUF 608JPR-RV027W I7 14650HX-1T-16G-RTX 5070 8G-16`-W11",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 4,
+    "sources": []
+  },
+  {
+    "id": "11ae08f0-5bf6-4a8e-ba8e-04ddeff78c0a",
+    "title": "LAP ASUS V3607VH-EG005W-C5 210H-16G-1T-RTX 5050 8G-16\"- W11",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 4,
+    "sources": []
+  },
+  {
+    "id": "07122b72-a20e-4997-991e-d0f8d070e942",
+    "title": "LAP ASUS V3607VH-RP007W-C7 240H-16G-1T-RTX 5050 8G-16”-W11",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 4,
+    "sources": []
+  },
+  {
+    "id": "cefa9fb0-38d0-4325-bd30-e448528e851f",
+    "title": "LAP ASUS V3607VM-PL027W C7 240H-32G-1T-RTX 5060 8G-16\"-W11",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 4,
+    "sources": []
+  },
+  {
+    "id": "dad21967-c43b-465f-ab30-b6e73cb9644a",
+    "title": "LAP ASUS X1607CA-MB117W U7 255H 16G-1T-INTEL-16\"-W11",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "c3d03d1e-f141-418c-ab87-1ca90a83c1c8",
+    "title": "LAP ASUS X1607QA-MB054W Snapdragon XX1 26100 16GB/1TB W11 16 \"W11",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "69d1c437-522c-48ff-90b9-df73b4738798",
+    "title": "LAP DELL C I5 Latitude 5450 8/512SSD/14\" HD/Iris/1335U",
+    "status": "miss"
+  }
+]

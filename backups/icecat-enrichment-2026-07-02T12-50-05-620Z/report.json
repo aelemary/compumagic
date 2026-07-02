@@ -1,0 +1,17 @@
+[
+  {
+    "id": "dd90119c-9845-4d77-b0e3-6926e7391ae7",
+    "title": "Intel ®/Processor/Core™ i5-12400F/18MB Cache - BOX",
+    "status": "miss"
+  },
+  {
+    "id": "37c59bc3-48b4-49b7-8c47-c1e1576eb269",
+    "title": "Intel ®/Processor/Core™ i5-12400F/18MB Cache - TRAY",
+    "status": "miss"
+  },
+  {
+    "id": "7057d65a-6bab-4701-803d-5c12ebf3bf91",
+    "title": "Intel ®/Processor/Core™ i5-14400F/20MB Cache - BOX",
+    "status": "miss"
+  }
+]

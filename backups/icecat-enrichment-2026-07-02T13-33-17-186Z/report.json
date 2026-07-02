@@ -1,0 +1,61 @@
+[
+  {
+    "id": "1fe0f2db-6ada-490f-9a04-7578381477ae",
+    "title": "LAP ASUS S3407CA-LY007W - U7 255H-16G-1T-INTEL-14\"-W 11",
+    "status": "web-dry-run",
+    "query": "direct-source",
+    "specCount": 30,
+    "sources": [
+      {
+        "title": "ASUS S3407CA official tech specs",
+        "url": "https://www.asus.com/laptops/for-home/vivobook/asus-vivobook-s14-s3407/techspec/"
+      }
+    ]
+  },
+  {
+    "id": "6eaeceea-f90f-468e-9200-ffea555ddf6f",
+    "title": "LAP ASUS S3407CA-LY065W U5 225H-16G-512G-INTEL-14\"-W11",
+    "status": "web-dry-run",
+    "query": "direct-source",
+    "specCount": 30,
+    "sources": [
+      {
+        "title": "ASUS S3407CA official tech specs",
+        "url": "https://www.asus.com/laptops/for-home/vivobook/asus-vivobook-s14-s3407/techspec/"
+      }
+    ]
+  },
+  {
+    "id": "10961ac3-a722-41f5-83a7-27bbbf906dbb",
+    "title": "LAP ASUS S3607CA-SH070W U7 255H-16-1T-INTEL ARC-16\"-W11",
+    "status": "dry-run",
+    "icecatId": "134704419",
+    "icecatTitle": "ASUS Vivobook S16 S3607CA-SH070W Intel Core Ultra 7 255H Laptop 40.6 cm (16\") WUXGA 16 GB DDR5-SDRAM 1 TB SSD Wi-Fi 6 (802.11ax) Windows 11 Home German Silver",
+    "source": "code:S3607CA-SH070W",
+    "score": 52.4,
+    "specCount": 48
+  },
+  {
+    "id": "09a6eaeb-3b9e-49c1-9a75-9e3649514eb4",
+    "title": "LAP ASUS TUF 608JPR-RV027W I7 14650HX-1T-16G-RTX 5070 8G-16`-W11",
+    "status": "miss"
+  },
+  {
+    "id": "11ae08f0-5bf6-4a8e-ba8e-04ddeff78c0a",
+    "title": "LAP ASUS V3607VH-EG005W-C5 210H-16G-1T-RTX 5050 8G-16\"- W11",
+    "status": "miss"
+  },
+  {
+    "id": "07122b72-a20e-4997-991e-d0f8d070e942",
+    "title": "LAP ASUS V3607VH-RP007W-C7 240H-16G-1T-RTX 5050 8G-16”-W11",
+    "status": "web-dry-run",
+    "query": "direct-source",
+    "specCount": 29,
+    "sources": [
+      {
+        "title": "ASUS V3607VH official tech specs",
+        "url": "https://www.asus.com/laptops/for-home/vivobook/asus-v16-v3607/techspec/"
+      }
+    ]
+  }
+]

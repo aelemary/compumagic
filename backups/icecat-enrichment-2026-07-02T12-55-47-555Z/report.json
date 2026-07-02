@@ -1,0 +1,152 @@
+[
+  {
+    "id": "96a4ef44-3865-4c84-9fd1-51208ddb7204",
+    "title": "LAP ASUS FX608JHR-RV057W-CI7-14650HX-RTX 5050 8GB-16G-512GB -16\"-W11",
+    "status": "web-updated",
+    "query": "direct-source",
+    "specCount": 23,
+    "sources": [
+      {
+        "title": "ASUS FX608JHR official tech specs",
+        "url": "https://www.asus.com/laptops/for-gaming/tuf-gaming/asus-tuf-gaming-f16-2025/techspec/"
+      }
+    ]
+  },
+  {
+    "id": "3348eccd-8c69-4141-817d-ac33edbe2616",
+    "title": "LAP ASUS FX608JMR-F16  i7 14650HX 32G-1T RTX 5060 8G 16 W11",
+    "status": "web-updated",
+    "query": "direct-source",
+    "specCount": 23,
+    "sources": [
+      {
+        "title": "ASUS FX608JMR official tech specs",
+        "url": "https://www.asus.com/laptops/for-gaming/tuf-gaming/asus-tuf-gaming-f16-2025/techspec/"
+      }
+    ]
+  },
+  {
+    "id": "38776d03-8e0b-4b52-8a59-55125cafbe99",
+    "title": "LAP ASUS FX608JMR-RV017W  i7 14650HX 16G-1T RTX 5060 16 W11",
+    "status": "web-updated",
+    "query": "direct-source",
+    "specCount": 23,
+    "sources": [
+      {
+        "title": "ASUS FX608JMR official tech specs",
+        "url": "https://www.asus.com/laptops/for-gaming/tuf-gaming/asus-tuf-gaming-f16-2025/techspec/"
+      }
+    ]
+  },
+  {
+    "id": "79b3e9ab-baf2-488a-be4e-bef5d4343a9a",
+    "title": "LAP ASUS FX608JMR-RV057W I7 14650HX-16G-512G-RTX5060 8G-16\"-W11",
+    "status": "web-updated",
+    "query": "direct-source",
+    "specCount": 23,
+    "sources": [
+      {
+        "title": "ASUS FX608JMR official tech specs",
+        "url": "https://www.asus.com/laptops/for-gaming/tuf-gaming/asus-tuf-gaming-f16-2025/techspec/"
+      }
+    ]
+  },
+  {
+    "id": "33e18d7b-e749-4dec-a98a-618ea1aec89b",
+    "title": "LAP ASUS FX608JPR-RV084 I7 14650 16G/1T/RTX 5070 8G DOS",
+    "status": "web-updated",
+    "query": "direct-source",
+    "specCount": 23,
+    "sources": [
+      {
+        "title": "ASUS FX608JPR official tech specs",
+        "url": "https://www.asus.com/laptops/for-gaming/tuf-gaming/asus-tuf-gaming-f16-2025/techspec/"
+      }
+    ]
+  },
+  {
+    "id": "086e9f4e-3aa7-42e2-9b65-37741fa9f0d7",
+    "title": "LAP ASUS G16 G614PR-RV132W Ryzen 9 8940HX - RTX 5070 Ti 12GB - 32GB RAM - 1TB SSD - W 11",
+    "status": "miss"
+  },
+  {
+    "id": "c62b0fbf-8fb2-4320-96f4-91fd6a473b3e",
+    "title": "LAP ASUS G614FM-RV169W-R9 9955HX-16G/1TB/RTX 5060 8GB 16\" W11",
+    "status": "miss"
+  },
+  {
+    "id": "d69733a1-b01a-4225-97b7-f5eb83dca40b",
+    "title": "LAP ASUS G614FP-GR169W R9 9955HX-16GB/ 1TB/RTX 5070 8GB- W 11",
+    "status": "miss"
+  },
+  {
+    "id": "e818531e-4779-4516-853e-623b361438ae",
+    "title": "LAP ASUS G614PH-RV161W R9-8940HX/16G/1T/RTX 5050 8G/16`/W11",
+    "status": "miss"
+  },
+  {
+    "id": "565f3c66-15b7-4a0d-bf09-3db36a76dc26",
+    "title": "LAP ASUS G614PR-G016W Ryzen™ 9 8940HX 16G-1T-RTX™ 5070 Ti 16 W11",
+    "status": "miss"
+  },
+  {
+    "id": "baaa1b0b-a9fc-45aa-b1cf-deabd2beaecd",
+    "title": "LAP ASUS G615LR-RV052W  Ultra 7 255HX 32G-1T RTX™ 5070 Ti 16 W11",
+    "status": "updated",
+    "icecatId": "135320173",
+    "icecatTitle": "ASUS ROG Strix G16 G615LR-RV052W Intel Core Ultra 7 255HX Laptop 40.6 cm (16\") WUXGA 32 GB DDR5-SDRAM 1 TB SSD NVIDIA GeForce RTX 5070 Ti Wi-Fi 7 (802.11be) Windows 11 Home Green, Grey",
+    "source": "code:G615LR-RV052W",
+    "score": 55.4,
+    "specCount": 48
+  },
+  {
+    "id": "ba16589f-2a29-4a39-86dd-dd342d42c560",
+    "title": "LAP ASUS G635LX-RW036W Ultra 9 275HX 64G-1T  Radeon™ 8060S W11",
+    "status": "updated",
+    "icecatId": "132205242",
+    "icecatTitle": "ASUS ROG Strix SCAR 16 G635LX-RW036W Intel Core Ultra 9 275HX Laptop 40.6 cm (16\") 2.5K 64 GB DDR5-SDRAM 2 TB SSD NVIDIA GeForce RTX 5090 Wi-Fi 7 (802.11be) Windows 11 Home Black",
+    "source": "code:G635LX-RW036W",
+    "score": 54.4,
+    "specCount": 48
+  },
+  {
+    "id": "b13eff25-ce52-489c-b514-b43fe9ea5397",
+    "title": "LAP ASUS G835LX-AI464W U9 275HX 64G-4T-5090 24G-18`-W11",
+    "status": "miss"
+  },
+  {
+    "id": "48c04bd9-daed-4061-95ba-b4f9676577ff",
+    "title": "LAP ASUS N6506CU-MA014W U9 285H-24GB-2TB-RTX 4050 6G-15.6\"-W11",
+    "status": "updated",
+    "icecatId": "128675518",
+    "icecatTitle": "ASUS Vivobook Pro 15 OLED N6506CU-MA014W Intel Core Ultra 9 285H Laptop 39.6 cm (15.6\") 3K 24 GB DDR5-SDRAM 2 TB SSD NVIDIA GeForce RTX 4050 Wi-Fi 6E (802.11ax) Windows 11 Home Grey",
+    "source": "code:N6506CU-MA014W",
+    "score": 53.4,
+    "specCount": 48
+  },
+  {
+    "id": "1fe0f2db-6ada-490f-9a04-7578381477ae",
+    "title": "LAP ASUS S3407CA-LY007W - U7 255H-16G-1T-INTEL-14\"-W 11",
+    "status": "miss"
+  },
+  {
+    "id": "6eaeceea-f90f-468e-9200-ffea555ddf6f",
+    "title": "LAP ASUS S3407CA-LY065W U5 225H-16G-512G-INTEL-14\"-W11",
+    "status": "miss"
+  },
+  {
+    "id": "10961ac3-a722-41f5-83a7-27bbbf906dbb",
+    "title": "LAP ASUS S3607CA-SH070W U7 255H-16-1T-INTEL ARC-16\"-W11",
+    "status": "miss"
+  },
+  {
+    "id": "09a6eaeb-3b9e-49c1-9a75-9e3649514eb4",
+    "title": "LAP ASUS TUF 608JPR-RV027W I7 14650HX-1T-16G-RTX 5070 8G-16`-W11",
+    "status": "miss"
+  },
+  {
+    "id": "11ae08f0-5bf6-4a8e-ba8e-04ddeff78c0a",
+    "title": "LAP ASUS V3607VH-EG005W-C5 210H-16G-1T-RTX 5050 8G-16\"- W11",
+    "status": "miss"
+  }
+]

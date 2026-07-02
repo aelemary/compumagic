@@ -312,22 +312,326 @@ function mapCompany(record) {
   };
 }
 
-function getSpecValue(specs = {}, keys = []) {
-  if (!specs || typeof specs !== "object") return "";
-  for (const key of keys) {
-    if (specs[key] != null && specs[key] !== "") return String(specs[key]);
+function normalizeSpecsRaw(value) {
+  if (value == null || value === "") return {};
+  if (typeof value === "string") {
+    try {
+      const parsed = JSON.parse(value);
+      return parsed && typeof parsed === "object" && !Array.isArray(parsed) ? parsed : {};
+    } catch {
+      return {};
+    }
   }
-  const manual = specs.manual && typeof specs.manual === "object" ? specs.manual : {};
-  const normalizedKeys = keys.map((key) => key.toLowerCase());
-  const match = Object.entries(manual).find(([key, value]) => {
-    return value != null && value !== "" && normalizedKeys.includes(key.toLowerCase());
-  });
-  return match ? String(match[1]) : "";
+  return value && typeof value === "object" && !Array.isArray(value) ? value : {};
+}
+
+function normalizeSpecKey(value = "") {
+  return String(value || "")
+    .toLowerCase()
+    .replace(/[_/-]+/g, " ")
+    .replace(/[^a-z0-9]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function normalizeSpecPrimitive(value) {
+  if (value == null) return "";
+  if (typeof value === "string") return value.trim();
+  if (typeof value === "number" || typeof value === "boolean") return String(value);
+  return "";
+}
+
+function findSpecValue(specsRaw, candidates = []) {
+  if (!specsRaw || typeof specsRaw !== "object") return "";
+  const normalizedCandidates = candidates.map(normalizeSpecKey).filter(Boolean);
+  const queue = [specsRaw];
+  const seen = new Set();
+  while (queue.length) {
+    const current = queue.shift();
+    if (!current || typeof current !== "object") continue;
+    if (seen.has(current)) continue;
+    seen.add(current);
+
+    if (Array.isArray(current)) {
+      current.forEach((item) => {
+        if (item && typeof item === "object") queue.push(item);
+      });
+      continue;
+    }
+
+    for (const [key, value] of Object.entries(current)) {
+      const normalizedKey = normalizeSpecKey(key);
+      const isCandidate = normalizedCandidates.some(
+        (candidate) => normalizedKey === candidate || normalizedKey.includes(candidate)
+      );
+      const primitive = normalizeSpecPrimitive(value);
+      if (isCandidate && primitive) return primitive;
+      if (value && typeof value === "object") queue.push(value);
+    }
+  }
+  return "";
+}
+
+function getSpecValue(specs = {}, keys = []) {
+  return findSpecValue(specs, keys);
+}
+
+function titleIncludes(title = "", pattern) {
+  return pattern.test(String(title || ""));
+}
+
+function formatCapacityToken(value = "", unit = "") {
+  const numeric = String(value || "").trim();
+  const suffix = String(unit || "").trim().toUpperCase();
+  if (!numeric || !suffix) return "";
+  return suffix === "T" ? `${numeric}TB` : `${numeric}GB`;
+}
+
+function inferLaptopTitleSpecs(title = "") {
+  const raw = String(title || "").replace(/\s+/g, " ").trim();
+  if (!raw) return {};
+
+  const inferred = {};
+
+  const slashLayout = raw.match(/\b(\d{1,3})\s*G(?:B)?\s*\/\s*(\d+(?:\.\d+)?)\s*([GT])(?:B)?\b/i);
+  if (slashLayout) {
+    inferred.ram = `${slashLayout[1]}GB`;
+    inferred.storage = formatCapacityToken(slashLayout[2], slashLayout[3]);
+  }
+
+  if (!inferred.ram) {
+    const ramMatch =
+      raw.match(/\b(?:RAM\s*)?(\d{1,3})\s*GB(?:\s*RAM)?\b/i) ||
+      raw.match(/\b(\d{1,3})\s*G(?:B)?\s+RAM\b/i);
+    if (ramMatch) inferred.ram = `${ramMatch[1]}GB`;
+  }
+
+  if (!inferred.storage) {
+    const storageMatch =
+      raw.match(/\b(\d+(?:\.\d+)?)\s*(TB|GB)\s*(?:SSD|HDD|NVME|PCIE)?\b/i) ||
+      raw.match(/\bSSD\s*(\d+(?:\.\d+)?)\s*(TB|GB)\b/i) ||
+      raw.match(/\b(\d+(?:\.\d+)?)\s*([GT])\b/i);
+    if (storageMatch) {
+      const unit = storageMatch[2].toUpperCase();
+      inferred.storage = unit.length === 1 ? formatCapacityToken(storageMatch[1], unit) : `${storageMatch[1]}${unit}`;
+    }
+  }
+
+  const intelCoreMatch = raw.match(/\bI([3579])[-\s]?(\d{4,5}[A-Z]{0,3})\b/i);
+  if (intelCoreMatch) {
+    inferred.cpu = `Intel Core i${intelCoreMatch[1]}-${intelCoreMatch[2].toUpperCase()}`;
+  }
+
+  if (!inferred.cpu) {
+    const intelCoreNewMatch =
+      raw.match(/\bC([3579])[-\s]?(\d{3,5}[A-Z]{0,3})\b/i) ||
+      raw.match(/\bCORE\s+([3579])[-\s]?(\d{3,5}[A-Z]{0,3})\b/i);
+    if (intelCoreNewMatch) {
+      inferred.cpu = `Intel Core ${intelCoreNewMatch[1]} ${intelCoreNewMatch[2].toUpperCase()}`;
+    }
+  }
+
+  if (!inferred.cpu) {
+    const ultraMatch =
+      raw.match(/\bU([579])[-\s]?(\d{3,5}[A-Z]{0,3})\b/i) ||
+      raw.match(/\bULTRA\s+([579])[-\s]?(\d{3,5}[A-Z]{0,3})\b/i) ||
+      raw.match(/\bCORE\s+ULTRA\s+([579])[-\s]?(\d{3,5}[A-Z]{0,3})\b/i);
+    if (ultraMatch) {
+      inferred.cpu = `Intel Core Ultra ${ultraMatch[1]} ${ultraMatch[2].toUpperCase()}`;
+    }
+  }
+
+  if (!inferred.cpu) {
+    const ryzenAiMatch =
+      raw.match(/\bR\s*AI\s*([3579])[-\s]?(\d{3,5}[A-Z]{0,3})\b/i) ||
+      raw.match(/\bRYZEN\s*AI\s*([3579])[-\s]?(\d{3,5}[A-Z]{0,3})\b/i);
+    if (ryzenAiMatch) {
+      inferred.cpu = `AMD Ryzen AI ${ryzenAiMatch[1]} ${ryzenAiMatch[2].toUpperCase()}`;
+    }
+  }
+
+  if (!inferred.cpu) {
+    const ryzenMatch =
+      raw.match(/\bR([3579])[-\s]?(\d{3,5}[A-Z]{0,3})\b/i) ||
+      raw.match(/\bRYZEN\s*([3579])[-\s]?(\d{3,5}[A-Z]{0,3})\b/i);
+    if (ryzenMatch) {
+      inferred.cpu = `AMD Ryzen ${ryzenMatch[1]} ${ryzenMatch[2].toUpperCase()}`;
+    }
+  }
+
+  if (!inferred.cpu) {
+    const snapdragonMatch = raw.match(/\bSNAPDRAGON\s+([A-Z0-9+\s]+?\d{4,5})\b/i);
+    if (snapdragonMatch) {
+      inferred.cpu = `Qualcomm Snapdragon ${snapdragonMatch[1].replace(/\s+/g, " ").trim()}`;
+    }
+  }
+
+  const rtxMatch = raw.match(/\bRTX\s*(\d{3,4})(\s*TI)?(?:\s*(\d{1,2})\s*G(?:B)?)?\b/i);
+  if (rtxMatch) {
+    inferred.gpu = `NVIDIA GeForce RTX ${rtxMatch[1]}${rtxMatch[2] ? " Ti" : ""}${rtxMatch[3] ? ` ${rtxMatch[3]}GB` : ""}`;
+  }
+
+  if (!inferred.gpu) {
+    const gtxMatch = raw.match(/\bGTX\s*(\d{3,4})(?:\s*(\d{1,2})\s*G(?:B)?)?\b/i);
+    if (gtxMatch) {
+      inferred.gpu = `NVIDIA GeForce GTX ${gtxMatch[1]}${gtxMatch[2] ? ` ${gtxMatch[2]}GB` : ""}`;
+    }
+  }
+
+  if (!inferred.gpu) {
+    const mxMatch = raw.match(/\bMX\s*(\d{3,4})\b/i);
+    if (mxMatch) inferred.gpu = `NVIDIA GeForce MX${mxMatch[1]}`;
+  }
+
+  if (!inferred.gpu) {
+    const rxMatch = raw.match(/\bRX\s*(\d{4,5}[A-Z]{0,2})\b/i);
+    if (rxMatch) inferred.gpu = `AMD Radeon RX ${rxMatch[1].toUpperCase()}`;
+  }
+
+  if (!inferred.gpu) {
+    const radeonMatch = raw.match(/\bRADEON\s+([A-Z0-9 ]{3,20})\b/i);
+    if (radeonMatch) inferred.gpu = `AMD Radeon ${radeonMatch[1].replace(/\s+/g, " ").trim()}`;
+  }
+
+  const displayMatch = raw.match(/\b(\d{1,2}(?:\.\d)?)\s*(?:["`]|INCH)/i);
+  if (displayMatch) inferred.display = `${displayMatch[1]}-inch`;
+
+  if (titleIncludes(raw, /\bW11\b|\bWINDOWS\s*11\b/i)) inferred.operatingSystem = "Windows 11";
+  else if (titleIncludes(raw, /\bW10\b|\bWINDOWS\s*10\b/i)) inferred.operatingSystem = "Windows 10";
+  else if (titleIncludes(raw, /\bDOS\b|\bFREE\s*DOS\b|\bNO\s*OS\b/i)) inferred.operatingSystem = "DOS";
+
+  return inferred;
+}
+
+function inferGpuTitleSpecs(title = "") {
+  const raw = String(title || "").replace(/\s+/g, " ").trim();
+  if (!raw) return {};
+  const inferred = {};
+  const rtxMatch = raw.match(/\bRTX\s*(\d{3,4})(\s*TI)?(?:\s*(\d{1,2})\s*G(?:B)?)?\b/i);
+  if (rtxMatch) inferred.gpu = `NVIDIA GeForce RTX ${rtxMatch[1]}${rtxMatch[2] ? " Ti" : ""}`;
+  const rxMatch = raw.match(/\bRX\s*(\d{4,5}[A-Z]{0,2})\b/i);
+  if (!inferred.gpu && rxMatch) inferred.gpu = `AMD Radeon RX ${rxMatch[1].toUpperCase()}`;
+  const memoryMatch = raw.match(/\b(\d{1,2})\s*G(?:B)?\b/i);
+  if (memoryMatch) inferred.memory = `${memoryMatch[1]}GB`;
+  const memoryTypeMatch = raw.match(/\b(GDDR[3567X]*)\b/i);
+  if (memoryTypeMatch) inferred.memoryType = memoryTypeMatch[1].toUpperCase();
+  return inferred;
+}
+
+function inferMonitorTitleSpecs(title = "") {
+  const raw = String(title || "").replace(/\s+/g, " ").trim();
+  if (!raw) return {};
+  const inferred = {};
+  const sizeMatch = raw.match(/\b(\d{2}(?:\.\d)?)\s*(?:["`]|INCH)/i);
+  if (sizeMatch) inferred.display = `${sizeMatch[1]}-inch`;
+  const refreshMatch = raw.match(/\b(\d{2,3})\s*HZ\b/i);
+  if (refreshMatch) inferred.refreshRate = `${refreshMatch[1]}Hz`;
+  if (titleIncludes(raw, /\b4K\b|\bUHD\b/i)) inferred.resolution = "3840 x 2160";
+  else if (titleIncludes(raw, /\bQHD\b|\b2K\b/i)) inferred.resolution = "2560 x 1440";
+  else if (titleIncludes(raw, /\bFHD\b|\b1080P\b/i)) inferred.resolution = "1920 x 1080";
+  return inferred;
+}
+
+function inferRamTitleSpecs(title = "") {
+  const raw = String(title || "").replace(/\s+/g, " ").trim();
+  if (!raw) return {};
+  const inferred = {};
+  const capacityMatch = raw.match(/\b(\d{1,3})\s*G(?:B)?\b/i);
+  if (capacityMatch) inferred.ram = `${capacityMatch[1]}GB`;
+  const typeMatch = raw.match(/\b(DDR[345])\b/i);
+  if (typeMatch) inferred.memoryType = typeMatch[1].toUpperCase();
+  const speedMatch = raw.match(/\b(\d{4,5})\s*(?:MHZ|MT\/S)\b/i);
+  if (speedMatch) inferred.speed = `${speedMatch[1]} MT/s`;
+  return inferred;
+}
+
+function inferStorageTitleSpecs(title = "") {
+  const raw = String(title || "").replace(/\s+/g, " ").trim();
+  if (!raw) return {};
+  const inferred = {};
+  const capacityMatch = raw.match(/\b(\d+(?:\.\d+)?)\s*(TB|GB)\b/i);
+  if (capacityMatch) inferred.storage = `${capacityMatch[1]}${capacityMatch[2].toUpperCase()}`;
+  if (titleIncludes(raw, /\bNVME\b/i)) inferred.interface = "NVMe";
+  else if (titleIncludes(raw, /\bSATA\b/i)) inferred.interface = "SATA";
+  if (titleIncludes(raw, /\bM\.?2\b/i)) inferred.formFactor = "M.2";
+  else if (raw.match(/\b2\.5["']?\b/i)) inferred.formFactor = "2.5-inch";
+  return inferred;
+}
+
+function inferMotherboardTitleSpecs(title = "") {
+  const raw = String(title || "").replace(/\s+/g, " ").trim();
+  if (!raw) return {};
+  const inferred = {};
+  const socketMatch = raw.match(/\b(LGA\s*1\d{3}|AM[45])\b/i);
+  if (socketMatch) inferred.socket = socketMatch[1].replace(/\s+/g, "");
+  const chipsetMatch = raw.match(/\b([ABHXZ]\d{3,4}[A-Z]?)\b/i);
+  if (chipsetMatch) inferred.chipset = chipsetMatch[1].toUpperCase();
+  const formFactorMatch = raw.match(/\b(E-ATX|ATX|M-ATX|MATX|MICRO-ATX|MINI-ITX|ITX)\b/i);
+  if (formFactorMatch) {
+    const value = formFactorMatch[1].toUpperCase();
+    inferred.formFactor = value === "MATX" ? "Micro ATX" : value;
+  }
+  if (titleIncludes(raw, /\bDDR5\b/i)) inferred.memoryType = "DDR5";
+  else if (titleIncludes(raw, /\bDDR4\b/i)) inferred.memoryType = "DDR4";
+  return inferred;
+}
+
+function inferTitleSpecs(title = "", type = "") {
+  const normalizedType = normalizeProductType(type);
+  if (normalizedType === "laptop" || normalizedType === "desktop") return inferLaptopTitleSpecs(title);
+  if (normalizedType === "gpu") return inferGpuTitleSpecs(title);
+  if (normalizedType === "monitor") return inferMonitorTitleSpecs(title);
+  if (normalizedType === "ram") return inferRamTitleSpecs(title);
+  if (normalizedType === "storage") return inferStorageTitleSpecs(title);
+  if (normalizedType === "motherboard") return inferMotherboardTitleSpecs(title);
+  return {};
+}
+
+function mergeInferredSpecs(specs = {}, inferred = {}, type = "") {
+  const merged = { ...(specs && typeof specs === "object" ? specs : {}) };
+  const normalizedType = normalizeProductType(type);
+  const put = (label, value) => {
+    if (!value || merged[label]) return;
+    merged[label] = value;
+  };
+
+  if (normalizedType === "laptop" || normalizedType === "desktop") {
+    put("Processor", inferred.cpu);
+    put("Graphics", inferred.gpu);
+    put("Memory", inferred.ram);
+    put("Storage", inferred.storage);
+    put("Display", inferred.display);
+    put("Operating System", inferred.operatingSystem);
+  } else if (normalizedType === "gpu") {
+    put("Graphics Processor", inferred.gpu);
+    put("Memory", inferred.memory);
+    put("Memory Type", inferred.memoryType);
+  } else if (normalizedType === "monitor") {
+    put("Display", inferred.display);
+    put("Display resolution", inferred.resolution);
+    put("Maximum refresh rate", inferred.refreshRate);
+  } else if (normalizedType === "ram") {
+    put("Internal memory", inferred.ram);
+    put("Memory type", inferred.memoryType);
+    put("Memory clock speed", inferred.speed);
+  } else if (normalizedType === "storage") {
+    put("Storage", inferred.storage);
+    put("Interface", inferred.interface);
+    put("SSD form factor", inferred.formFactor);
+  } else if (normalizedType === "motherboard") {
+    put("Processor socket", inferred.socket);
+    put("Motherboard chipset", inferred.chipset);
+    put("Motherboard form factor", inferred.formFactor);
+    put("Supported memory types", inferred.memoryType);
+  }
+
+  return merged;
 }
 
 function buildSpecsPayload(body = {}, existingSpecs = {}) {
   const manual =
     existingSpecs.manual && typeof existingSpecs.manual === "object" ? existingSpecs.manual : {};
+  const incomingManual = body.specs && typeof body.specs === "object" ? body.specs : {};
   const specs = {
     ...existingSpecs,
     cpu: body.cpu || existingSpecs.cpu || "",
@@ -336,7 +640,11 @@ function buildSpecsPayload(body = {}, existingSpecs = {}) {
     storage: body.storage || existingSpecs.storage || "",
     display: body.display || existingSpecs.display || "",
   };
-  if (Object.keys(manual).length) specs.manual = manual;
+  const nextManual = { ...manual, ...incomingManual };
+  if (body.capacity) nextManual.capacity = body.capacity;
+  if (body.memoryType) nextManual.memoryType = body.memoryType;
+  if (body.chipset) nextManual.chipset = body.chipset;
+  if (Object.keys(nextManual).length) specs.manual = nextManual;
   return specs;
 }
 
@@ -344,8 +652,15 @@ const PRODUCT_TYPES = {
   laptop: { table: "laptops", label: "Laptop" },
   gpu: { table: "gpus", label: "GPU" },
   cpu: { table: "cpus", label: "CPU" },
-  hdd: { table: "hdds", label: "HDD" },
+  storage: { table: "hdds", label: "Storage" },
   motherboard: { table: "motherboards", label: "Motherboard" },
+  ram: { table: "products", label: "Memory" },
+  monitor: { table: "products", label: "Monitor" },
+  printer: { table: "products", label: "Printer" },
+  desktop: { table: "products", label: "Desktop" },
+  power: { table: "products", label: "Power" },
+  accessory: { table: "products", label: "Accessory" },
+  other: { table: "products", label: "Product" },
 };
 
 function normalizeProductType(value = "") {
@@ -354,7 +669,7 @@ function normalizeProductType(value = "") {
   if (raw === "laptops") return "laptop";
   if (raw === "gpus") return "gpu";
   if (raw === "cpus") return "cpu";
-  if (raw === "hdds") return "hdd";
+  if (raw === "hdd" || raw === "hdds" || raw === "ssd" || raw === "storage") return "storage";
   if (raw === "motherboards") return "motherboard";
   if (PRODUCT_TYPES[raw]) return raw;
   return "";
@@ -364,30 +679,79 @@ function mapProduct(record, type) {
   if (!record) return null;
   const company = record.brands ? mapCompany(record.brands) : null;
   const normalizedType = normalizeProductType(type);
-  const specsRaw = record.specs_raw && typeof record.specs_raw === "object" ? record.specs_raw : {};
+  const specsRaw = normalizeSpecsRaw(record.specs_raw);
   const manualSpecs =
     specsRaw.manual && typeof specsRaw.manual === "object" ? specsRaw.manual : {};
+  const icecat =
+    specsRaw.icecat && typeof specsRaw.icecat === "object" && !Array.isArray(specsRaw.icecat)
+      ? specsRaw.icecat
+      : null;
+  const icecatSpecs =
+    icecat?.specs && typeof icecat.specs === "object" && !Array.isArray(icecat.specs)
+      ? icecat.specs
+      : {};
+  const webSpecs =
+    specsRaw.web?.specs && typeof specsRaw.web.specs === "object" && !Array.isArray(specsRaw.web.specs)
+      ? specsRaw.web.specs
+      : {};
   const productId = record.product_id || record.id;
   const fallbackTitle = `${PRODUCT_TYPES[normalizedType]?.label || "Product"} ${String(productId || "").slice(0, 8)}`;
+  const resolvedTitle = record.title || record.name || fallbackTitle;
+  const inferred = inferTitleSpecs(resolvedTitle, normalizedType || type);
+  const mergedSpecs = mergeInferredSpecs({ ...webSpecs, ...icecatSpecs, ...manualSpecs }, inferred, normalizedType || type);
   const product = {
     id: productId,
     type: normalizedType || type,
     companyId: record.brand_id,
     shortName: record.short_name || "",
-    title: record.title || record.name || fallbackTitle,
+    title: resolvedTitle,
+    price: record.price != null ? Number(record.price) : 0,
     description: record.description || "",
     images: Array.isArray(record.images) ? record.images : record.images ? [record.images] : [],
     warranty: record.warranty != null ? Number(record.warranty) : 0,
-    specs: manualSpecs,
+    specs: mergedSpecs,
+    specsRaw,
+    icecatId: icecat?.id ? String(icecat.id) : "",
+    icecatTitle: icecat?.title || "",
+    icecatCategory: icecat?.category || "",
     company,
   };
-  if (normalizedType === "laptop") {
-    product.gpu = record.gpu || getSpecValue(specsRaw, ["gpu", "graphics"]);
-    product.cpu = record.cpu || getSpecValue(specsRaw, ["cpu", "processor"]);
-    product.ram = record.ram || getSpecValue(specsRaw, ["ram", "memory"]);
-    product.storage = record.storage || getSpecValue(specsRaw, ["storage", "ssd", "hdd"]);
-    product.display = record.display || getSpecValue(specsRaw, ["display", "screen"]);
-  }
+  product.gpu =
+    record.gpu ||
+    getSpecValue(specsRaw, [
+      "gpu",
+      "graphics",
+      "vga",
+      "graphics processor",
+      "discrete graphics card model",
+      "graphics adapter",
+    ]) ||
+    inferred.gpu ||
+    inferred.memory;
+  product.cpu =
+    record.cpu ||
+    getSpecValue(specsRaw, ["cpu", "processor model", "processor family", "processor cores"]) ||
+    inferred.cpu;
+  product.ram =
+    record.ram ||
+    getSpecValue(specsRaw, ["ram", "internal memory", "system memory", "memory"]) ||
+    inferred.ram ||
+    inferred.memory;
+  product.storage =
+    record.storage ||
+    getSpecValue(specsRaw, [
+      "storage",
+      "total storage capacity",
+      "ssd capacity",
+      "hdd capacity",
+      "capacity",
+    ]) ||
+    inferred.storage;
+  product.display =
+    record.display ||
+    getSpecValue(specsRaw, ["display diagonal", "display resolution", "display", "screen", "monitor"]) ||
+    inferred.display ||
+    inferred.resolution;
   return product;
 }
 
@@ -414,14 +778,17 @@ function filterProducts(products, filters) {
       (product.description || "").toLowerCase().includes(search) ||
       companyName.toLowerCase().includes(search) ||
       (product.type || "").toLowerCase().includes(search) ||
-      (product.type === "laptop" &&
-        ((product.gpu || "").toLowerCase().includes(search) ||
-          (product.cpu || "").toLowerCase().includes(search) ||
-          (product.ram || "").toLowerCase().includes(search) ||
-          (product.storage || "").toLowerCase().includes(search) ||
-          (product.display || "").toLowerCase().includes(search)));
+      (product.gpu || "").toLowerCase().includes(search) ||
+      (product.cpu || "").toLowerCase().includes(search) ||
+      (product.ram || "").toLowerCase().includes(search) ||
+      (product.storage || "").toLowerCase().includes(search) ||
+      (product.display || "").toLowerCase().includes(search) ||
+      Object.values(product.specs || {}).some((value) =>
+        String(value || "").toLowerCase().includes(search)
+      );
     const matchesCompany = !filters.companyId || product.companyId === filters.companyId;
-    const matchesCategory = !normalizedCategory || product.type === normalizedCategory;
+    const matchesCategory =
+      !normalizedCategory || normalizeProductType(product.type) === normalizedCategory;
     const matchesIds =
       !filters.ids || (Array.isArray(filters.ids) && filters.ids.includes(product.id));
     return matchesSearch && matchesCompany && matchesCategory && matchesIds;
@@ -481,7 +848,7 @@ async function fetchProducts({ ids = [], category = "", companyId = "" } = {}) {
   if (ids.length) {
     params.id = `in.(${ids.join(",")})`;
   }
-  if (normalizedCategory) {
+  if (normalizedCategory && normalizedCategory !== "storage") {
     params.type = `eq.${normalizedCategory}`;
   }
   if (companyId) {
@@ -720,10 +1087,8 @@ async function handleApi(req, res, pathname, searchParams) {
             description: body.description || "",
             warranty: body.warranty != null ? Number(body.warranty) : 0,
             images,
+            specs_raw: buildSpecsPayload(body),
           };
-          if (incomingType === "laptop") {
-            payload.specs_raw = buildSpecsPayload(body);
-          }
           const createdProduct = await sb("products", {
             method: "POST",
             headers: { Prefer: "return=representation" },
@@ -762,10 +1127,8 @@ async function handleApi(req, res, pathname, searchParams) {
               : typeof body.images === "string" && body.images
               ? body.images.split(/[\n,]+/).map((item) => item.trim()).filter(Boolean)
               : undefined,
+            specs_raw: buildSpecsPayload(body, current[0].specs_raw || {}),
           };
-          if (existingType === "laptop") {
-            payload.specs_raw = buildSpecsPayload(body, current[0].specs_raw || {});
-          }
           Object.keys(payload).forEach((key) => payload[key] === undefined && delete payload[key]);
           if (payload.brand_id) {
             const brands = await sb("brands", { params: { select: "id", id: `eq.${payload.brand_id}` } });
@@ -995,4 +1358,6 @@ if (require.main === module) {
   });
 }
 
+server.mapProduct = mapProduct;
+server.inferTitleSpecs = inferTitleSpecs;
 module.exports = server;

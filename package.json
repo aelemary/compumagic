@@ -4,6 +4,10 @@
   "main": "server.js",
   "type": "commonjs",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "import:catalog": "node scripts/import-catalog.js --replace",
+    "images:enrich": "node scripts/enrich-product-images.js",
+    "icecat:enrich": "node scripts/enrich-icecat-specs.js",
+    "specs:enrich": "node scripts/enrich-icecat-specs.js"
   }
 }

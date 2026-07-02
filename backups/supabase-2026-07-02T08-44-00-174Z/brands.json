@@ -1,0 +1,80 @@
+[
+  {
+    "id": "bfa7da16-53cd-4f09-a02a-d1ca15efc78b",
+    "name": "MSI",
+    "description": "MSI KATANA ",
+    "created_at": "2025-11-18T20:10:40.536968+00:00"
+  },
+  {
+    "id": "b6beae54-1136-489d-9945-61e2d0104707",
+    "name": "LENOVO ",
+    "description": "",
+    "created_at": "2025-11-18T20:26:19.436599+00:00"
+  },
+  {
+    "id": "9208c3b7-de77-476b-a7fd-66e8cf640e0d",
+    "name": "HP",
+    "description": "",
+    "created_at": "2025-11-19T21:13:27.162392+00:00"
+  },
+  {
+    "id": "16eda6a9-637b-4478-af9b-8c9324e140a4",
+    "name": "ASUS ROG STRIX ",
+    "description": "",
+    "created_at": "2025-11-22T12:33:07.470584+00:00"
+  },
+  {
+    "id": "6847fcc4-66bb-451f-bb7a-ab234f1cedb7",
+    "name": "ASUS TUF ",
+    "description": "",
+    "created_at": "2025-11-22T12:33:15.706267+00:00"
+  },
+  {
+    "id": "2e24e56f-4260-4939-baf3-21cf0446eba9",
+    "name": "ASUS ROG STRIX SCAR ",
+    "description": "",
+    "created_at": "2025-12-24T13:36:14.698495+00:00"
+  },
+  {
+    "id": "2f08fdaa-77ba-4f70-9db1-4e6625323f65",
+    "name": "ASUS ROG Flow",
+    "description": "",
+    "created_at": "2025-12-24T13:48:52.332156+00:00"
+  },
+  {
+    "id": "97db013c-6fdb-4091-ad31-307b05697455",
+    "name": "LENOVO LEGION ",
+    "description": "",
+    "created_at": "2026-01-03T10:54:25.070418+00:00"
+  },
+  {
+    "id": "1ffe1eaf-3217-4eac-8142-57a2728e5eac",
+    "name": "Intel",
+    "description": "",
+    "created_at": "2026-02-06T15:16:39.093296+00:00"
+  },
+  {
+    "id": "2656755b-da18-4b93-824c-452cafe41166",
+    "name": "Geforce Nvidia",
+    "description": "",
+    "created_at": "2026-02-07T09:52:31.830727+00:00"
+  },
+  {
+    "id": "f9e5d7d1-4707-48b4-92e7-4173c5a27661",
+    "name": "AMD RADEON",
+    "description": "",
+    "created_at": "2026-02-07T20:56:57.574191+00:00"
+  },
+  {
+    "id": "097f37f5-0bf5-4bcd-88d1-1dc735fd516e",
+    "name": "Amd Radeon",
+    "description": "",
+    "created_at": "2026-02-07T20:57:21.885671+00:00"
+  },
+  {
+    "id": "f30af1f7-3ffc-4ff6-bc83-e15c950dc490",
+    "name": "DELL",
+    "description": "",
+    "created_at": "2026-02-18T20:50:58.596692+00:00"
+  }
+]

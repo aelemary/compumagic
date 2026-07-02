@@ -15,7 +15,15 @@ const CATEGORY_LABELS = {
   gpu: "Graphics",
   cpu: "Processor",
   hdd: "Storage",
+  storage: "Storage",
   motherboard: "Motherboard",
+  ram: "Memory",
+  monitor: "Monitor",
+  printer: "Printer",
+  desktop: "Desktop",
+  power: "Power",
+  accessory: "Accessory",
+  other: "Other",
 };
 
 function redirectToLogin() {
@@ -143,7 +151,7 @@ function syncImagePreview() {
 function toggleCategoryFields(categoryValue) {
   const category = String(categoryValue || "").toLowerCase();
   document.querySelectorAll(".laptop-only").forEach((field) => {
-    field.hidden = category && category !== "laptop";
+    field.hidden = category !== "laptop";
   });
 }
 
@@ -199,6 +207,8 @@ function startEditingProduct(productId) {
   form.querySelector('input[name="display"]').value = product.display || "";
   const warrantyInput = form.querySelector('input[name="warranty"]');
   if (warrantyInput) warrantyInput.value = product.warranty ?? "";
+  const priceInput = form.querySelector('input[name="price"]');
+  if (priceInput) priceInput.value = product.price || "";
   form.querySelector('textarea[name="description"]').value = product.description || "";
   const imagesTextarea = form.querySelector('textarea[name="images"]');
   imagesTextarea.value = (product.images || []).join("\n");
@@ -298,6 +308,7 @@ function renderCatalog() {
       const warrantyLabel = product.warranty
         ? `${product.warranty} yr${product.warranty > 1 ? "s" : ""} warranty`
         : "";
+      const priceLabel = product.price ? `Price: ${Number(product.price).toLocaleString()}` : "";
       const typeLabel = CATEGORY_LABELS[product.type] || "Product";
       const row = document.createElement("tr");
       row.innerHTML = `
@@ -305,6 +316,7 @@ function renderCatalog() {
         <strong>${product.title}</strong>
         <div class="field-hint">${company ? company.name : "—"}</div>
         ${warrantyLabel ? `<div class="field-hint">${warrantyLabel}</div>` : ""}
+        ${priceLabel ? `<div class="field-hint">${priceLabel}</div>` : ""}
       </td>
       <td>${typeLabel}</td>
       <td>
@@ -584,6 +596,11 @@ async function handleProductSubmit(event) {
     payload.warranty = Number(payload.warranty);
   } else {
     payload.warranty = 0;
+  }
+  if (payload.price !== undefined && payload.price !== "") {
+    payload.price = Number(payload.price);
+  } else {
+    payload.price = 0;
   }
   payload.images = parseImageList(payload.images);
   if (payload.category !== "laptop") {

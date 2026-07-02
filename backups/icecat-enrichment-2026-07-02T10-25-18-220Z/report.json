@@ -1,0 +1,67 @@
+[
+  {
+    "id": "dda414fe-56ea-4633-a990-931e51d81a61",
+    "title": "AMD®/Processor/Ryzen™ 5  3400G TRAY",
+    "status": "web-dry-run",
+    "query": "AMD Ryzen 5 3400G cpu specifications",
+    "specCount": 6,
+    "sources": [
+      {
+        "title": "AMD Ryzen 5 3400G - Benchmarks, Specifications, User Reviews & CPU ...",
+        "url": "https://www.cpu-monkey.com/en/cpu-amd_ryzen_5_3400g"
+      },
+      {
+        "title": "AMD Ryzen 5 3400G Specs | TechPowerUp CPU Database",
+        "url": "https://www.techpowerup.com/cpu-specs/ryzen-5-3400g.c2204"
+      },
+      {
+        "title": "AMD Ryzen 5 3400G - Benchmark, Test and Specs",
+        "url": "https://cpu-benchmark.org/cpu/amd-ryzen-5-3400g/"
+      },
+      {
+        "title": "AMD Ryzen 5 3400G Specs | TechSpot",
+        "url": "https://www.techspot.com/specs/cpu/206496-amd-ryzen-5-3400g.html"
+      }
+    ]
+  },
+  {
+    "id": "09852131-9606-41e2-be87-ca6ebd9f6897",
+    "title": "AMD®/Processor/Ryzen™ 5 3400G BOX",
+    "status": "web-dry-run",
+    "query": "AMD Ryzen 5 3400G cpu specifications",
+    "specCount": 6,
+    "sources": [
+      {
+        "title": "AMD Ryzen 5 3400G - Benchmarks, Specifications, User Reviews & CPU ...",
+        "url": "https://www.cpu-monkey.com/en/cpu-amd_ryzen_5_3400g"
+      },
+      {
+        "title": "AMD Ryzen 5 3400G Specs | TechPowerUp CPU Database",
+        "url": "https://www.techpowerup.com/cpu-specs/ryzen-5-3400g.c2204"
+      },
+      {
+        "title": "AMD Ryzen 5 3400G - Benchmark, Test and Specs",
+        "url": "https://cpu-benchmark.org/cpu/amd-ryzen-5-3400g/"
+      },
+      {
+        "title": "AMD Ryzen 5 3400G Specs | TechSpot",
+        "url": "https://www.techspot.com/specs/cpu/206496-amd-ryzen-5-3400g.html"
+      }
+    ]
+  },
+  {
+    "id": "86c2a325-dcd1-4115-b7b5-dc7dddc6e932",
+    "title": "AMD®/Processor/Ryzen™ 5 7600/TRAY+FAN",
+    "status": "miss"
+  },
+  {
+    "id": "05cb2e5d-1b88-42c7-83f7-1907a07fe7b3",
+    "title": "AMD®/Processor/Ryzen™ 5 8400F MPK/TRAY+FAN",
+    "status": "miss"
+  },
+  {
+    "id": "c1ae65ad-94de-431e-a679-60a0c6c050e3",
+    "title": "AMD®/Processor/Ryzen™ 5 9500F TRAY",
+    "status": "miss"
+  }
+]

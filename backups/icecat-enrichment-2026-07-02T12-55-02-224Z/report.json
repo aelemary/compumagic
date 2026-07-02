@@ -1,0 +1,54 @@
+[
+  {
+    "id": "82c80003-c654-4e5e-88da-ff00c3cd632e",
+    "title": "LAP ASUS FX607VJB-RL165W C5-210H/16G/512G/RTX 3050 6G/16`/W11",
+    "status": "web-updated",
+    "query": "direct-source",
+    "specCount": 22,
+    "sources": [
+      {
+        "title": "ASUS FX607VJB official tech specs",
+        "url": "https://www.asus.com/laptops/for-gaming/tuf-gaming/asus-tuf-gaming-f16-2024/techspec/"
+      }
+    ]
+  },
+  {
+    "id": "d60a8542-7a5f-431f-a821-6fbabd6f9bfe",
+    "title": "LAP ASUS FX607VJB-RL805W C5-210H/8G/512G/RTX 3050 6G/16`/W11",
+    "status": "web-updated",
+    "query": "direct-source",
+    "specCount": 22,
+    "sources": [
+      {
+        "title": "ASUS FX607VJB official tech specs",
+        "url": "https://www.asus.com/laptops/for-gaming/tuf-gaming/asus-tuf-gaming-f16-2024/techspec/"
+      }
+    ]
+  },
+  {
+    "id": "d95a1fee-4603-425c-8a77-afec6203df48",
+    "title": "LAP ASUS FX607VU-RL121 i7-13620H 16G/1T/RTX 4050 6G 16\" DOS",
+    "status": "web-updated",
+    "query": "direct-source",
+    "specCount": 22,
+    "sources": [
+      {
+        "title": "ASUS FX607VU official tech specs",
+        "url": "https://www.asus.com/laptops/for-gaming/tuf-gaming/asus-tuf-gaming-f16-2024/techspec/"
+      }
+    ]
+  },
+  {
+    "id": "e91559fc-3892-4420-bd0a-31c103c68600",
+    "title": "LAP ASUS FX607VU-RL167W C7 240H 16G-512G-RTX 4050 6G-16\"-W11",
+    "status": "web-updated",
+    "query": "direct-source",
+    "specCount": 22,
+    "sources": [
+      {
+        "title": "ASUS FX607VU official tech specs",
+        "url": "https://www.asus.com/laptops/for-gaming/tuf-gaming/asus-tuf-gaming-f16-2024/techspec/"
+      }
+    ]
+  }
+]

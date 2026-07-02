@@ -1,0 +1,50 @@
+{
+  "createdAt": "2026-07-02T08:44:00.175Z",
+  "supabaseUrl": "https://nlooktzgammeqjejrjgk.supabase.co",
+  "tables": {
+    "users": {
+      "skipped": false,
+      "rows": 3
+    },
+    "brands": {
+      "skipped": false,
+      "rows": 13
+    },
+    "products": {
+      "skipped": false,
+      "rows": 39
+    },
+    "contact": {
+      "skipped": false,
+      "rows": 1
+    },
+    "laptops": {
+      "skipped": true,
+      "rows": 0
+    },
+    "gpus": {
+      "skipped": true,
+      "rows": 0
+    },
+    "cpus": {
+      "skipped": true,
+      "rows": 0
+    },
+    "hdds": {
+      "skipped": true,
+      "rows": 0
+    },
+    "motherboards": {
+      "skipped": true,
+      "rows": 0
+    },
+    "orders": {
+      "skipped": false,
+      "rows": 1
+    },
+    "order_items": {
+      "skipped": false,
+      "rows": 1
+    }
+  }
+}

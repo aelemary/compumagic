@@ -136,11 +136,11 @@ body.nav-open #site-nav {
 main {
   max-width: 680px;
   margin: 0 auto;
-  padding: 1.5rem 1.25rem 3rem;
+  padding: 1rem 1.25rem 3rem;
 }
 
 .top-banner {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 .top-banner video {
@@ -266,6 +266,15 @@ main {
   margin-top: 1rem;
 }
 
+.mobile-search {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 1.5rem;
+}
+
 .filters-form label {
   display: grid;
   gap: 0.4rem;
@@ -291,9 +300,54 @@ main {
   gap: 0.7rem;
 }
 
+.filter-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.7rem;
+  min-width: 0;
+}
+
+.filter-pair label {
+  min-width: 0;
+}
+
+.filter-pair input {
+  width: 100%;
+  min-width: 0;
+}
+
 .catalog-stack {
   display: grid;
   gap: 1.2rem;
+}
+
+.category-tiles {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1.2rem;
+}
+
+.category-tile {
+  min-height: 82px;
+  border-radius: 8px;
+  border: 1px solid rgba(15, 61, 122, 0.16);
+  background: linear-gradient(135deg, #ffffff, #eef4fb);
+  padding: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.category-tile span {
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.category-tile strong {
+  color: var(--accent-strong);
+  font-family: "IBM Plex Mono", "Courier New", monospace;
+  font-size: 1.25rem;
 }
 
 .empty-state {
@@ -318,6 +372,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  gap: 0.75rem;
   color: var(--muted);
   font-size: 0.8rem;
 }
@@ -328,14 +383,56 @@ main {
   color: var(--ink);
 }
 
+.catalog-heading a,
+.back-link {
+  color: var(--accent-strong);
+  font-weight: 700;
+}
+
+.rail-heading-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.rail-button {
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 50%;
+  border: 1px solid rgba(15, 61, 122, 0.25);
+  background: #ffffff;
+  color: var(--accent-strong);
+  font-size: 1.15rem;
+  line-height: 1;
+  font-weight: 700;
+  cursor: pointer;
+}
+
 .mobile-list {
   display: grid;
   gap: 0.9rem;
 }
 
+.mobile-rail {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(260px, 86vw);
+  gap: 0.85rem;
+  overflow-x: auto;
+  padding-bottom: 0.8rem;
+  scroll-snap-type: x proximity;
+  -webkit-overflow-scrolling: touch;
+}
+
+.mobile-rail .mobile-card {
+  scroll-snap-align: start;
+}
+
 .mobile-card {
   background: #ffffff;
-  border-radius: var(--radius-sm);
+  border-radius: 8px;
   border: 1px solid rgba(15, 61, 122, 0.16);
   padding: 0.75rem;
   display: grid;

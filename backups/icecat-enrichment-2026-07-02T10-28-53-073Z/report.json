@@ -1,0 +1,42 @@
+[
+  {
+    "id": "02ae0344-cd6e-45af-97a2-ad155268dfe5",
+    "title": "LAP ALIENNWARE 16X-AC16251 U9 275HX-1T-32G-RTX5070 8G-16",
+    "status": "web-dry-run",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "23427724-839d-4dcf-8e69-b3aad8396238",
+    "title": "LAP ALIENWARE 16-AC16250 C7 240H-16G-1T-RTX 4050 6G-16",
+    "status": "web-dry-run",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "792e05c1-6767-4152-a0ce-470a172c73c5",
+    "title": "LAP ALIENWARE 16-AC16250- C7 240H-32G-1T-RTX5060 8G-16",
+    "status": "web-dry-run",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "baf031a7-c94d-477a-adef-90e7b3da603a",
+    "title": "LAP ASUS  FA506NCQ-HN167W  R7 170 16G/512G/RTX 3050 4G 15.6\" W11",
+    "status": "web-dry-run",
+    "query": "",
+    "specCount": 4,
+    "sources": []
+  },
+  {
+    "id": "d0be3204-187f-4997-adc3-252a6c2abeca",
+    "title": "LAP ASUS FA401KM-RG014W R AI 7 350/16G/1T/RTX 5060 8G/14`/W11",
+    "status": "web-dry-run",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  }
+]

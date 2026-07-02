@@ -57,56 +57,23 @@
         </video>
       </section>
 
-      <section class="mobile-hero">
-        <span class="eyebrow">Structured Catalog</span>
-        <h1>Enterprise hardware, documented for real deployments.</h1>
-        <p>
-          Browse verified configurations, manufacturer context, and service notes. Every listing is
-          curated for professional evaluation.
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#catalog">Browse Catalog</a>
-          <a class="btn btn-outline" href="/m/contact.html">Contact Operations</a>
-        </div>
-      </section>
+      <form id="mobile-search" class="filters-form mobile-search" role="search">
+        <label>
+          Search catalog
+          <input type="search" name="search" placeholder="Search products, brands, or specs" />
+        </label>
+        <button type="submit" class="btn btn-primary">Search</button>
+      </form>
 
       <section class="panel" id="catalog">
         <h2 class="section-title">Product Catalog</h2>
         <p class="section-subtitle">
-          Search by keyword, filter by category, or narrow by manufacturer.
+          Browse categories, then swipe across each row for more products.
         </p>
-        <div id="category-jumps" class="category-jumps"></div>
-        <form id="filter-form" class="filters-form">
-          <label>
-            Keywords
-            <input type="search" id="search" name="search" placeholder="Search by title or specs" />
-          </label>
-          <label>
-            Category
-            <select id="filter-category" name="category">
-              <option value="">All categories</option>
-              <option value="laptop">Laptops</option>
-              <option value="gpu">Graphics</option>
-              <option value="cpu">Processors</option>
-              <option value="hdd">Storage</option>
-              <option value="motherboard">Motherboards</option>
-            </select>
-          </label>
-          <label>
-            Manufacturer
-            <select id="filter-company" name="companyId">
-              <option value="">Any manufacturer</option>
-            </select>
-          </label>
-          <div class="filter-actions">
-            <button type="submit" class="btn btn-primary">Apply Filters</button>
-            <button type="button" class="btn btn-outline" id="filter-reset">Reset</button>
-          </div>
-        </form>
-        <div id="inventory-status" class="order-status"></div>
+        <div id="category-tiles" class="category-tiles"></div>
         <div id="results" class="catalog-stack"></div>
         <div id="empty" class="empty-state" hidden>
-          Nothing matched that search. Try a different keyword or check back once the catalog updates.
+          Catalog products are not available yet. Check back once the import is complete.
         </div>
       </section>
     </main>
@@ -118,6 +85,7 @@
     </footer>
 
     <script src="/auth.js" defer></script>
+    <script src="/catalog-config.js" defer></script>
     <script src="/nav.js" defer></script>
     <script src="/m/desktop-link.js" defer></script>
     <script src="/m/main.js" defer></script>

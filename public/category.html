@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Compu Magic | Category Catalog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/mobile-redirect.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>
+            <span class="brand-name">Compu Magic</span>
+            <span class="brand-tag">Enterprise Hardware</span>
+          </span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          Menu
+        </button>
+        <nav id="site-nav">
+          <a href="/index.html">Catalog</a>
+          <a href="/contact.html">Contact</a>
+          <a href="/admin.html" data-requires-role="admin">Admin</a>
+          <span id="nav-user" class="nav-user" hidden></span>
+          <a href="/login.html" id="nav-auth">Login</a>
+        </nav>
+        <form id="header-search" class="header-search" role="search">
+          <input type="search" name="search" placeholder="Search catalog" aria-label="Search catalog" />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </header>
+
+    <main>
+      <section class="panel category-page-head">
+        <a class="back-link" href="/index.html">Back to catalog</a>
+        <h1 class="section-title" id="category-title">Catalog</h1>
+        <p class="section-subtitle" id="category-subtitle">
+          Refine this category by keyword, brand, price, and visible specification text.
+        </p>
+      </section>
+
+      <section class="panel category-filter-panel">
+          <h2 class="section-title">Filters</h2>
+          <form id="category-filter-form" class="filters-form">
+            <label>
+              Keywords
+              <input type="search" id="filter-search" name="search" placeholder="Title, brand, or specs" />
+            </label>
+            <label>
+              Category
+              <select id="filter-category" name="category">
+                <option value="">All categories</option>
+              </select>
+            </label>
+            <label>
+              Manufacturer
+              <select id="filter-company" name="companyId">
+                <option value="">Any manufacturer</option>
+              </select>
+            </label>
+            <div class="filter-pair">
+              <label>
+                Min price
+                <input type="number" id="filter-price-min" name="priceMin" min="0" step="1" placeholder="0" />
+              </label>
+              <label>
+                Max price
+                <input type="number" id="filter-price-max" name="priceMax" min="0" step="1" placeholder="Any" />
+              </label>
+            </div>
+            <label>
+              CPU
+              <input type="text" name="cpu" placeholder="Intel, Ryzen, Ultra..." />
+            </label>
+            <label>
+              GPU
+              <input type="text" name="gpu" placeholder="RTX, Radeon, Intel..." />
+            </label>
+            <label>
+              RAM / Memory
+              <input type="text" name="ram" placeholder="16GB, DDR5..." />
+            </label>
+            <label>
+              Storage / Capacity
+              <input type="text" name="storage" placeholder="1TB, NVMe, SATA..." />
+            </label>
+            <div class="filter-actions">
+              <button type="submit" class="btn btn-primary">Apply Filters</button>
+              <button type="button" class="btn btn-outline" id="filter-reset">Reset</button>
+            </div>
+          </form>
+          <div id="category-status" class="order-status"></div>
+      </section>
+
+      <section class="panel category-results-panel">
+          <div class="catalog-heading">
+            <h2 id="result-count">Products</h2>
+            <span id="result-context"></span>
+          </div>
+          <div id="category-results" class="catalog-grid category-results-grid"></div>
+          <div id="category-empty" class="empty-state" hidden>
+            Nothing matched those filters.
+          </div>
+      </section>
+    </main>
+
+    <footer>
+      Compu Magic &copy; <span id="year"></span>. Professional systems catalog.
+      <br />
+      For tailored requirements, connect via the contact page.
+    </footer>
+
+    <script src="/auth.js" defer></script>
+    <script src="/catalog-config.js" defer></script>
+    <script src="/category.js" defer></script>
+    <script src="/nav.js" defer></script>
+  </body>
+</html>

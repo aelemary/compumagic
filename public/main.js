@@ -3,16 +3,8 @@ const state = {
   catalog: [],
   companies: [],
 };
-let inventoryStatusEl = null;
-let statusTimer = null;
-const CATEGORY_LABELS = {
-  laptop: "Laptops",
-  gpu: "Graphics",
-  cpu: "Processors",
-  hdd: "Storage",
-  motherboard: "Motherboards",
-};
-const CATEGORY_ORDER = Object.keys(CATEGORY_LABELS);
+
+const CATEGORY_ORDER = (window.CATALOG_CATEGORIES || []).map((category) => category.type);
 
 async function fetchJSON(url, options = {}) {
   const res = await fetch(url, { credentials: "include", ...options });
@@ -32,253 +24,165 @@ async function fetchJSON(url, options = {}) {
   return res.json();
 }
 
+function escapeHtml(value = "") {
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
 function setYear() {
   const yearEl = document.getElementById("year");
-  if (yearEl) {
-    yearEl.textContent = new Date().getFullYear();
-  }
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
 }
 
-function showInventoryStatus(message, type = "success") {
-  if (!inventoryStatusEl) return;
-  if (statusTimer) {
-    clearTimeout(statusTimer);
-  }
-  inventoryStatusEl.innerHTML = `<div class="toast ${type === "error" ? "error" : ""}">${message}</div>`;
-  statusTimer = window.setTimeout(() => {
-    inventoryStatusEl.innerHTML = "";
-  }, 3000);
-}
-
-function populateCompanyFilter(companies = []) {
-  const select = document.getElementById("filter-company");
-  if (!select) return;
-  const current = select.value;
-  select.innerHTML = `<option value="">Any manufacturer</option>`;
-  companies.forEach((company) => {
-    const option = document.createElement("option");
-    option.value = company.id;
-    option.textContent = company.name;
-    select.appendChild(option);
+function setupHeaderSearch() {
+  const form = document.getElementById("header-search");
+  if (!form) return;
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const search = new FormData(form).get("search") || "";
+    const url = new URL("/category.html", window.location.origin);
+    if (String(search).trim()) url.searchParams.set("search", String(search).trim());
+    window.location.href = url.toString();
   });
-  if (current && companies.find((company) => company.id === current)) {
-    select.value = current;
-  }
 }
 
-function createProductCard(product) {
-  const card = document.createElement("article");
-  card.className = "product-card";
-  const typeLabel = CATEGORY_LABELS[product.type] || "Products";
-  const brandLabel = product.company?.name || "Unassigned";
-  const image =
-    product.images?.[0] || `https://placehold.co/600x450?text=${encodeURIComponent(typeLabel)}`;
-  const summary = product.shortName || product.description || "—";
-  const specLeft =
-    product.type === "laptop"
-      ? `GPU: ${product.gpu || "n/a"}`
-      : `Details: ${summary}`;
-  const specRight =
-    product.type === "laptop"
-      ? `CPU: ${product.cpu || "n/a"}`
-      : `Warranty: ${product.warranty ? `${product.warranty} yr` : "—"}`;
-  card.innerHTML = `
-    <div class="product-media">
-      <img src="${image}" alt="${product.title}" loading="lazy" />
-    </div>
-    <div class="product-body">
-      <span class="badge">${brandLabel} • ${typeLabel}</span>
-      <h3 class="product-title">${product.title}</h3>
-      <p class="product-summary">${summary}</p>
-      <div class="product-meta">
-        <div class="meta-row"><span>${specLeft}</span><span>${specRight}</span></div>
-      </div>
-    </div>
-  `;
-  const detailUrl = `/product.html?id=${encodeURIComponent(product.id)}`;
-  card.dataset.href = detailUrl;
-  card.addEventListener("click", () => {
-    window.location.href = detailUrl;
-  });
-  return card;
-}
-
-function toggleEmptyState(hasResults) {
-  const empty = document.getElementById("empty");
-  if (!empty) return;
-  empty.hidden = hasResults;
-}
-
-function updateStats() {
-  const brandEl = document.getElementById("stat-brands");
-  const productEl = document.getElementById("stat-products");
-  const categoryEl = document.getElementById("stat-categories");
-  const categories = new Set(state.catalog.map((item) => item.type).filter(Boolean));
-  if (brandEl) brandEl.textContent = state.companies.length;
-  if (productEl) productEl.textContent = state.catalog.length;
-  if (categoryEl) categoryEl.textContent = categories.size;
-}
-
-function renderCategoryJumps(products) {
-  const container = document.getElementById("category-jumps");
-  if (!container) return;
-  container.innerHTML = "";
-  if (!products.length) {
-    container.hidden = true;
-    return;
-  }
-
-  const available = new Set(products.map((item) => item.type).filter(Boolean));
-  const makeLink = (label, href, active = false) => {
-    const link = document.createElement("a");
-    link.href = href;
-    link.textContent = label;
-    if (active) link.classList.add("active");
-    return link;
-  };
-
-  container.appendChild(makeLink("All", "#catalog", true));
-  CATEGORY_ORDER.forEach((type) => {
-    if (!available.has(type)) return;
-    container.appendChild(makeLink(CATEGORY_LABELS[type], `#category-${type}`));
-  });
-
-  const hasOther = products.some((item) => item.type && !CATEGORY_LABELS[item.type]);
-  if (hasOther) {
-    container.appendChild(makeLink("Other", "#category-other"));
-  }
-
-  const links = Array.from(container.querySelectorAll("a"));
-  links.forEach((link) => {
-    link.addEventListener("click", () => {
-      links.forEach((item) => item.classList.remove("active"));
-      link.classList.add("active");
-    });
-  });
-
-  container.hidden = false;
-}
-
-async function loadInventory(params = {}) {
-  const url = new URL(`${API_BASE}/products`, window.location.origin);
-  Object.entries(params).forEach(([key, value]) => {
-    if (value !== "" && value != null) {
-      url.searchParams.set(key, value);
-    }
-  });
-  return fetchJSON(url.toString());
+async function loadInventory() {
+  return fetchJSON(`${API_BASE}/products`);
 }
 
 async function loadCompanies() {
   return fetchJSON(`${API_BASE}/companies`);
 }
 
-function renderProducts(products) {
-  const results = document.getElementById("results");
-  results.innerHTML = "";
-  if (!products.length) {
-    toggleEmptyState(false);
-    return;
-  }
-  toggleEmptyState(true);
-  const fragment = document.createDocumentFragment();
-  const grouped = products.reduce((acc, product) => {
-    const type = product.type || "other";
+function productImage(product) {
+  const category = window.getCatalogCategory(product.type);
+  const image =
+    product.images?.[0] ||
+    window.catalogPlaceholder(category.label);
+  return window.catalogImageUrl(image, { width: 360, height: 270, quality: 62 });
+}
+
+function createProductCard(product) {
+  const card = document.createElement("article");
+  card.className = "product-card rail-card";
+  const category = window.getCatalogCategory(product.type);
+  const brandLabel = product.company?.name || "Unassigned";
+  const summary = window.catalogSummary(product);
+  const image = productImage(product);
+  card.innerHTML = `
+    <div class="product-media">
+      <img src="${escapeHtml(image)}" alt="${escapeHtml(product.title)}" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
+    </div>
+    <div class="product-body">
+      <span class="badge">${escapeHtml(brandLabel)} • ${escapeHtml(category.singular)}</span>
+      <h3 class="product-title">${escapeHtml(product.title)}</h3>
+      ${summary ? `<p class="product-summary">${escapeHtml(summary)}</p>` : ""}
+    </div>
+  `;
+  card.addEventListener("click", () => {
+    window.location.href = `/product.html?id=${encodeURIComponent(product.id)}`;
+  });
+  return card;
+}
+
+function groupedProducts(products) {
+  return products.reduce((acc, product) => {
+    const type = window.getCatalogCategory(product.type).type || "other";
     if (!acc[type]) acc[type] = [];
     acc[type].push(product);
     return acc;
   }, {});
-  Object.keys(CATEGORY_LABELS).forEach((type) => {
+}
+
+function renderCategoryTiles(products) {
+  const container = document.getElementById("category-tiles");
+  if (!container) return;
+  const grouped = groupedProducts(products);
+  container.innerHTML = "";
+  const fragment = document.createDocumentFragment();
+  CATEGORY_ORDER.forEach((type) => {
     const items = grouped[type] || [];
     if (!items.length) return;
+    const category = window.getCatalogCategory(type);
+    const tile = document.createElement("a");
+    tile.className = "category-tile";
+    tile.href = `/category.html?type=${encodeURIComponent(type)}`;
+    tile.innerHTML = `
+      <span>${escapeHtml(category.label)}</span>
+      <strong>${items.length}</strong>
+    `;
+    fragment.appendChild(tile);
+  });
+  container.appendChild(fragment);
+}
+
+function renderProductRails(products) {
+  const results = document.getElementById("results");
+  const empty = document.getElementById("empty");
+  if (!results) return;
+  results.innerHTML = "";
+  if (!products.length) {
+    if (empty) empty.hidden = false;
+    return;
+  }
+  if (empty) empty.hidden = true;
+  const grouped = groupedProducts(products);
+  const fragment = document.createDocumentFragment();
+  CATEGORY_ORDER.forEach((type) => {
+    const items = grouped[type] || [];
+    if (!items.length) return;
+    const category = window.getCatalogCategory(type);
     const section = document.createElement("section");
-    section.className = "catalog-section";
-    section.id = `category-${type}`;
+    section.className = "catalog-section product-rail-section";
     section.innerHTML = `
       <div class="catalog-heading">
-        <h3>${CATEGORY_LABELS[type]}</h3>
-        <span>${items.length} item${items.length > 1 ? "s" : ""}</span>
+        <h3>${escapeHtml(category.label)}</h3>
+        <div class="rail-heading-actions">
+          <button class="rail-button" type="button" data-rail-prev aria-label="Scroll ${escapeHtml(category.label)} left">‹</button>
+          <button class="rail-button" type="button" data-rail-next aria-label="Scroll ${escapeHtml(category.label)} right">›</button>
+          <a href="/category.html?type=${encodeURIComponent(type)}">View all ${items.length}</a>
+        </div>
       </div>
-      <div class="catalog-grid"></div>
+      <div class="product-rail"></div>
     `;
-    const grid = section.querySelector(".catalog-grid");
-    items.forEach((product) => grid.appendChild(createProductCard(product)));
+    const rail = section.querySelector(".product-rail");
+    items.slice(0, 16).forEach((product) => rail.appendChild(createProductCard(product)));
+    const prev = section.querySelector("[data-rail-prev]");
+    const next = section.querySelector("[data-rail-next]");
+    const scrollRail = (direction) => {
+      rail.scrollBy({
+        left: direction * Math.max(rail.clientWidth * 0.85, 260),
+        behavior: "smooth",
+      });
+    };
+    if (prev) prev.addEventListener("click", () => scrollRail(-1));
+    if (next) next.addEventListener("click", () => scrollRail(1));
     fragment.appendChild(section);
   });
-  const otherItems = Object.entries(grouped)
-    .filter(([type]) => !CATEGORY_LABELS[type])
-    .flatMap(([, items]) => items);
-  if (otherItems.length) {
-    const section = document.createElement("section");
-    section.className = "catalog-section";
-    section.id = "category-other";
-    section.innerHTML = `
-      <div class="catalog-heading">
-        <h3>Other Products</h3>
-        <span>${otherItems.length} item${otherItems.length > 1 ? "s" : ""}</span>
-      </div>
-      <div class="catalog-grid"></div>
-    `;
-    const grid = section.querySelector(".catalog-grid");
-    otherItems.forEach((product) => grid.appendChild(createProductCard(product)));
-    fragment.appendChild(section);
-  }
   results.appendChild(fragment);
 }
 
 async function init() {
   setYear();
-  inventoryStatusEl = document.getElementById("inventory-status");
+  setupHeaderSearch();
   try {
-    const inventoryPromise = loadInventory();
-    const companiesPromise = loadCompanies().catch(() => []);
-    const [inventory, companies] = await Promise.all([inventoryPromise, companiesPromise]);
-    state.companies = companies || [];
+    const [inventory, companies] = await Promise.all([
+      loadInventory(),
+      loadCompanies().catch(() => []),
+    ]);
     state.catalog = inventory || [];
-    populateCompanyFilter(state.companies);
-    renderProducts(state.catalog);
-    renderCategoryJumps(state.catalog);
-    updateStats();
-
-    const form = document.getElementById("filter-form");
-    const resetButton = document.getElementById("filter-reset");
-    if (form) {
-      form.addEventListener("submit", async (event) => {
-        event.preventDefault();
-        const formData = new FormData(form);
-        const params = Object.fromEntries(formData.entries());
-        showInventoryStatus("Refreshing catalog…");
-        const results = await loadInventory(params);
-        state.catalog = results;
-        renderProducts(results);
-        renderCategoryJumps(results);
-        updateStats();
-        if (!results.length) {
-          showInventoryStatus("No products matched that search.", "error");
-        } else {
-          showInventoryStatus("Catalog updated.");
-        }
-      });
-    }
-    if (resetButton && form) {
-      resetButton.addEventListener("click", async () => {
-        form.reset();
-        populateCompanyFilter(state.companies);
-        showInventoryStatus("Resetting filters…");
-        const results = await loadInventory();
-        state.catalog = results;
-        renderProducts(results);
-        renderCategoryJumps(results);
-        updateStats();
-        showInventoryStatus("Showing full catalog.");
-      });
-    }
+    state.companies = companies || [];
+    renderCategoryTiles(state.catalog);
+    renderProductRails(state.catalog);
   } catch (error) {
     console.error(error);
-    showInventoryStatus("Could not load the catalog right now.", "error");
     const results = document.getElementById("results");
-    results.innerHTML = `<div class="toast error">Catalog data isn't available yet. Please try again shortly.</div>`;
-    toggleEmptyState(true);
+    if (results) {
+      results.innerHTML = `<div class="toast error">Catalog data isn't available yet. Please try again shortly.</div>`;
+    }
   }
 }
 

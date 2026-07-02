@@ -1,0 +1,41 @@
+[
+  {
+    "id": "586dec03-e476-4541-8d00-7db108a35a6d",
+    "title": "VGA ASUS DUAL GEFORCE  RTX 3050 6G OC",
+    "status": "web-dry-run",
+    "query": "direct-source",
+    "specCount": 2,
+    "sources": [
+      {
+        "title": "ASUS dual-rtx3050 tech specs",
+        "url": "https://www.asus.com/motherboards-components/graphics-cards/dual/dual-rtx3050/techspec/"
+      }
+    ]
+  },
+  {
+    "id": "02228b76-21ea-4323-87bc-b30f3676648b",
+    "title": "VGA ASUS Dual GeForce RTX™ 3050 V2 OC Edition 8GB GDDR6",
+    "status": "web-dry-run",
+    "query": "direct-source",
+    "specCount": 5,
+    "sources": [
+      {
+        "title": "ASUS dual-rtx3050-o8g tech specs",
+        "url": "https://www.asus.com/motherboards-components/graphics-cards/dual/dual-rtx3050-o8g/techspec/"
+      }
+    ]
+  },
+  {
+    "id": "f6d50bad-5a0b-438c-b2eb-2fc91a4f6311",
+    "title": "VGA ASUS Dual GeForce RTX™ 5050 8GB GDDR6 OC Edition",
+    "status": "web-dry-run",
+    "query": "direct-source",
+    "specCount": 5,
+    "sources": [
+      {
+        "title": "ASUS dual-rtx5050-o8g tech specs",
+        "url": "https://www.asus.com/motherboards-components/graphics-cards/dual/dual-rtx5050-o8g/techspec/"
+      }
+    ]
+  }
+]

@@ -1,0 +1,842 @@
+[
+  {
+    "id": "77c7e7d4-a1ba-4267-b359-5ce40e847eff",
+    "type": "laptop",
+    "created_at": "2025-12-24T13:26:33.901814+00:00",
+    "brand_id": "16eda6a9-637b-4478-af9b-8c9324e140a4",
+    "title": "ASUS ROG Strix G16 G615LR-RV052W Gaming Laptop – Intel Core Ultra 7 255HX, RTX 5070Ti 12GB, 32GB RAM, 1TB SSD, 16” WUXGA-WIN11",
+    "short_name": "ASUS ROG Strix G16 G615LR-RV052W",
+    "price": 106999,
+    "description": "",
+    "images": [
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1766582791716-asus-rog-strix-g16-g615lr-rv052w-geforce-rtx-5070-ti-ultra-7-255hx-32gb-1tb-ssd-.webp"
+    ],
+    "warranty": 1,
+    "specs_raw": {
+      "cpu": "Intel Core Ultra 7 255HX",
+      "gpu": "NVIDIA RTX 5070Ti 12GB ",
+      "ram": "32GB DDR5",
+      "manual": {
+        "Battery & Power": "90WHrs Battery; 280W Adapter (Fast Charge 50% in 30 mins)"
+      },
+      "display": "16 Inch FHD165Hz",
+      "storage": "1TB SSD"
+    }
+  },
+  {
+    "id": "5406590a-8649-4c0d-9814-dcea29b7d73e",
+    "type": "laptop",
+    "created_at": "2026-01-03T11:02:57.895379+00:00",
+    "brand_id": "97db013c-6fdb-4091-ad31-307b05697455",
+    "title": "Lenovo Legion pro 5 15IRX10 83NN001SED Intel Core i7 14650HX - NVIDIA RTX 5050 8GB - 16GB DDR5-5600Mhz - 512GB SSD M.2 - 16\" WQXGA IPS 100% DCI-P3, 240Hz - Windows 11",
+    "short_name": "Lenovo Legion pro 5 15IRX10 83NN001SED",
+    "price": 65500,
+    "description": "",
+    "images": [
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1767438143930-lenovo-legion-5-83f00045ed-10.webp",
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1767438148477-lenovo-legion-5-83f00045ed.webp"
+    ],
+    "warranty": 2,
+    "specs_raw": {
+      "cpu": "Intel Core i7-14650HX",
+      "gpu": "NVIDIA RTX 5050 8GB",
+      "ram": "16GB DDR5-5600Mhz",
+      "display": "16\" WQXGA IPS 100% DCI-P3, 240Hz",
+      "storage": "512GB SSD M.2 "
+    }
+  },
+  {
+    "id": "0037660d-80e8-49fc-bbe8-4a7fdc9282d7",
+    "type": "laptop",
+    "created_at": "2025-12-26T15:01:14.321814+00:00",
+    "brand_id": "b6beae54-1136-489d-9945-61e2d0104707",
+    "title": "LENOVO LOQ 15IRX9 83DV008QED - Intel® Core™ i7-13650HX - NVIDIA® GeForce RTX™ 3050 6GB - 16GB SO-DIMM DDR5-4800 - 512GB SSD M.2 - 15.6 FHD IPS 100% sRGB 144Hz -2 years Warranty",
+    "short_name": "LENOVO LOQ 15IRX9 I7-13TH RTX 3050 6GB 2Y",
+    "price": 41500,
+    "description": "",
+    "images": [
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1766761267603-lenovo-loq-15iax9-gaming-laptop-intel-core-i5-12450hx-24gb-ddr5-512gb-ssd-nvidia.jpg"
+    ],
+    "warranty": 2,
+    "specs_raw": {
+      "cpu": "Intel Core i7-13650HX ",
+      "gpu": "NVIDIA RTX 3050 6GB",
+      "ram": "16GB DDR5",
+      "display": "15.6 FHD IPS 100% sRGB 144Hz",
+      "storage": "512GB SSD"
+    }
+  },
+  {
+    "id": "c190392a-610e-4530-a596-7464ab372eb7",
+    "type": "gpu",
+    "created_at": "2026-02-07T10:59:06.634812+00:00",
+    "brand_id": "2656755b-da18-4b93-824c-452cafe41166",
+    "title": "VGA ASUS DUAL RTX 5060TI 16GB GDDR7 OC EDITION WHITE",
+    "short_name": "ASUS DUAL RTX 5060TI 16GB",
+    "price": 33000,
+    "description": "",
+    "images": [
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1770461933050-white-5060ti-dual-16gb.webp"
+    ],
+    "warranty": 3,
+    "specs_raw": {}
+  },
+  {
+    "id": "0fe433c1-2589-4d4f-a7c4-5a04d8dbdf4c",
+    "type": "gpu",
+    "created_at": "2026-02-07T11:03:48.254018+00:00",
+    "brand_id": "2656755b-da18-4b93-824c-452cafe41166",
+    "title": "VGA ASUS PRIME RTX 5070TI 16GB GDDR7 OC EDITION",
+    "short_name": "ASUS PRIME RTX 5070TI 16GB",
+    "price": 58500,
+    "description": "",
+    "images": [
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1770462222623-prime-5070ti.webp"
+    ],
+    "warranty": 3,
+    "specs_raw": {}
+  },
+  {
+    "id": "e4085641-f49a-4709-b7e1-07105899c567",
+    "type": "gpu",
+    "created_at": "2026-02-07T10:57:30.410868+00:00",
+    "brand_id": "2656755b-da18-4b93-824c-452cafe41166",
+    "title": "VGA ASUS PRIME RTX 5060TI 16GB GDDR7 OC EDITION",
+    "short_name": "ASUS PRIME RTX 5060TI 16GB",
+    "price": 34500,
+    "description": "",
+    "images": [
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1770461801322-prime-5060ti.webp"
+    ],
+    "warranty": 3,
+    "specs_raw": {}
+  },
+  {
+    "id": "60fcd713-8c53-468e-95b0-b4f2b08068a2",
+    "type": "laptop",
+    "created_at": "2025-12-21T04:43:12.011672+00:00",
+    "brand_id": "9208c3b7-de77-476b-a7fd-66e8cf640e0d",
+    "title": "HP Victus 15-fa2318TX Gaming Laptop Intel Core i7 13620H 512GB SSD 16GB Ram Nvidia GeForce RTX 3050 6GB 15.6\" Inch FHD - Mica Silver",
+    "short_name": "HP Victus 15-FA2318TX I7-13TH RTX 3050 6GB",
+    "price": 40500,
+    "description": "",
+    "images": [
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1766292166536-1763287937056.png",
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1766292184974-c08192359_c374b06c-1755-4ca6-bf03-3f940f9eac5a.png"
+    ],
+    "warranty": 1,
+    "specs_raw": {
+      "cpu": "Intel Core i7-13620H",
+      "gpu": "NVIDIA RTX 3050 6GB",
+      "ram": "16GB DDR5",
+      "display": "15.6\" Inch FHD",
+      "storage": "512GB SSD"
+    }
+  },
+  {
+    "id": "c0d0fa1e-e885-4ffe-bd1b-48ae59a00edc",
+    "type": "laptop",
+    "created_at": "2025-12-21T07:39:38.993098+00:00",
+    "brand_id": "b6beae54-1136-489d-9945-61e2d0104707",
+    "title": "Lenovo LOQ 15IRX9 83DV012HED Intel Core i5-13450HX - NVIDIA GeForce RTX 3050 6GB - 24GB DDR5 4800Mhz - 512GB SSD - 15.6 FHD IPS 144Hz 100%SRGB",
+    "short_name": "LENOVO LOQ 15IRX9 I5-13TH RTX 3050 6GB",
+    "price": 38000,
+    "description": "",
+    "images": [
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1766302763526-lenovo-loq-15iax9-gaming-laptop-intel-core-i5-12450hx-24gb-ddr5-512gb-ssd-nvidia.jpg",
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1766302776300-loq_15iax9e_ct1_01.png"
+    ],
+    "warranty": 1,
+    "specs_raw": {
+      "cpu": "Intel Core i5-13450HX ",
+      "gpu": "NVIDIA RTX 3050 6GB",
+      "ram": "24GB DDR5",
+      "display": "15.6 FHD IPS 144Hz 100%SRGB",
+      "storage": "512GB SSD"
+    }
+  },
+  {
+    "id": "7c661935-4453-42a2-82b0-bcb95ad6847c",
+    "type": "laptop",
+    "created_at": "2025-12-24T13:13:56.633816+00:00",
+    "brand_id": "16eda6a9-637b-4478-af9b-8c9324e140a4",
+    "title": "Asus ROG Strix G16 G614FM-RV169W AMD Ryzen 9 9955HX 16Core RTX 5060 8GB 16GB RAM 1TB NVMe SSD 16″ FHD+ 165Hz Win 11 Home",
+    "short_name": "Asus ROG Strix G16 G614FM-RV169W",
+    "price": 102999,
+    "description": "",
+    "images": [
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1766582337977-asus-rog-strix-g16-g614fm-rv169w-ryzen-9-9955hx-16gb-1tb-ssd-rtx-5060-16-inchfhd.webp"
+    ],
+    "warranty": 1,
+    "specs_raw": {
+      "cpu": "AMD Ryzen 9 9955HX",
+      "gpu": "NVIDIA RTX 5060 8GB",
+      "ram": "16GB DDR5",
+      "manual": {
+        "Camera": "1080P FHD camera\nBattery & Power : 90WHrs Battery | 280W AC Adapter | 0-50% in 30 mins"
+      },
+      "display": "16-inch FHD+ 165Hz",
+      "storage": "1TB PCIe 4.0 NVMe"
+    }
+  },
+  {
+    "id": "625e6c8c-aa88-4228-9653-2ed0ce772e34",
+    "type": "laptop",
+    "created_at": "2025-12-24T12:48:11.431548+00:00",
+    "brand_id": "16eda6a9-637b-4478-af9b-8c9324e140a4",
+    "title": "ASUS ROG Strix G16 G614PH-RV161W – Ryzen 9 8940HX – 16GB RAM – 1TB NVMe SSD – RTX 5050 8GB – 16\" FHD+ 165Hz IPS – Win11",
+    "short_name": "ASUS ROG Strix G16 G614PH-RV161W",
+    "price": 72999,
+    "description": "",
+    "images": [
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1766580452378-1766341463158.png"
+    ],
+    "warranty": 1,
+    "specs_raw": {
+      "cpu": "AMD Ryzen 9 8940HX",
+      "gpu": "NVIDIA RTX 5050 8GB ",
+      "ram": "16GB DDR5",
+      "manual": {
+        "Camera": "1080P FHD Camera\nWireless : Wi-Fi 6E (802.11ax) Triple Band 2*2 + Bluetooth® 5.3\nBattery & Power : 90WHrs 4-cell Li-ion | 280W AC Adapter"
+      },
+      "display": "16' FHD (1920 x 1200, WUXGA) IPS 165Hz 100% SRGB",
+      "storage": "1TB PCIe® 4.0 NVMe"
+    }
+  },
+  {
+    "id": "7c15bab5-db25-4c78-a0ef-547ab6a25846",
+    "type": "laptop",
+    "created_at": "2025-12-24T13:44:11.395234+00:00",
+    "brand_id": "16eda6a9-637b-4478-af9b-8c9324e140a4",
+    "title": "ASUS ROG Strix G16 G614PR-RV132W Ryzen 9 8940HX, RTX 5070 Ti 12GB DDR5, 1TB SSD, 16-inch FHD+ 165Hz ROG BAG",
+    "short_name": "ASUS ROG Strix G16 G614PR-RV132W",
+    "price": 114999,
+    "description": "",
+    "images": [
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1766583842701-g614pr-rv009w.webp"
+    ],
+    "warranty": 1,
+    "specs_raw": {
+      "cpu": "Ryzen 9 8940HX",
+      "gpu": "GeForce RTX 5070 Ti ",
+      "ram": "32GB",
+      "manual": {
+        "Battery & Power": "90WHrs Battery | 280W AC Adapter | 0-50% in 30 mins"
+      },
+      "display": "16 inch FHD 165Hz",
+      "storage": "1TB SSD"
+    }
+  },
+  {
+    "id": "48c4ad2d-1247-408f-b845-e681083ba91f",
+    "type": "laptop",
+    "created_at": "2025-12-24T13:32:38.538262+00:00",
+    "brand_id": "16eda6a9-637b-4478-af9b-8c9324e140a4",
+    "title": "ASUS ROG Strix G16 G615LW-G321W Gaming Laptop – Intel Core Ultra 9 275HX, RTX 5080 16GB, 32GB DDR5, 1TB SSD, 16” FHD+ 165Hz, Windows 11 Home",
+    "short_name": "Asus ROG Strix G16 G615LW-G321W",
+    "price": 144999,
+    "description": "",
+    "images": [
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1766583156469-asus-rog-strix-g16-g615lw-g321w-geforce-rtx-5080-ultra-9-275hx-32gb-1tb-ssd-16-i.webp"
+    ],
+    "warranty": 1,
+    "specs_raw": {
+      "cpu": "Intel Core Ultra 9 275HX",
+      "gpu": "RTX 5080 16GB",
+      "ram": "32GB DDR5",
+      "manual": {
+        "Camera": "1080P FHD IR Camera for Windows Hello\n\nBattery & Power : 90WHrs Battery | 380W AC Adapter | 0-50% in 30 mins"
+      },
+      "display": "16” FHD+ 165Hz",
+      "storage": "1TB SSD"
+    }
+  },
+  {
+    "id": "0b510c03-0423-4eef-8f73-4fe93f059d74",
+    "type": "laptop",
+    "created_at": "2025-12-24T13:35:02.666312+00:00",
+    "brand_id": "16eda6a9-637b-4478-af9b-8c9324e140a4",
+    "title": "ASUS ROG Strix G18 G815LW-S9033W – Intel Core Ultra 9 275HX, RTX 5080, 16GB GDDR7, 32GB DDR5, 1TB SSD, 18” 2.5K 240Hz Nebula Display, Win11",
+    "short_name": "ASUS ROG Strix G18 G815LW-S9033W",
+    "price": 149999,
+    "description": "",
+    "images": [
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1766583300745-asus-rog-strix-g18-g815lw-s9033w-geforce-rtx-5080-ultra-9-275hx-32gb-1tb-ssd-18-.webp"
+    ],
+    "warranty": 1,
+    "specs_raw": {
+      "cpu": "Ultra 9 275HX",
+      "gpu": "GeForce RTX 5080",
+      "ram": "32GB DDR5",
+      "manual": {
+        "Camera & Security": "1080P FHD IR Camera (Windows Hello) | Firmware TPM\n\nBattery & Power : 90WHrs Battery | 380W AC Adapter + 100W USB-C Charger Included"
+      },
+      "display": "18 Inch 2.5K 240Hz",
+      "storage": "1TB SSD"
+    }
+  },
+  {
+    "id": "9801c865-268e-412d-ab79-3f57aa5610f3",
+    "type": "laptop",
+    "created_at": "2025-12-24T13:40:17.565608+00:00",
+    "brand_id": "2e24e56f-4260-4939-baf3-21cf0446eba9",
+    "title": "ASUS ROG Strix SCAR 16 G635LX-RW036W – Intel Core Ultra 9 275HX, NVIDIA GeForce RTX 5090 24GB GDDR7, 16″ 2.5K 240Hz Mini LED Nebula HDR Display, 64GB DDR5, 2TB PCIe 4.0 SSD RAID 0, Win11 Home, Wi-Fi 7, Per-Key RGB Keyboard",
+    "short_name": "ASUS ROG Strix SCAR 16 G635LX-RW036W",
+    "price": 214999,
+    "description": "",
+    "images": [
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1766583609764-asus-rog-strix-g18-g815lw-s9033w-geforce-rtx-5080-ultra-9-275hx-32gb-1tb-ssd-18-.webp"
+    ],
+    "warranty": 1,
+    "specs_raw": {
+      "cpu": "Ultra 9 275HX",
+      "gpu": "GeForce RTX 5090",
+      "ram": "64GB",
+      "manual": {
+        "Camera": "1080P FHD IR Camera with Windows Hello support\n\nBattery & Power : 90WHrs Battery | 380W Desktop Adapter + 100W USB-C Charger"
+      },
+      "display": "16 Inch 2.5K 240Hz ",
+      "storage": "2TB SSD"
+    }
+  },
+  {
+    "id": "6c4a9d84-49eb-49bc-9d46-52ab55fd24ee",
+    "type": "laptop",
+    "created_at": "2025-12-21T04:49:06.772701+00:00",
+    "brand_id": "9208c3b7-de77-476b-a7fd-66e8cf640e0d",
+    "title": "HP Victus 15-fa2013dx Intel Core i5-13420H - NVIDIA RTX 3050 6GB - 8GB DDR4 3200Mhz - 512GB SSD - 15.6\" FHD 144Hz - Win 11",
+    "short_name": "HP Victus RTX 3050 6GB",
+    "price": 30500,
+    "description": "",
+    "images": [
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1766292529591-1763287937056.png",
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1766292540334-c08192359_c374b06c-1755-4ca6-bf03-3f940f9eac5a.png"
+    ],
+    "warranty": 1,
+    "specs_raw": {
+      "cpu": "Intel Core i5-13240H",
+      "gpu": "NVIDIA RTX 3050 6GB ",
+      "ram": "8GB DDR4",
+      "display": "15.6\" FHD 144Hz",
+      "storage": "512GB SSD"
+    }
+  },
+  {
+    "id": "1947c230-6a3f-4416-814f-8263a03539cf",
+    "type": "laptop",
+    "created_at": "2026-01-03T11:25:17.301819+00:00",
+    "brand_id": "bfa7da16-53cd-4f09-a02a-d1ca15efc78b",
+    "title": "MSI Vector 16 HX AI A2XWHG Intel Core Ultra 9 275HX - 32GB DDR5 5600MHz - NVIDIA RTX 5070 Ti 12GB - 1TB NVMe Gen4 - 16-Inch QHD+ 240Hz - Windows 11",
+    "short_name": "MSI Vector 16 HX RTX 5070Ti 12GB",
+    "price": 116999,
+    "description": "",
+    "images": [
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1767439514037-1024_8f95d613-5403-4e7f-8c53-de62910c951b-2.png"
+    ],
+    "warranty": 2,
+    "specs_raw": {
+      "cpu": "Intel Core Ultra 9 275HX",
+      "gpu": "NVIDIA RTX 5070 Ti 12GB",
+      "ram": "32GB DDR5 5600MHz",
+      "display": "16-Inch QHD+ 240Hz",
+      "storage": "1TB NVMe Gen4"
+    }
+  },
+  {
+    "id": "d9f97b0c-2dc3-4f82-9502-b98ae81f9efe",
+    "type": "laptop",
+    "created_at": "2026-02-18T19:04:16.541808+00:00",
+    "brand_id": "9208c3b7-de77-476b-a7fd-66e8cf640e0d",
+    "title": "HP VICTUS 15-FA2392TX GAMING LAPTOP INTEL CORE I7 13620H 512GB SSD 16GB RAM NVIDIA GEFORCE RTX 4050 6GB 15.6\" INCH FHD - MICA SILVER",
+    "short_name": "HP VICTUS 15-FA2392TX RTX 4050",
+    "price": 44999,
+    "description": "",
+    "images": [
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1771441449212-hp-victus-gaming-laptop-1-1100x1100w.jpg"
+    ],
+    "warranty": 1,
+    "specs_raw": {
+      "cpu": "INTEL CORE I7 13620H",
+      "gpu": "RTX 4050 6GB",
+      "ram": "16GB DDR5",
+      "display": "15.6\" INCH FHD",
+      "storage": "512GB SSD"
+    }
+  },
+  {
+    "id": "79f5c371-43ea-4cdb-a7ce-92d2ca1cd19c",
+    "type": "laptop",
+    "created_at": "2026-01-03T11:19:43.708198+00:00",
+    "brand_id": "97db013c-6fdb-4091-ad31-307b05697455",
+    "title": "Lenovo Legion Pro 7 16IAX10H – Intel Core Ultra 9 275HX – 32GB DDR5 6400Mhz – 1TB PCIe 5.0 NVMe SSD – RTX 5070 Ti 12GB – 16 inch 240Hz WQXGA OLED G-SYNC – Per-key RGB Arabic Keyboard – NO OS – LA3 AI Chip ",
+    "short_name": "Lenovo Legion Pro 7 16IAX10H",
+    "price": 128500,
+    "description": "",
+    "images": [
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1767439149668-1766339791180.png"
+    ],
+    "warranty": 1,
+    "specs_raw": {
+      "cpu": "Intel Core Ultra 9 275HX",
+      "gpu": "RTX 5070 Ti 12GB",
+      "ram": "32GB DDR5 6400Mhz",
+      "display": "16 inch 240Hz WQXGA OLED G-SYNC",
+      "storage": "1TB PCIe 5.0 NVMe SSD"
+    }
+  },
+  {
+    "id": "470aa650-33bd-4b16-b3aa-9aedfd07fb9b",
+    "type": "laptop",
+    "created_at": "2026-01-03T10:59:05.242943+00:00",
+    "brand_id": "97db013c-6fdb-4091-ad31-307b05697455",
+    "title": "LENOVO Legion 5 15IRX10 83LY00PCED - Intel® Core i7-13650HX - NVIDIA GeForce RTX 5060 8GB - 16GB DDR5-4800 - 1TB SSD M.2 - 15.1\" WQXGA (2560x1600) OLED 1000nits (peak) / 500nits (typical) glossy, 100% DCI-P3, 165Hz",
+    "short_name": "LENOVO Legion 5 15IRX10 83LY00PCED",
+    "price": 66999,
+    "description": "",
+    "images": [
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1767437935330-lenovo-legion-5-83f00045ed-10.webp",
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1767437937900-lenovo-legion-5-83f00045ed.webp"
+    ],
+    "warranty": 1,
+    "specs_raw": {
+      "cpu": "Intel® Core i7-13650HX",
+      "gpu": "NVIDIA GeForce RTX 5060 8GB",
+      "ram": "16GB DDR5-4800",
+      "display": "15.1\" WQXGA (2560x1600) OLED 1000nits (peak) / 500nits (typical) glossy, 100% DCI-P3, 165Hz",
+      "storage": "1TB SSD M.2"
+    }
+  },
+  {
+    "id": "f8c8b8e9-be6e-4fc0-8666-38109ebf9f7d",
+    "type": "laptop",
+    "created_at": "2026-02-18T19:32:26.183077+00:00",
+    "brand_id": "6847fcc4-66bb-451f-bb7a-ab234f1cedb7",
+    "title": "ASUS TUF Gaming A16 FA608PM-RV169W - AMD Ryzen 9 8940HX - NVIDIA GeForce RTX 5060 8GB - 16G DDR5 5200HZ (1x16) - 1TB PCIe® 4.0 NVMe - 16' WUXGA IPS 165Hz 100% sRGB 400nits - Windows 11",
+    "short_name": "ASUS TUF Gaming A16 FA608PM-RV169W RTX 5060 8GB",
+    "price": 66999,
+    "description": "",
+    "images": [
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1771443139190-_hrv1vtibeqov8fv1.png"
+    ],
+    "warranty": 1,
+    "specs_raw": {
+      "cpu": "AMD Ryzen 9 8940HX",
+      "gpu": "RTX 5060 8GB",
+      "ram": "16GB DDR5",
+      "display": "16' WUXGA IPS 165Hz 100% sRGB 400nits",
+      "storage": "1TB SSD"
+    }
+  },
+  {
+    "id": "07866e34-d4e1-4f23-9b5d-69198bcae96d",
+    "type": "laptop",
+    "created_at": "2026-02-18T19:21:25.455868+00:00",
+    "brand_id": "6847fcc4-66bb-451f-bb7a-ab234f1cedb7",
+    "title": "ASUS TUF Gaming A16 FA608UH-RV007W - GeForce RTX 5050 - AMD Ryzen 7 260 - 16GB - 512GB SSD - 16 FHD 165Hz - Windows 11",
+    "short_name": "ASUS TUF Gaming A16 FA608UH-RV007W RTX 5050 8GB",
+    "price": 54999,
+    "description": "",
+    "images": [
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1771442473290-_hrv1vtibeqov8fv1.png"
+    ],
+    "warranty": 1,
+    "specs_raw": {
+      "cpu": "AMD Ryzen 7 260",
+      "gpu": "RTX 5050 8GB",
+      "ram": "16GB DDR5",
+      "display": "16 FHD 165Hz",
+      "storage": "512GB SSD"
+    }
+  },
+  {
+    "id": "f09304aa-02e4-46df-83de-2942e9742928",
+    "type": "laptop",
+    "created_at": "2026-02-18T19:25:48.361785+00:00",
+    "brand_id": "6847fcc4-66bb-451f-bb7a-ab234f1cedb7",
+    "title": "ASUS TUF Gaming F16 FX608JHR-RV057W Intel Core i7-14650HX - Nvidia RTX 5050 8GB - 16G DDR5 5600HZ - 512GB SSD M.2 - 16\" FHD+ IPS 165Hz - Windows 11",
+    "short_name": "ASUS TUF Gaming F16 FX608JHR-RV057W RTX 5050 8GB",
+    "price": 57999,
+    "description": "",
+    "images": [
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1771442673320-fwebp.webp",
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1771442676909-fwebp-1.webp"
+    ],
+    "warranty": 1,
+    "specs_raw": {
+      "cpu": "Intel Core i7-14650HX",
+      "gpu": "RTX 5050 8GB",
+      "ram": "16GB DDR5",
+      "display": "16\" FHD+ IPS 165Hz",
+      "storage": "512GB SSD"
+    }
+  },
+  {
+    "id": "30d22ec3-7147-4045-9b84-65c49c7d2a45",
+    "type": "laptop",
+    "created_at": "2026-02-18T19:29:23.3607+00:00",
+    "brand_id": "6847fcc4-66bb-451f-bb7a-ab234f1cedb7",
+    "title": "Asus TUF Gaming F16 FX608JMR-RV017W Gaming laptop Intel Core i7 14650HX 1TB SSD 16GB Ram Nvidia GeForce RTX 5060 8GB 16'' Inch FHD+ Win.11",
+    "short_name": "Asus TUF Gaming F16 FX608JMR-RV017W RTX 5060 8GB",
+    "price": 66999,
+    "description": "",
+    "images": [
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1771442941383-fwebp.webp",
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1771442944866-fwebp-1.webp"
+    ],
+    "warranty": 1,
+    "specs_raw": {
+      "cpu": "Intel Core i7 14650HX",
+      "gpu": "RTX 5060 8GB",
+      "ram": "16GB DDR5",
+      "display": "16'' Inch FHD+",
+      "storage": "1TB SSD"
+    }
+  },
+  {
+    "id": "63dee5b0-3950-4c26-a5b0-032eaeb13500",
+    "type": "laptop",
+    "created_at": "2026-02-18T19:18:04.473784+00:00",
+    "brand_id": "6847fcc4-66bb-451f-bb7a-ab234f1cedb7",
+    "title": "ASUS TUF Gaming F16 FX607VJB-RL165W Laptop – Core 5 210H / 16GB DDR5 / 512GB PCIe 4.0 SSD / RTX 3050 6GB / 16\" WUXGA 144Hz / Windows 11 – Mecha Gray",
+    "short_name": "ASUS TUF Gaming F16 FX607VJB-RL165W RTX 3050 6GB",
+    "price": 36999,
+    "description": "",
+    "images": [
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1771442267250-_r77hpisxotedqcfa.png"
+    ],
+    "warranty": 1,
+    "specs_raw": {
+      "cpu": "Core 5 210H",
+      "gpu": "RTX 3050 6GB",
+      "ram": "16GB DDR5",
+      "display": "16\" WUXGA 144Hz",
+      "storage": "512GB SSD"
+    }
+  },
+  {
+    "id": "e996cc63-6d08-4368-9295-7c9f836cdb20",
+    "type": "laptop",
+    "created_at": "2025-12-21T04:46:19.030927+00:00",
+    "brand_id": "9208c3b7-de77-476b-a7fd-66e8cf640e0d",
+    "title": "Hp Victus 15-fa2082wm Intel Core i5-13420H NVIDIA GeForce RTX 4050 6GB GDDR6 - 16 GB DDR4-3200 MHz - 512GB SSD 15.6 FHD 144Hz IPS Windows 11",
+    "short_name": "HP Victus 15-fa1082wm i5-13TH RTX 4050 6GB",
+    "price": 34999,
+    "description": "",
+    "images": [
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1766292359359-1763287937056.png",
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1766292370262-c08192359_c374b06c-1755-4ca6-bf03-3f940f9eac5a.png"
+    ],
+    "warranty": 1,
+    "specs_raw": {
+      "cpu": "Intel Core i5-13420H ",
+      "gpu": "NVIDIA RTX 4050 6GB ",
+      "ram": "16GB DDR4",
+      "display": "15.6 FHD 144Hz",
+      "storage": "512GB SSD"
+    }
+  },
+  {
+    "id": "b1732f60-822c-4ef4-b994-50d3029a2bc1",
+    "type": "laptop",
+    "created_at": "2026-01-03T11:11:52.095121+00:00",
+    "brand_id": "97db013c-6fdb-4091-ad31-307b05697455",
+    "title": "Lenovo Legion 5 15IRX10 83F0004AED Intel Core Ultra 9 275HX - NVIDIA RTX 5070 8GB - 32GB DDR5 5600MHz - 1TB SSD M.2 - 15.1\" WQXGA OLED 165Hz",
+    "short_name": "Lenovo Legion 5 15IRX10 83F0004AED",
+    "price": 88999,
+    "description": "",
+    "images": [
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1767438695071-lenovo-legion-5-83f00045ed-10.webp",
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1767438698442-lenovo-legion-5-83f00045ed.webp"
+    ],
+    "warranty": 2,
+    "specs_raw": {
+      "cpu": "Intel Core Ultra 9 275HX",
+      "gpu": "NVIDIA RTX 5070 8GB",
+      "ram": "32GB DDR5 5600MHz",
+      "display": " 15.1\" WQXGA OLED 165Hz",
+      "storage": "1TB SSD M.2"
+    }
+  },
+  {
+    "id": "82bfd86c-c2e1-43b3-b210-8cd8f6ee836c",
+    "type": "laptop",
+    "created_at": "2026-01-03T11:08:04.092338+00:00",
+    "brand_id": "97db013c-6fdb-4091-ad31-307b05697455",
+    "title": "Lenovo Legion Pro 5 16IRX10 83NN001XAX - Intel® Core i9-14900HX - NVIDIA® GeForce RTX™ 5070 8GB - 32GB DDR5-5600 - 1TB SSD M.2 - 16\" WQXGA (2560x1600) IPS 500nits Anti-glare, 100% DCI-P3, 240Hz",
+    "short_name": "Lenovo Legion Pro 5 16IRX10 83NN001XAX",
+    "price": 85999,
+    "description": "",
+    "images": [
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1767438450077-lenovo-legion-5-83f00045ed-10.webp",
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1767438475159-lenovo-legion-5-83f00045ed.webp"
+    ],
+    "warranty": 1,
+    "specs_raw": {
+      "cpu": "Intel® Core i9-14900HX",
+      "gpu": "NVIDIA® GeForce RTX™ 5070 8GB",
+      "ram": "32GB DDR5-5600",
+      "display": "16\" WQXGA (2560x1600) IPS 500nits Anti-glare, 100% DCI-P3, 240Hz",
+      "storage": "1TB SSD M.2"
+    }
+  },
+  {
+    "id": "2f4d2c41-18e5-49ec-92a5-3bc89eae3317",
+    "type": "laptop",
+    "created_at": "2026-02-18T19:57:45.421638+00:00",
+    "brand_id": "97db013c-6fdb-4091-ad31-307b05697455",
+    "title": "LENOVO Legion 5 15IRX10 83LY00HTLK - Intel® Core i9-14900HX - NVIDIA® GeForce RTX™ 5070 8GB - 32GB SO-DIMM DDR5-5600 - 1TB SSD M.2 - 15.1\" WQXGA (2560x1600) OLED 1000nits (peak) / 500nits (typical) glossy, 100% DCI-P3, 165Hz - Windows® 11",
+    "short_name": "LENOVO Legion 5 15IRX10 RTX 5070 8GB",
+    "price": 83999,
+    "description": "",
+    "images": [
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1771444490343-lenovo_legion_5_15irx10_guw9-e0.webp"
+    ],
+    "warranty": 1,
+    "specs_raw": {
+      "cpu": "Intel® Core i9-14900HX",
+      "gpu": "RTX 5070 8GB",
+      "ram": "32GB DDR5",
+      "display": "15.1\" WQXGA (2560x1600) OLED 1000nits (peak) / 500nits (typical) glossy, 100% DCI-P3, 165Hz",
+      "storage": "1TB SSD M.2"
+    }
+  },
+  {
+    "id": "36e7db87-5002-4856-96ba-232927ece059",
+    "type": "laptop",
+    "created_at": "2026-02-18T20:08:29.279799+00:00",
+    "brand_id": "6847fcc4-66bb-451f-bb7a-ab234f1cedb7",
+    "title": "ASUS TUF Gaming F16 FX608JMR-F16 Intel Core i7-14650HX, RTX 5060 8GB, 32GB RAM, 1TB SSD, 16″ FHD+ 165Hz IPS, Windows 11",
+    "short_name": "ASUS TUF Gaming F16 FX608JMR-F16 RTX 5060 8GB",
+    "price": 69999,
+    "description": "",
+    "images": [
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1771445140078-fwebp.webp",
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1771445142021-fwebp-1.webp"
+    ],
+    "warranty": 1,
+    "specs_raw": {
+      "cpu": "Intel Core i7-14650HX",
+      "gpu": "RTX 5060 8GB",
+      "ram": "32GB DDR5",
+      "display": "16″ FHD+ 165Hz IPS",
+      "storage": "1TB SSD"
+    }
+  },
+  {
+    "id": "8f05b5d0-2f5c-4750-9e52-d34a2c9ca817",
+    "type": "laptop",
+    "created_at": "2026-02-18T20:31:49.647423+00:00",
+    "brand_id": "6847fcc4-66bb-451f-bb7a-ab234f1cedb7",
+    "title": "ASUS TUF Gaming F16 608JPR-RV027W Intel Core i7-14650HX, RTX 5070, 16GB DDR5, 1TB SSD, 16” 165Hz , Win11 ",
+    "short_name": "ASUS TUF Gaming F16 608JPR-RV027W RTX 5070 8GB",
+    "price": 79500,
+    "description": "",
+    "images": [
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1771446701754-fwebp.webp",
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1771446707217-fwebp-1.webp"
+    ],
+    "warranty": 1,
+    "specs_raw": {
+      "cpu": "Intel Core i7-14650HX",
+      "gpu": "RTX 5070 8GB",
+      "ram": "16GB DDR5",
+      "display": "16” 165Hz",
+      "storage": "1TB SSD"
+    }
+  },
+  {
+    "id": "f44bcf17-d1cc-469e-91f6-9c309e8d5bb4",
+    "type": "laptop",
+    "created_at": "2026-02-18T20:55:47.884891+00:00",
+    "brand_id": "f30af1f7-3ffc-4ff6-bc83-e15c950dc490",
+    "title": "Dell alinwaer 16 aurora ac16250 Core 7 240H RAM 16GB SSD 1TB RTX 4050 6GB 16B\" WQXGA (2560 x 1600) 120Hz, 300 nits, ComfortView Plus, 100% sRG color gamut, Windows 11",
+    "short_name": "Dell Alinwaer 16 AURORA AC16250 RTX 4050 6GB",
+    "price": 50999,
+    "description": "",
+    "images": [
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1771448093536-564b67da-9a65-44d6-927f-2555f635089f.jpg",
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1771448117194-42e83b18-34e0-4424-b61f-618de4a64b4a.jpg",
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1771448122108-23cb6958-148f-4a4c-be53-64024f56596b.jpg"
+    ],
+    "warranty": 1,
+    "specs_raw": {
+      "cpu": "INTEL Core 7 240H",
+      "gpu": "RTX 4050 6GB",
+      "ram": "16GB DDR5",
+      "display": "16\" WQXGA (2560 x 1600) 120Hz, 300 nits, ComfortView Plus, 100% sRGB color gamut",
+      "storage": "1TB SSD"
+    }
+  },
+  {
+    "id": "1eface6d-db26-4855-97c8-16379ba2de29",
+    "type": "laptop",
+    "created_at": "2026-02-18T21:05:01.627409+00:00",
+    "brand_id": "f30af1f7-3ffc-4ff6-bc83-e15c950dc490",
+    "title": "DELL Alienware 16X Aurora Gaming Laptop | Intel Core Ultra 9 275HX | RTX 5070 8GB | 32GB RAM | 1TB SSD | 240Hz WQXGA Display | Windows 11",
+    "short_name": "DELL Alienware 16X Aurora (Aurora 16 Gaming Laptop)",
+    "price": 101999,
+    "description": "",
+    "images": [
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1771448679443-dell_alienware_16x_aurora_ac16251.webp"
+    ],
+    "warranty": 3,
+    "specs_raw": {
+      "cpu": "Intel Core Ultra 9 275HX",
+      "gpu": "Nvidia GeForce RTX 5070 8GB  ",
+      "ram": "32GB DDR5",
+      "manual": {
+        "Operating System": "Windows 11 Home\n\nBattery & Power : 6-Cell 96Whr Battery (Integrated); 280W Power Adapter"
+      },
+      "display": "16\" Inch WQXGA",
+      "storage": "1TB SSD"
+    }
+  },
+  {
+    "id": "e2b3a80a-70df-474d-ad90-8164aaf96b95",
+    "type": "laptop",
+    "created_at": "2026-02-18T20:59:13.187417+00:00",
+    "brand_id": "f30af1f7-3ffc-4ff6-bc83-e15c950dc490",
+    "title": "Dell Alienware 16 Aurora Gaming Laptop – Intel Core 7 240H, RTX 5060 8GB, 16GB DDR5, 512GB SSD, 16\" WQXGA 120Hz, Win 11",
+    "short_name": "Dell Alienware 16 Aurora Gaming Laptop",
+    "price": 69999,
+    "description": "",
+    "images": [
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1771448340510-564b67da-9a65-44d6-927f-2555f635089f.jpg"
+    ],
+    "warranty": 3,
+    "specs_raw": {
+      "cpu": "Intel® Core™ 7-240H",
+      "gpu": "RTX 5060 8GB",
+      "ram": "32GB DDR5",
+      "manual": {
+        "Graphics Card TGP": "80W\n\nBattery:\n\n96Wh\n\nPower Adapter:\n\n180W\n\nOperating System:\n\nWindows 11\n\nSpeaker:\n\nDual speakers"
+      },
+      "display": "16\" WQXGA 120Hz 300 nits 100% sRGB ComfortView Plus",
+      "storage": "1TB SSD"
+    }
+  },
+  {
+    "id": "731b9357-5a27-4377-8852-746c59b5d92e",
+    "type": "laptop",
+    "created_at": "2025-12-24T13:51:24.904141+00:00",
+    "brand_id": "2f08fdaa-77ba-4f70-9db1-4e6625323f65",
+    "title": "ASUS ROG Flow Z13 GZ302EA-RU016W – Ryzen AI Max+ 395 - 32GB LPDDR5X - 1TB SSD - 13.4\" 2.5K 180Hz Touch - Windows 11",
+    "short_name": "ASUS ROG Flow Z13 GZ302EA-RU016W",
+    "price": 107999,
+    "description": "",
+    "images": [
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1766584272490-gz302ea-ru016w-1.webp",
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1766584275296-gz302ea-ru016w-7.webp"
+    ],
+    "warranty": 1,
+    "specs_raw": {
+      "cpu": "AMD Ryzen AI MAX+ 395",
+      "gpu": "AMD Radeon Graphics",
+      "ram": "32GB LPDDR5X 8000MHz",
+      "manual": {
+        "Battery & Power": "70WHrs Battery | 200W AC Adapter included | 0-50% in 30 mins"
+      },
+      "display": "13.4-Inch 2.5K IPS 180Hz",
+      "storage": "1TB M.2 NVME"
+    }
+  },
+  {
+    "id": "8c24e361-dde5-4508-8abf-a00be0d43bcd",
+    "type": "laptop",
+    "created_at": "2026-02-18T20:38:07.56159+00:00",
+    "brand_id": "2e24e56f-4260-4939-baf3-21cf0446eba9",
+    "title": "ASUS ROG Strix G16 (2025) G614FP-GR169W Gaming Laptop – AMD Ryzen 9 9955HX, RTX 5070, 16-inch FHD+ 165Hz, 16GB DDR5, 1TB SSD, Windows 11 Home – Eclipse Gray",
+    "short_name": "ASUS ROG Strix G16 (2025) G614FP-GR169W Gaming Laptop",
+    "price": 99999,
+    "description": "",
+    "images": [
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1771447153547-download_c18a3d8e-b23f-4499-b56a-7c2a04588d96.webp"
+    ],
+    "warranty": 1,
+    "specs_raw": {
+      "cpu": "AMD Ryzen 9 9955HX",
+      "gpu": "RTX 5070 8GB",
+      "manual": {
+        "Battery & Power": "90WHrs Battery | 280W AC Adapter | 0-50% in 30 mins"
+      }
+    }
+  },
+  {
+    "id": "ffcae84b-de27-4b52-b5c6-16fb3b7f5ff8",
+    "type": "laptop",
+    "created_at": "2026-02-18T20:46:39.322936+00:00",
+    "brand_id": "16eda6a9-637b-4478-af9b-8c9324e140a4",
+    "title": "Asus ROG Strix G16 G614FR-G4032W 90NR0NK8-M008B0 Gaming Laptop- AMD R9 9955HX- 32GB RAM- 1TB SSD- 16” 2.5K 240Hz- RTX 5070Ti 12GB-Win11",
+    "short_name": "Asus ROG Strix G16 G614FR-G4032W",
+    "price": 124999,
+    "description": "",
+    "images": [
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1771447484945-_4nsed7is39cqxxqr.png"
+    ],
+    "warranty": 1,
+    "specs_raw": {
+      "cpu": "Ryzen 9 9955HX ",
+      "gpu": "RTX 5070 Ti 12GB",
+      "ram": "32GB DDR5",
+      "manual": {
+        "Camera": "1080P FHD camera\nBattery : 90WHrs 4-cell Li-ion"
+      },
+      "display": "16 INCH 2.5K 240Hz",
+      "storage": "1TB SSD"
+    }
+  },
+  {
+    "id": "f394dd90-ca18-4ee6-b68c-07a73ebfc2a8",
+    "type": "gpu",
+    "created_at": "2026-02-07T21:00:31.600013+00:00",
+    "brand_id": "097f37f5-0bf5-4bcd-88d1-1dc735fd516e",
+    "title": "VGA ASUS PRIME RADEON RX 9070 XT 16GB GDDR6 OC EDITION",
+    "short_name": "ASUS PRIME RADEON RX 9070 XT 16GB",
+    "price": 37999,
+    "description": "",
+    "images": [
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1770498051530-9070-xt.webp"
+    ],
+    "warranty": 3,
+    "specs_raw": {}
+  },
+  {
+    "id": "6d8cf76b-6415-4d78-8b38-71f9b82360db",
+    "type": "gpu",
+    "created_at": "2026-02-07T21:02:00.37528+00:00",
+    "brand_id": "097f37f5-0bf5-4bcd-88d1-1dc735fd516e",
+    "title": "VGA ASUS PRIME RADEON RX 9070 16GB GDDR6 OC EDITION",
+    "short_name": "ASUS PRIME RADEON RX 9070 16GB",
+    "price": 34500,
+    "description": "",
+    "images": [
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1770498149660-rx-9070-evo.webp"
+    ],
+    "warranty": 3,
+    "specs_raw": {}
+  },
+  {
+    "id": "6cc2618b-dabd-4946-bd00-aefee4ca696c",
+    "type": "laptop",
+    "created_at": "2026-02-18T19:50:39.966713+00:00",
+    "brand_id": "2e24e56f-4260-4939-baf3-21cf0446eba9",
+    "title": "ASUS ROG Strix SCAR 18 (2025) G835LX-AI464W INTEL Core Ultra 9 275HX GAMING LAPTOP 64GB RAM 2TB + 2TB NVMe SSD NVIDIA GeForce RTX 5090 18\" WIN 11",
+    "short_name": "ASUS ROG Strix SCAR 18 (2025) G835LX-AI464W",
+    "price": 239999,
+    "description": "",
+    "images": [
+      "https://nlooktzgammeqjejrjgk.supabase.co/storage/v1/object/public/laptop-images/1771444227312-_xenetvg8cfkgjfjo.png"
+    ],
+    "warranty": 1,
+    "specs_raw": {
+      "cpu": "Intel® Core™ Ultra 9 Processor 275HX 2.7 GHz (36MB Cache, up to 5.4 GHz, 24 cores, 24 Threads); Intel® AI Boost NPU up to 13TOPS",
+      "gpu": "NVIDIA® GeForce RTX™ 5090 Laptop GPU ROG Boost: 1647MHz* at 175W (1597MHz Boost Clock+50MHz OC, 150W+25W Dynamic Boost) 24GB GDDR7",
+      "ram": "32GB DDR5-5600 SO-DIMM, the memory speed of the systems vary by CPU SPEC x 2 Max Capacity: 64GB Support dual channel memory",
+      "manual": {
+        "Camera & Security": "1080P FHD IR Camera (Windows Hello) | Firmware TPM\n\nBattery & Power : 90WHrs Battery | 380W AC Adapter | 0-50% in 30 mins"
+      },
+      "display": "ROG Nebula HDR Display 18-inch 2.5K (2560 x 1600, WQXGA) 16:10 aspect ratio Mini LED Anti-glare display DCI-P3: 100% Refresh Rate: 240Hz G-Sync Pantone Validated MUX Switch + NVIDIA® Advanced Optimus",
+      "storage": "2TB + 2TB PCIe® 4.0 NVMe™ M.2 Performance SSD"
+    }
+  }
+]

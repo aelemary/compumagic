@@ -1,0 +1,34 @@
+[
+  {
+    "id": "21e3624c-44e9-4a19-817a-fb1f7b8aac63",
+    "title": "ASUS A31 PLUS Case",
+    "status": "miss"
+  },
+  {
+    "id": "7d965c55-6add-4103-b513-c45c2ed1a6e2",
+    "title": "ASUS Prime LC 360 aRGB CPU Liquid Cooler",
+    "status": "miss"
+  },
+  {
+    "id": "323ae6b3-2186-446d-aaf9-2a0b5ca298df",
+    "title": "HIKSEMI ®/EX-SSD Storage/T300S\"/BLACK  ™ - 512 GB",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 1,
+    "sources": []
+  },
+  {
+    "id": "48ae8e59-6e3d-47c1-8f68-955f64bfef27",
+    "title": "HIKSEMI ®/HS-ESSD Storage/T300S\"/BLACK  ™ - 1T",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 1,
+    "sources": []
+  },
+  {
+    "id": "29c9cba5-5cd5-4fa5-b33a-8271e8b95da5",
+    "title": "HP PRINTER LJ M111A",
+    "status": "miss",
+    "icecatError": "fetch failed"
+  }
+]

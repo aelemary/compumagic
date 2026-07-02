@@ -1,0 +1,57 @@
+[
+  {
+    "id": "21e3624c-44e9-4a19-817a-fb1f7b8aac63",
+    "title": "ASUS A31 PLUS Case",
+    "status": "miss"
+  },
+  {
+    "id": "7d965c55-6add-4103-b513-c45c2ed1a6e2",
+    "title": "ASUS Prime LC 360 aRGB CPU Liquid Cooler",
+    "status": "miss"
+  },
+  {
+    "id": "5f771826-ab58-4d24-8ceb-90574d191729",
+    "title": "LAP DELL C I7 Latitude 3450 16/512/14\" /Iris/1355U",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "0e3c3a4f-5708-4c83-90c6-03480619061a",
+    "title": "LAP DELL C I7 Latitude 3450 8/512/14\" /Iris/1355U",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "f32cd9fb-3bfd-4e16-bbee-2088a1b1edee",
+    "title": "LAP DELL C I7 Latitude 3450 8/512/14\" /MX570/1355U",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "210bf4b9-a864-425c-a296-428d17ed9da4",
+    "title": "LAP DELL CI7 M-Vostro 3530 1355U 8/512 SSD/INTEL",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 3,
+    "sources": []
+  },
+  {
+    "id": "b6c94572-e1ef-43d7-9911-7e15dd55f4e2",
+    "title": "LAP DELL DC15250 I5 1334U /8G/512G/INTEL",
+    "status": "web-updated",
+    "query": "",
+    "specCount": 2,
+    "sources": []
+  },
+  {
+    "id": "3e783390-53a4-4498-b782-be6172a1e64c",
+    "title": "LAP DELL I5 LATITUDE 3450 8G/512G/14`/INTEL/1335U",
+    "status": "miss"
+  }
+]

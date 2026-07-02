@@ -1,0 +1,642 @@
+[
+  {
+    "id": "5c6592d7-c77b-4745-a72d-139d04095304",
+    "title": "ACER ®/SSD Storage/SATA III- 2.5\"/RE100 ™ - 1TB",
+    "status": "miss"
+  },
+  {
+    "id": "5d1b682d-bdc7-410c-8faa-918ebaa4ec44",
+    "title": "ACER ®/SSD Storage/SATA III- 2.5\"/RE100 ™ - 256GB",
+    "status": "miss"
+  },
+  {
+    "id": "24f25248-fe89-43a2-be75-f7c8af971d28",
+    "title": "ACER ®/SSD Storage/SATA III- 2.5\"/SA100 ™ - 240GB",
+    "status": "miss"
+  },
+  {
+    "id": "dda414fe-56ea-4633-a990-931e51d81a61",
+    "title": "AMD®/Processor/Ryzen™ 5  3400G TRAY",
+    "status": "miss"
+  },
+  {
+    "id": "09852131-9606-41e2-be87-ca6ebd9f6897",
+    "title": "AMD®/Processor/Ryzen™ 5 3400G BOX",
+    "status": "miss"
+  },
+  {
+    "id": "86c2a325-dcd1-4115-b7b5-dc7dddc6e932",
+    "title": "AMD®/Processor/Ryzen™ 5 7600/TRAY+FAN",
+    "status": "miss"
+  },
+  {
+    "id": "05cb2e5d-1b88-42c7-83f7-1907a07fe7b3",
+    "title": "AMD®/Processor/Ryzen™ 5 8400F MPK/TRAY+FAN",
+    "status": "miss"
+  },
+  {
+    "id": "c1ae65ad-94de-431e-a679-60a0c6c050e3",
+    "title": "AMD®/Processor/Ryzen™ 5 9500F TRAY",
+    "status": "miss"
+  },
+  {
+    "id": "1fae1acb-bab5-423a-a81c-03491798023b",
+    "title": "AMD®/Processor/Ryzen™ 7 7800X3D BOX",
+    "status": "miss"
+  },
+  {
+    "id": "726ab43e-570a-4736-ba5f-d1f07176f795",
+    "title": "AMD®/Processor/Ryzen™ 7 8700G TRAY",
+    "status": "miss"
+  },
+  {
+    "id": "52fa2016-154d-4826-b819-30cd270c62fa",
+    "title": "AMD®/Processor/Ryzen™ 7 9800X3D BOX",
+    "status": "miss"
+  },
+  {
+    "id": "c4194571-78d5-4a51-a63e-924bbd367321",
+    "title": "AMD®/Processor/Ryzen™ 9 7900X BOX",
+    "status": "miss"
+  },
+  {
+    "id": "6d009ddb-9054-4932-a171-decf1bcae682",
+    "title": "AMD®/Processor/Ryzen™ 9 9900X BOX",
+    "status": "miss"
+  },
+  {
+    "id": "f09a0be6-ef68-43a5-a776-bcfe75db3d4d",
+    "title": "AMD®/Processor/Ryzen™ 9 9900X TRAY",
+    "status": "miss"
+  },
+  {
+    "id": "0f4b2cff-9063-4c38-8bd8-0704a2a86601",
+    "title": "AMD®/Processor/Ryzen™ 9 9900X3D BOX",
+    "status": "miss"
+  },
+  {
+    "id": "105abf44-5c72-433f-a2a6-24ed9ffef772",
+    "title": "APACER/SSD Storage/M2 NVME- 256GB",
+    "status": "miss"
+  },
+  {
+    "id": "21e3624c-44e9-4a19-817a-fb1f7b8aac63",
+    "title": "ASUS A31 PLUS Case",
+    "status": "miss"
+  },
+  {
+    "id": "c8ee9e8b-c2f7-4530-978c-1a49049a010b",
+    "title": "ASUS MONITOR GAMING VA249HG 24\" 120HZ",
+    "status": "updated",
+    "icecatId": "129188041",
+    "icecatTitle": "ASUS VA249HG computer monitor 60.5 cm (23.8\") 1920 x 1080 pixels Full HD LCD Black",
+    "source": "code:VA249HG",
+    "score": 25.4,
+    "specCount": 48
+  },
+  {
+    "id": "d92137e4-b25d-4325-af9f-2aa54ee6232a",
+    "title": "ASUS MONITOR TUF GAMING VG259Q5A 24\" 200HZ",
+    "status": "updated",
+    "icecatId": "131258746",
+    "icecatTitle": "ASUS TUF Gaming VG259Q5A computer monitor 62.2 cm (24.5\") 1920 x 1080 pixels Full HD LED Black",
+    "source": "code:VG259Q5A",
+    "score": 26.4,
+    "specCount": 48
+  },
+  {
+    "id": "7d965c55-6add-4103-b513-c45c2ed1a6e2",
+    "title": "ASUS Prime LC 360 aRGB CPU Liquid Cooler",
+    "status": "miss"
+  },
+  {
+    "id": "91adeb35-cfd0-448e-99fc-321e2f0804a7",
+    "title": "Crucial ®/SSD Storage/1TB NVMe\" M2 E100",
+    "status": "miss"
+  },
+  {
+    "id": "28e8bbc1-d695-4275-b0c4-32ccb517aaca",
+    "title": "Crucial ®/SSD Storage/1TB NVMe\" M2 P510",
+    "status": "miss"
+  },
+  {
+    "id": "87c5c11e-a33c-4715-8947-577a17ef7f81",
+    "title": "Crucial ®/SSD Storage/1TGB NVMe\" M2 P3",
+    "status": "miss"
+  },
+  {
+    "id": "0f041889-e30c-4a49-93d4-907ed7cbaf25",
+    "title": "Crucial ®/SSD Storage/2TB NVMe\" M2 E100",
+    "status": "miss"
+  },
+  {
+    "id": "ba14bfec-3c7f-4acc-a89a-069d34af4ee5",
+    "title": "Crucial ®/SSD Storage/2TB NVMe\" M2 P310",
+    "status": "miss"
+  },
+  {
+    "id": "ace5806f-662b-415e-9538-0d926ce1f12e",
+    "title": "Crucial ®/SSD Storage/2TB NVMe\" M2 P510",
+    "status": "miss"
+  },
+  {
+    "id": "de86a07b-36cf-4d8f-84da-ddc00c942ee5",
+    "title": "Crucial ®/SSD Storage/2TB NVMe\" M2 T705",
+    "status": "miss"
+  },
+  {
+    "id": "c00e7fa8-4b1d-4578-a251-0ca9ca46e8a4",
+    "title": "Crucial ®/SSD Storage/480GB NVMe\" M2 E100",
+    "status": "miss"
+  },
+  {
+    "id": "8e24e87d-9521-4545-a17e-7adff97e6aeb",
+    "title": "Crucial ®/SSD Storage/SATA 3 - 2.5\"/BX500 ™ - 1TGB",
+    "status": "miss"
+  },
+  {
+    "id": "6615e841-65e8-4bc9-b73d-d3f18d2e5695",
+    "title": "Crucial ®/SSD Storage/SATA 3 - 2.5\"/BX500 ™ - 240GB",
+    "status": "miss"
+  },
+  {
+    "id": "04b6f146-292f-4d08-8348-bfcfd5008928",
+    "title": "Crucial ®/SSD Storage/SATA 3 - 2.5\"/BX500 ™ - 2TB",
+    "status": "miss"
+  },
+  {
+    "id": "29029d90-51bf-4252-a132-123b17f9d606",
+    "title": "Crucial ®/SSD Storage/SATA 3 - 2.5\"/BX500 ™ - 500GB",
+    "status": "miss"
+  },
+  {
+    "id": "d4d860e1-0e75-4091-8616-0a9c755787d7",
+    "title": "CRUCIAL X9 1TB PORTABLE SSD",
+    "status": "miss"
+  },
+  {
+    "id": "88f97fa6-e0a4-4381-ae53-a76b14c14f77",
+    "title": "CRUCIAL X9 2TB PORTABLE SSD",
+    "status": "miss"
+  },
+  {
+    "id": "e9e71bbb-841e-4ce7-af85-b758754855f9",
+    "title": "CRUCIAL X9 4TB PORTABLE SSD",
+    "status": "miss"
+  },
+  {
+    "id": "226de052-2afe-4c2f-93c1-01129ecb6f02",
+    "title": "Dell ®/LED Monitors/ 22\"/Model No. E2225HM",
+    "status": "miss"
+  },
+  {
+    "id": "b6c6be21-358c-45d1-a674-5eeae65bb656",
+    "title": "Dell ®/LED Monitors/ 22\"/Model No. SE2225HM",
+    "status": "miss"
+  },
+  {
+    "id": "f9a4b664-c671-4788-86bb-bafc4713fcb2",
+    "title": "Dell ®/LED Monitors/ 24\"/Model No. E2425HM",
+    "status": "updated",
+    "icecatId": "130442852",
+    "icecatTitle": "DELL E Series E2425HM computer monitor 60.5 cm (23.8\") 1920 x 1080 pixels Full HD LCD Black",
+    "source": "code:E2425HM",
+    "score": 24.4,
+    "specCount": 48
+  },
+  {
+    "id": "35118eca-e871-4ca5-bc93-1bf87b14514e",
+    "title": "Dell ®/LED Monitors/ 24\"/Model No. SE2425HM",
+    "status": "miss"
+  },
+  {
+    "id": "3b6896d3-d080-48ae-ba87-3c2c45d4ed3c",
+    "title": "Dell ®/LED Monitors/23.5\"/Model No. E2423HN",
+    "status": "updated",
+    "icecatId": "100314699",
+    "icecatTitle": "DELL E Series E2423HN computer monitor 60.5 cm (23.8\") 1920 x 1080 pixels Full HD LCD Black",
+    "source": "code:E2423HN",
+    "score": 24.4,
+    "specCount": 48
+  },
+  {
+    "id": "83405684-8858-4eeb-964c-b38be03bc3a5",
+    "title": "Dell ®/LED Monitors/27\"/Model No. E2723H",
+    "status": "updated",
+    "icecatId": "106112925",
+    "icecatTitle": "DELL E Series E2723H computer monitor 68.6 cm (27\") 1920 x 1080 pixels Full HD LCD Black",
+    "source": "code:E2723H",
+    "score": 24.4,
+    "specCount": 48
+  },
+  {
+    "id": "25ef37bd-aea0-414e-8092-0c0e6f9c75f7",
+    "title": "Dell ®/LED Monitors/27\"/Model No. E2725H",
+    "status": "updated",
+    "icecatId": "122250387",
+    "icecatTitle": "DELL E Series E2725H computer monitor 68.6 cm (27\") 1920 x 1080 pixels Full HD LED Black",
+    "source": "code:E2725H",
+    "score": 24.4,
+    "specCount": 48
+  },
+  {
+    "id": "b5f288f0-8d15-49ef-9a7e-d555715ae617",
+    "title": "Dell ®/LED Monitors/27\"/Model No. SE2725HM",
+    "status": "miss"
+  },
+  {
+    "id": "da483be8-4d96-49a7-82f6-43d02a488edc",
+    "title": "Dell ®/LED Monitors/IPS 23.8\"/Model No. P2425H",
+    "status": "updated",
+    "icecatId": "120212075",
+    "icecatTitle": "DELL Pro Plus P2425H computer monitor 61 cm (24\") 1920 x 1080 pixels Full HD LCD Black",
+    "source": "code:P2425H",
+    "score": 24.4,
+    "specCount": 48
+  },
+  {
+    "id": "7dbfd997-fa3f-4df0-8ecc-99a0e60be616",
+    "title": "Dell ®/LED Monitors/IPS 27\"/Model No. P2725H",
+    "status": "updated",
+    "icecatId": "120212077",
+    "icecatTitle": "DELL Pro Plus P2725H computer monitor 68.6 cm (27\") 1920 x 1080 pixels Full HD LCD Black",
+    "source": "code:P2725H",
+    "score": 24.4,
+    "specCount": 48
+  },
+  {
+    "id": "14182b58-361b-4ae4-900e-f5b7dc628d7b",
+    "title": "Dell ®/LED Monitors/IPS* 24\"/Model No. S2425H",
+    "status": "updated",
+    "icecatId": "120666008",
+    "icecatTitle": "DELL S Series S2425H computer monitor 60.5 cm (23.8\") 1920 x 1080 pixels Full HD LCD Black, Silver",
+    "source": "code:S2425H",
+    "score": 24.4,
+    "specCount": 48
+  },
+  {
+    "id": "5681c385-cb25-49f8-87ef-7625d033aa79",
+    "title": "Dell ®/LED Monitors/IPS* 27\"/Model No. S2725H",
+    "status": "updated",
+    "icecatId": "120666009",
+    "icecatTitle": "DELL S Series S2725H computer monitor 68.6 cm (27\") 1920 x 1080 pixels Full HD LCD Black, Silver",
+    "source": "code:S2725H",
+    "score": 24.4,
+    "specCount": 48
+  },
+  {
+    "id": "8dd926e0-6237-448c-bc21-21038511cedc",
+    "title": "HIKSEMI ®/ELITE  PORTABLE SSD 1050MB 1024GB",
+    "status": "miss"
+  },
+  {
+    "id": "3cfa9135-f40d-46c8-9c4b-1cdb02c5e245",
+    "title": "HIKSEMI ®/ELITE PORTABLE SSD 1050MB 2048GB",
+    "status": "miss"
+  },
+  {
+    "id": "c7f3b009-24b4-4149-86ef-b81ef1a011c1",
+    "title": "HIKSEMI ®/ESSD-T100 PORTABLE 1024GB",
+    "status": "miss"
+  },
+  {
+    "id": "bd3ad045-eaad-490b-afb8-a5b17d8525be",
+    "title": "HIKSEMI ®/ESSD-T100 PORTABLE 512GB",
+    "status": "miss"
+  },
+  {
+    "id": "323ae6b3-2186-446d-aaf9-2a0b5ca298df",
+    "title": "HIKSEMI ®/EX-SSD Storage/T300S\"/BLACK  ™ - 512 GB",
+    "status": "miss"
+  },
+  {
+    "id": "ab66e472-3b6b-4518-a90f-dcdf68e8bb19",
+    "title": "HIKSEMI ®/HS-ESSD PORTABLE/T300S\"/BLACK  ™ - 2T",
+    "status": "miss"
+  },
+  {
+    "id": "48ae8e59-6e3d-47c1-8f68-955f64bfef27",
+    "title": "HIKSEMI ®/HS-ESSD Storage/T300S\"/BLACK  ™ - 1T",
+    "status": "miss"
+  },
+  {
+    "id": "3ced96a2-1f53-4e72-9496-ec48dd2c2db7",
+    "title": "HIKSEMI ®/SSD Storage/M2 NVME \"/PCle 3.0 ™ - 2048GB",
+    "status": "miss"
+  },
+  {
+    "id": "a606e8a9-9b7f-4061-826d-cd5ba25561d5",
+    "title": "HIKSEMI ®/SSD Storage/M2 NVME \"/PCle 3.0 ™ - 256GB",
+    "status": "miss"
+  },
+  {
+    "id": "d49f8342-f499-4b92-b784-f94e5dcbd57a",
+    "title": "HIKSEMI ®/SSD Storage/M2 NVME \"/PCle 3.0 ™ - 512GB",
+    "status": "miss"
+  },
+  {
+    "id": "eb017e42-278f-421c-8755-204925d277f5",
+    "title": "HIKSEMI ®/SSD Storage/SATA 6 - 2.5\"/Wave (s) ™ - 1024GB",
+    "status": "miss"
+  },
+  {
+    "id": "90056f8e-e9e1-4a43-88c7-5b52f7bf5811",
+    "title": "HIKSEMI ®/SSD Storage/SATA 6 - 2.5\"/Wave (s) ™ - 128GB",
+    "status": "miss"
+  },
+  {
+    "id": "c42dfb10-e782-4ea3-8933-e5990ed2968b",
+    "title": "HIKSEMI ®/SSD Storage/SATA 6 - 2.5\"/Wave (s) ™ - 2048GB",
+    "status": "miss"
+  },
+  {
+    "id": "2ca90ebe-06c4-44ae-be74-8a8e44ef730e",
+    "title": "HIKSEMI ®/SSD Storage/SATA 6 - 2.5\"/Wave (s) ™ - 256GB",
+    "status": "miss"
+  },
+  {
+    "id": "af09c0bb-1c4a-4483-82f4-baf234fb96b3",
+    "title": "HIKSEMI ®/SSD Storage/SATA 6 - 2.5\"/Wave (s) ™ - 512GB",
+    "status": "miss"
+  },
+  {
+    "id": "29c9cba5-5cd5-4fa5-b33a-8271e8b95da5",
+    "title": "HP PRINTER LJ M111A",
+    "status": "miss"
+  },
+  {
+    "id": "c2525c54-45ea-4988-91f2-b3a3ab45d33e",
+    "title": "HP PRINTER LJ M111W",
+    "status": "miss"
+  },
+  {
+    "id": "d9b64ab3-8a6d-4cdf-8367-82739ce1cab5",
+    "title": "HP PRINTER LJ M137FNW",
+    "status": "miss"
+  },
+  {
+    "id": "fa83f8fe-e7cb-40b8-863f-4fcc442601c1",
+    "title": "HP PRINTER LJ M141A",
+    "status": "miss"
+  },
+  {
+    "id": "68b10e16-8727-40c1-a202-24b24a7e0d3c",
+    "title": "HP PRINTER LJ M141W",
+    "status": "miss"
+  },
+  {
+    "id": "c9e06b99-54d6-44c2-b033-2281f45c61e6",
+    "title": "HP PRINTER SMART W/L INKTANK-581-ALO",
+    "status": "miss"
+  },
+  {
+    "id": "ff23cfda-0432-4204-864e-fbdf3b2db9a0",
+    "title": "HP®/LED Monitors/TN 18.5\"/Model No. P19b",
+    "status": "miss"
+  },
+  {
+    "id": "31023d61-0f14-443b-b7cc-b9d1401d5df9",
+    "title": "HP®/Printer LaserJet - 4103dw",
+    "status": "miss"
+  },
+  {
+    "id": "9ca677b1-68dd-40a0-9d3b-defc076fe039",
+    "title": "HP®/Printer LaserJet - 4103FDN",
+    "status": "miss"
+  },
+  {
+    "id": "dd90119c-9845-4d77-b0e3-6926e7391ae7",
+    "title": "Intel ®/Processor/Core™ i5-12400F/18MB Cache - BOX",
+    "status": "miss"
+  },
+  {
+    "id": "37c59bc3-48b4-49b7-8c47-c1e1576eb269",
+    "title": "Intel ®/Processor/Core™ i5-12400F/18MB Cache - TRAY",
+    "status": "miss"
+  },
+  {
+    "id": "7057d65a-6bab-4701-803d-5c12ebf3bf91",
+    "title": "Intel ®/Processor/Core™ i5-14400F/20MB Cache - BOX",
+    "status": "miss"
+  },
+  {
+    "id": "9f3b803d-8fc3-43f4-99f1-54ce37518752",
+    "title": "Intel ®/Processor/Core™ i5-14400F/20MB Cache - TRAY",
+    "status": "miss"
+  },
+  {
+    "id": "5a07dd2e-534d-4f23-96d4-9122e1a774b4",
+    "title": "Intel ®/Processor/Core™ i7-14700F/33MB Cache - BOX",
+    "status": "miss"
+  },
+  {
+    "id": "a0a7789a-07b5-4501-87e5-f2e541032b7f",
+    "title": "Intel ®/Processor/Core™ i7-14700KF/33MB Cache - BOX",
+    "status": "miss"
+  },
+  {
+    "id": "6b289d17-527b-4aea-916e-4f2ddb863ebc",
+    "title": "Intel ®/Processor/Core™ i9-14900K/36MB Cache - BOX",
+    "status": "miss"
+  },
+  {
+    "id": "73d1beee-f154-4954-8103-30e03a48d7ce",
+    "title": "Intel ®/Processor/Core™ i9-14900KF/36MB Cache - BOX",
+    "status": "miss"
+  },
+  {
+    "id": "460c5def-c7c4-4ade-8588-be03c51b34b9",
+    "title": "Intel® Core™ Ultra 5 245k processor  5.20GHz24MB / LGA1851BOX",
+    "status": "miss"
+  },
+  {
+    "id": "92c70690-2684-43e2-86da-adcd117837e3",
+    "title": "Intel® Core™Ultra 5-225 processor 3.30GHz20MB LGA1851  BOX",
+    "status": "miss"
+  },
+  {
+    "id": "07c52d97-2608-4ae0-b4aa-b12da1620be0",
+    "title": "Intel® Core™Ultra 5-225F processor 3.30GHz20MB LGA1851 BOX",
+    "status": "miss"
+  },
+  {
+    "id": "5369d4e5-211c-4fd5-a9fe-00ca48ee9bc5",
+    "title": "Intel® Core™Ultra 5-245KF processor 4.20GHz24MB LGA1851 BOX",
+    "status": "miss"
+  },
+  {
+    "id": "7ec57d88-ba8b-4fc5-8865-cebafd929c20",
+    "title": "Intel® Core™Ultra 7-265KF processor 5.5GHz30MB LGA1851 BOX",
+    "status": "miss"
+  },
+  {
+    "id": "d45fc76b-30ae-4d53-b4d2-1a766e52bf0c",
+    "title": "Intel® Core™Ultra 9-285K processor 3.9GHz36MB LGA1851 BOX",
+    "status": "miss"
+  },
+  {
+    "id": "61fdc6e2-0f4c-458d-8a4a-8ee5111d7a21",
+    "title": "KINGSTON  XS2000 EXTERNAL SSD 500GB",
+    "status": "miss"
+  },
+  {
+    "id": "c4a05143-73cd-4b60-b1af-31666aec30e5",
+    "title": "KINGSTON XS1000 EXTERNAL SSD 1TB",
+    "status": "miss"
+  },
+  {
+    "id": "8e6a496d-48a6-479d-87d5-9f2fe69d2b0e",
+    "title": "KINGSTON XS1000 EXTERNAL SSD 2TB",
+    "status": "miss"
+  },
+  {
+    "id": "ba81f0d3-6aac-4df4-8f5f-133630271c7c",
+    "title": "KINGSTON XS2000 EXTERNAL SSD 1TB",
+    "status": "miss"
+  },
+  {
+    "id": "2b671b32-a60e-4eee-8315-3c6d0e4fb8d8",
+    "title": "KINGSTON XS2000 EXTERNAL SSD 2TB",
+    "status": "miss"
+  },
+  {
+    "id": "a23869da-2c89-4e06-bc32-2ad1d4fe0d39",
+    "title": "KingSton®/SSD Storage NV3/1TB NVMe\" M2",
+    "status": "miss"
+  },
+  {
+    "id": "41762fdf-4441-4d22-8e06-f317fc3da521",
+    "title": "KingSton®/SSD Storage NV3/1TB NVMe\" M2-TRAY",
+    "status": "miss"
+  },
+  {
+    "id": "8f69e359-3a9a-4bda-ac57-5d9038eb4992",
+    "title": "KIOXIA LXD20K001TG8 EXTERNAL SSD 1TB",
+    "status": "miss"
+  },
+  {
+    "id": "cd85ec39-a7b7-4657-8b5f-e575ac9040c0",
+    "title": "KIOXIA LXD20K002TG8 EXTERNAL SSD 2TB",
+    "status": "miss"
+  },
+  {
+    "id": "c2490e7a-4bc8-4df4-957f-d7c198ddf6b5",
+    "title": "KIOXIA/SSD STORAGE/HEATSINK/M2 NVME 2TB",
+    "status": "miss"
+  },
+  {
+    "id": "d1db3d59-b5fa-44af-b6b2-d33ec1a34628",
+    "title": "KIOXIA/SSD STORAGE/HEATSINK/M2 NVME 4TB",
+    "status": "miss"
+  },
+  {
+    "id": "5ef0a785-ef8e-4dc2-b4fb-c51fb4d89fac",
+    "title": "KIOXIA/SSD STORAGE/M2 NVME 1TB",
+    "status": "miss"
+  },
+  {
+    "id": "1cf7105f-59ca-4bf2-ae82-ce3db65e2287",
+    "title": "KIOXIA/SSD STORAGE/M2 NVME 2TB",
+    "status": "miss"
+  },
+  {
+    "id": "02ae0344-cd6e-45af-97a2-ad155268dfe5",
+    "title": "LAP ALIENNWARE 16X-AC16251 U9 275HX-1T-32G-RTX5070 8G-16",
+    "status": "miss"
+  },
+  {
+    "id": "23427724-839d-4dcf-8e69-b3aad8396238",
+    "title": "LAP ALIENWARE 16-AC16250 C7 240H-16G-1T-RTX 4050 6G-16",
+    "status": "miss"
+  },
+  {
+    "id": "792e05c1-6767-4152-a0ce-470a172c73c5",
+    "title": "LAP ALIENWARE 16-AC16250- C7 240H-32G-1T-RTX5060 8G-16",
+    "status": "miss"
+  },
+  {
+    "id": "baf031a7-c94d-477a-adef-90e7b3da603a",
+    "title": "LAP ASUS  FA506NCQ-HN167W  R7 170 16G/512G/RTX 3050 4G 15.6\" W11",
+    "status": "miss"
+  },
+  {
+    "id": "d0be3204-187f-4997-adc3-252a6c2abeca",
+    "title": "LAP ASUS FA401KM-RG014W R AI 7 350/16G/1T/RTX 5060 8G/14`/W11",
+    "status": "miss"
+  },
+  {
+    "id": "c6c5d99a-3a98-4d38-b3d5-04f9045301fc",
+    "title": "LAP ASUS FA506NCG-HN807W 15.6 Ryzen 7-7445HS-8GB RAM- 512GB-RTX 3050 4GB W11",
+    "status": "miss"
+  },
+  {
+    "id": "82c80003-c654-4e5e-88da-ff00c3cd632e",
+    "title": "LAP ASUS FX607VJB-RL165W C5-210H/16G/512G/RTX 3050 6G/16`/W11",
+    "status": "miss"
+  },
+  {
+    "id": "d60a8542-7a5f-431f-a821-6fbabd6f9bfe",
+    "title": "LAP ASUS FX607VJB-RL805W C5-210H/8G/512G/RTX 3050 6G/16`/W11",
+    "status": "miss"
+  },
+  {
+    "id": "d95a1fee-4603-425c-8a77-afec6203df48",
+    "title": "LAP ASUS FX607VU-RL121 i7-13620H 16G/1T/RTX 4050 6G 16\" DOS",
+    "status": "miss"
+  },
+  {
+    "id": "e91559fc-3892-4420-bd0a-31c103c68600",
+    "title": "LAP ASUS FX607VU-RL167W C7 240H 16G-512G-RTX 4050 6G-16\"-W11",
+    "status": "miss"
+  },
+  {
+    "id": "96a4ef44-3865-4c84-9fd1-51208ddb7204",
+    "title": "LAP ASUS FX608JHR-RV057W-CI7-14650HX-RTX 5050 8GB-16G-512GB -16\"-W11",
+    "status": "miss"
+  },
+  {
+    "id": "3348eccd-8c69-4141-817d-ac33edbe2616",
+    "title": "LAP ASUS FX608JMR-F16  i7 14650HX 32G-1T RTX 5060 8G 16 W11",
+    "status": "miss"
+  },
+  {
+    "id": "38776d03-8e0b-4b52-8a59-55125cafbe99",
+    "title": "LAP ASUS FX608JMR-RV017W  i7 14650HX 16G-1T RTX 5060 16 W11",
+    "status": "miss"
+  },
+  {
+    "id": "79b3e9ab-baf2-488a-be4e-bef5d4343a9a",
+    "title": "LAP ASUS FX608JMR-RV057W I7 14650HX-16G-512G-RTX5060 8G-16\"-W11",
+    "status": "miss"
+  },
+  {
+    "id": "33e18d7b-e749-4dec-a98a-618ea1aec89b",
+    "title": "LAP ASUS FX608JPR-RV084 I7 14650 16G/1T/RTX 5070 8G DOS",
+    "status": "miss"
+  },
+  {
+    "id": "086e9f4e-3aa7-42e2-9b65-37741fa9f0d7",
+    "title": "LAP ASUS G16 G614PR-RV132W Ryzen 9 8940HX - RTX 5070 Ti 12GB - 32GB RAM - 1TB SSD - W 11",
+    "status": "miss"
+  },
+  {
+    "id": "c62b0fbf-8fb2-4320-96f4-91fd6a473b3e",
+    "title": "LAP ASUS G614FM-RV169W-R9 9955HX-16G/1TB/RTX 5060 8GB 16\" W11",
+    "status": "miss"
+  },
+  {
+    "id": "d69733a1-b01a-4225-97b7-f5eb83dca40b",
+    "title": "LAP ASUS G614FP-GR169W R9 9955HX-16GB/ 1TB/RTX 5070 8GB- W 11",
+    "status": "miss"
+  },
+  {
+    "id": "e818531e-4779-4516-853e-623b361438ae",
+    "title": "LAP ASUS G614PH-RV161W R9-8940HX/16G/1T/RTX 5050 8G/16`/W11",
+    "status": "miss"
+  },
+  {
+    "id": "565f3c66-15b7-4a0d-bf09-3db36a76dc26",
+    "title": "LAP ASUS G614PR-G016W Ryzen™ 9 8940HX 16G-1T-RTX™ 5070 Ti 16 W11",
+    "status": "miss"
+  }
+]

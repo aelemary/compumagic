@@ -1,0 +1,72 @@
+[
+  {
+    "id": "226de052-2afe-4c2f-93c1-01129ecb6f02",
+    "title": "Dell ®/LED Monitors/ 22\"/Model No. E2225HM",
+    "status": "miss"
+  },
+  {
+    "id": "b6c6be21-358c-45d1-a674-5eeae65bb656",
+    "title": "Dell ®/LED Monitors/ 22\"/Model No. SE2225HM",
+    "status": "miss"
+  },
+  {
+    "id": "35118eca-e871-4ca5-bc93-1bf87b14514e",
+    "title": "Dell ®/LED Monitors/ 24\"/Model No. SE2425HM",
+    "status": "miss"
+  },
+  {
+    "id": "b5f288f0-8d15-49ef-9a7e-d555715ae617",
+    "title": "Dell ®/LED Monitors/27\"/Model No. SE2725HM",
+    "status": "miss"
+  },
+  {
+    "id": "ff23cfda-0432-4204-864e-fbdf3b2db9a0",
+    "title": "HP®/LED Monitors/TN 18.5\"/Model No. P19b",
+    "status": "miss"
+  },
+  {
+    "id": "86a0b3a5-cef8-496c-8159-82144428889f",
+    "title": "samsung ®/LED Monitors /27\"/100HZ/LS27D300GAMXUE",
+    "status": "miss"
+  },
+  {
+    "id": "a678cd55-22c7-4e55-a99a-7a68fa740061",
+    "title": "samsung ®/LED Monitors /27\"/120HZ/LS27F320GAUXEN",
+    "status": "updated",
+    "icecatId": "130536262",
+    "icecatTitle": "Samsung S27F320GAU computer monitor 68.6 cm (27\") 1920 x 1080 pixels Full HD LCD Black",
+    "source": "code:LS27F320GAUXEN",
+    "score": 23.4,
+    "specCount": 48
+  },
+  {
+    "id": "99181153-4bf9-4930-a54c-5b00579b5c35",
+    "title": "Samsung ®/LED Monitors /ODYSSEY G5-27\"/ LS27DG502EUXEN",
+    "status": "updated",
+    "icecatId": "120398552",
+    "icecatTitle": "Samsung G50D computer monitor 68.6 cm (27\") 2560 x 1440 pixels Quad HD LED Black",
+    "source": "code:LS27DG502EUXEN",
+    "score": 24.4,
+    "specCount": 48
+  },
+  {
+    "id": "f898a104-8ef4-459a-8cfb-200252a6844e",
+    "title": "Samsung ®/LED Monitors/Curved-32G5\"/Model No. S32CG552EM",
+    "status": "miss"
+  },
+  {
+    "id": "33387e49-2639-49ec-b1c1-91da42b10a59",
+    "title": "Samsung 32-Inch Odyssey G3 Series FHD Gaming Monitor LS32DG302EMXUE",
+    "status": "miss"
+  },
+  {
+    "id": "3bbfcca8-913b-43d4-bd27-ae65011e0b80",
+    "title": "SAMSUNG MONITOR 24 LS24F330EAUXEN",
+    "status": "updated",
+    "icecatId": "134789429",
+    "icecatTitle": "Samsung LS24F330EAUXEN computer monitor 61 cm (24\") 1920 x 1080 pixels Full HD LCD Black",
+    "source": "code:LS24F330EAUXEN",
+    "score": 25.4,
+    "specCount": 48
+  }
+]

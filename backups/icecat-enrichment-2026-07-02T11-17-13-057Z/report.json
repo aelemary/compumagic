@@ -1,0 +1,27 @@
+[
+  {
+    "id": "586dec03-e476-4541-8d00-7db108a35a6d",
+    "title": "VGA ASUS DUAL GEFORCE  RTX 3050 6G OC",
+    "status": "miss"
+  },
+  {
+    "id": "02228b76-21ea-4323-87bc-b30f3676648b",
+    "title": "VGA ASUS Dual GeForce RTX™ 3050 V2 OC Edition 8GB GDDR6",
+    "status": "miss"
+  },
+  {
+    "id": "f6d50bad-5a0b-438c-b2eb-2fc91a4f6311",
+    "title": "VGA ASUS Dual GeForce RTX™ 5050 8GB GDDR6 OC Edition",
+    "status": "miss"
+  },
+  {
+    "id": "fa10c3a0-2996-456e-a4b0-3aca070960da",
+    "title": "VGA ASUS Dual GeForce RTX™ 5060 8GB GDDR7 OC Edition",
+    "status": "miss"
+  },
+  {
+    "id": "905c84be-c884-4898-81d8-0f833ef60c27",
+    "title": "VGA ASUS Dual GeForce RTX™ 5060 Ti 16GB GDDR7",
+    "status": "miss"
+  }
+]

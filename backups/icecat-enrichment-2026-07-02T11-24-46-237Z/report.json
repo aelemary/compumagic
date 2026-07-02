@@ -1,0 +1,33 @@
+[
+  {
+    "id": "f7e7b061-a9d7-4376-ad5a-fb65e9c511d3",
+    "title": "MOTHERBOARD ASUS B850 MAX GAMING WIFI-W",
+    "status": "web-dry-run",
+    "query": "direct-source",
+    "specCount": 2,
+    "sources": [
+      {
+        "title": "ASUS b850-max-gaming-wifi-w tech specs",
+        "url": "https://www.asus.com/motherboards-components/motherboards/others/b850-max-gaming-wifi-w/techspec/"
+      }
+    ]
+  },
+  {
+    "id": "7d19c0db-f3af-4da2-8616-56cf98e3d8b8",
+    "title": "MOTHERBOARD ASUS B850M MAX GAMING WIFI",
+    "status": "web-dry-run",
+    "query": "direct-source",
+    "specCount": 2,
+    "sources": [
+      {
+        "title": "ASUS b850m-max-gaming-wifi tech specs",
+        "url": "https://www.asus.com/motherboards-components/motherboards/others/b850m-max-gaming-wifi/techspec/"
+      }
+    ]
+  },
+  {
+    "id": "264c6b75-c587-484e-85d0-1fefcb854e44",
+    "title": "MOTHERBOARD ASUS PRIME A620AM-K",
+    "status": "miss"
+  }
+]
