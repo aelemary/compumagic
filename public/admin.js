@@ -101,6 +101,40 @@ function parseImageList(value) {
     .filter(Boolean);
 }
 
+function parseManualSpecs(value = "") {
+  const specs = {};
+  String(value || "")
+    .split(/\r?\n/)
+    .map((line) => line.trim())
+    .filter(Boolean)
+    .forEach((line) => {
+      const separatorIndex = line.search(/[:=]/);
+      if (separatorIndex <= 0) return;
+      const key = line.slice(0, separatorIndex).trim();
+      const specValue = line.slice(separatorIndex + 1).trim();
+      if (key && specValue) specs[key] = specValue;
+    });
+  return specs;
+}
+
+function formatManualSpecs(specs = {}) {
+  if (!specs || typeof specs !== "object") return "";
+  return Object.entries(specs)
+    .filter(([key]) => key !== "sourceTitle")
+    .filter(([, value]) => String(value || "").trim())
+    .map(([key, value]) => `${key}: ${String(value).trim()}`)
+    .join("\n");
+}
+
+function productManualSpecs(product = {}) {
+  const raw = product.specsRaw && typeof product.specsRaw === "object" ? product.specsRaw : {};
+  return raw.manual && typeof raw.manual === "object" ? raw.manual : {};
+}
+
+function productIcecatId(product = {}) {
+  return product.icecatId || product.specsRaw?.icecat?.id || "";
+}
+
 function renderImagePreview(urls) {
   const preview = document.getElementById("image-preview");
   if (!preview) return;
@@ -209,6 +243,10 @@ function startEditingProduct(productId) {
   if (warrantyInput) warrantyInput.value = product.warranty ?? "";
   const priceInput = form.querySelector('input[name="price"]');
   if (priceInput) priceInput.value = product.price || "";
+  const manualSpecsInput = form.querySelector('textarea[name="manualSpecs"]');
+  if (manualSpecsInput) manualSpecsInput.value = formatManualSpecs(productManualSpecs(product));
+  const icecatInput = form.querySelector('input[name="icecatId"]');
+  if (icecatInput) icecatInput.value = productIcecatId(product);
   form.querySelector('textarea[name="description"]').value = product.description || "";
   const imagesTextarea = form.querySelector('textarea[name="images"]');
   imagesTextarea.value = (product.images || []).join("\n");
@@ -603,6 +641,10 @@ async function handleProductSubmit(event) {
     payload.price = 0;
   }
   payload.images = parseImageList(payload.images);
+  payload.specs = parseManualSpecs(payload.manualSpecs);
+  payload.replaceManualSpecs = true;
+  delete payload.manualSpecs;
+  payload.icecatId = payload.icecatId ? String(payload.icecatId).trim() : "";
   if (payload.category !== "laptop") {
     delete payload.gpu;
     delete payload.cpu;
@@ -614,11 +656,27 @@ async function handleProductSubmit(event) {
     showStatus("product-status", editId ? "Updating listing…" : "Publishing listing…");
     const endpoint = editId ? `${API_BASE}/products/${encodeURIComponent(editId)}` : `${API_BASE}/products`;
     const method = editId ? "PATCH" : "POST";
-    const product = await fetchJSON(endpoint, {
+    let product = await fetchJSON(endpoint, {
       method,
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload),
     });
+    let icecatImported = false;
+    let icecatError = null;
+    if (payload.icecatId) {
+      showStatus("product-status", "Listing saved. Pulling Icecat specs…");
+      try {
+        product = await fetchJSON(`${API_BASE}/products/${encodeURIComponent(product.id)}/icecat`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ icecatId: payload.icecatId }),
+        });
+        icecatImported = true;
+      } catch (error) {
+        console.error(error);
+        icecatError = error;
+      }
+    }
     const index = state.products.findIndex((item) => item.id === product.id);
     if (index === -1) {
       state.products.push(product);
@@ -627,9 +685,22 @@ async function handleProductSubmit(event) {
     }
     renderCatalog();
     updateStats();
+    if (icecatError) {
+      showStatus(
+        "product-status",
+        `Listing saved, but Icecat import failed: ${icecatError.message || "check the product ID"}.`,
+        "error"
+      );
+      startEditingProduct(product.id);
+      return;
+    }
     showStatus(
       "product-status",
-      editId ? `Listing ${product.title} updated.` : `Listing ${product.title} is live.`
+      icecatImported
+        ? `Listing ${product.title} updated with Icecat specs.`
+        : editId
+          ? `Listing ${product.title} updated.`
+          : `Listing ${product.title} is live.`
     );
     resetProductForm();
   } catch (error) {
@@ -639,6 +710,40 @@ async function handleProductSubmit(event) {
     } else {
       showStatus("product-status", "Couldn't publish listing.", "error");
     }
+  }
+}
+
+async function handleIcecatFetch() {
+  const form = document.getElementById("product-form");
+  if (!form) return;
+  const idInput = form.querySelector('input[name="id"]');
+  const icecatInput = form.querySelector('input[name="icecatId"]');
+  const productId = idInput ? idInput.value.trim() : "";
+  const icecatId = icecatInput ? icecatInput.value.trim() : "";
+  if (!productId) {
+    showStatus("product-status", "Save or edit an existing listing before pulling Icecat specs.", "error");
+    return;
+  }
+  if (!icecatId) {
+    showStatus("product-status", "Enter an Icecat product ID first.", "error");
+    return;
+  }
+  try {
+    showStatus("product-status", "Pulling Icecat specs…");
+    const product = await fetchJSON(`${API_BASE}/products/${encodeURIComponent(productId)}/icecat`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ icecatId }),
+    });
+    const index = state.products.findIndex((item) => item.id === product.id);
+    if (index === -1) state.products.push(product);
+    else state.products[index] = product;
+    renderCatalog();
+    startEditingProduct(product.id);
+    showStatus("product-status", `Icecat specs imported for ${product.title}.`);
+  } catch (error) {
+    console.error(error);
+    showStatus("product-status", error.message || "Could not pull Icecat specs.", "error");
   }
 }
 
@@ -657,9 +762,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const usersBody = document.getElementById("users-body");
   const cancelEditButton = document.getElementById("product-cancel");
   const categorySelect = document.getElementById("product-category");
+  const icecatButton = document.getElementById("icecat-fetch-button");
 
   if (companyForm) companyForm.addEventListener("submit", handleCompanySubmit);
   if (productForm) productForm.addEventListener("submit", handleProductSubmit);
+  if (icecatButton) icecatButton.addEventListener("click", handleIcecatFetch);
   if (cancelEditButton) {
     cancelEditButton.addEventListener("click", () => resetProductForm());
   }

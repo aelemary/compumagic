@@ -61,7 +61,7 @@ function renderImages(images = [], title = "Product image") {
           ? window.catalogImageUrl(url, { width: 900, height: 680, quality: 74 })
           : url;
         return `<figure class="gallery-slide" data-index="${index}">
-          <img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(title)} ${index + 1}" loading="${index === 0 ? "eager" : "lazy"}" decoding="async" referrerpolicy="no-referrer" />
+          <img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(title)} ${index + 1}" data-fallback="${escapeHtml(window.catalogPlaceholder ? window.catalogPlaceholder(title) : "https://placehold.co/800x500?text=Product+Preview")}" loading="${index === 0 ? "eager" : "lazy"}" decoding="async" referrerpolicy="no-referrer" />
         </figure>`;
       }
     )
@@ -81,7 +81,7 @@ function renderImages(images = [], title = "Product image") {
 
 function renderSpec(label, value) {
   if (!value) return "";
-  return `<div class="spec-item"><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong></div>`;
+  return `<div class="spec-sheet-row"><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong></div>`;
 }
 
 function renderSpecRow(label, value) {
@@ -96,17 +96,112 @@ function normalizeText(value = "") {
     .trim();
 }
 
+function normalizeProductSpecLabel(value = "") {
+  return String(value || "")
+    .toLowerCase()
+    .replace(/[_/-]+/g, " ")
+    .replace(/[^a-z0-9]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function canonicalSpecLabel(label = "") {
+  const normalized = normalizeProductSpecLabel(label);
+  if (["cpu", "processor", "processor model", "processor family"].includes(normalized)) return "processor";
+  if (["gpu", "graphics", "graphics adapter", "graphics processor", "discrete graphics card model"].includes(normalized)) return "graphics";
+  if (["ram", "memory", "internal memory", "system memory"].includes(normalized)) return "memory";
+  if (["storage", "ssd capacity", "hdd capacity", "total storage capacity", "capacity"].includes(normalized)) return "storage";
+  if (["display", "screen", "display diagonal", "display resolution"].includes(normalized)) return "display";
+  if (["operating system", "operating system installed", "os"].includes(normalized)) return "operating system";
+  if (["type", "memory type", "internal memory type", "graphics card memory type"].includes(normalized)) return "memory type";
+  if (["speed", "memory clock speed"].includes(normalized)) return "speed";
+  if (["size", "display size"].includes(normalized)) return "display";
+  return normalized;
+}
+
+function normalizeSpecValue(value = "") {
+  return String(value || "")
+    .toLowerCase()
+    .replace(/[®™]/g, "")
+    .replace(/\b(gb)\b/g, "g")
+    .replace(/\b(tb)\b/g, "t")
+    .replace(/\s+/g, " ")
+    .replace(/[^a-z0-9.]+/g, " ")
+    .trim();
+}
+
+function formatSpecValue(label, value) {
+  const text = String(value || "")
+    .replace(/\s+/g, " ")
+    .replace(/\s*,\s*/g, ", ")
+    .trim();
+  if (!text) return "";
+  if (/^https?:\/\//i.test(text)) return "";
+  if (/official source|xbox game pass|included in the box|microsoft office/i.test(label)) return "";
+  const canonical = canonicalSpecLabel(label);
+  const directCompact = {
+    processor: text.match(/(?:Intel|AMD|Qualcomm|Snapdragon|Core|Ryzen)[^,;]*/i)?.[0],
+    graphics: text.match(/(?:NVIDIA|AMD|Intel|GeForce|Radeon|RTX|GTX|Arc)[^,;]*/i)?.[0],
+    memory: text.match(/\b\d+\s*(?:GB|G)\b(?:\s*(?:DDR\d|LPDDR\dX?))?/i)?.[0],
+    storage: text.match(/\b\d+(?:\.\d+)?\s*(?:TB|GB|T|G)\b[^,;]*/i)?.[0],
+    display: text.match(/\b\d{1,2}(?:\.\d)?\s*(?:-?\s*inch|["`])[^,;]*/i)?.[0],
+    "operating system": text.match(/\bWindows\s+\d+(?:\s+\w+)?\b|\bDOS\b|\bNo preinstalled OS\b/i)?.[0],
+  }[canonical];
+  if (directCompact) return directCompact.replace(/\s+/g, " ").trim();
+  if (text.length <= 92) return text;
+  const compactParts = text
+    .split(/,|;/)
+    .map((part) => part.trim())
+    .filter(Boolean)
+    .filter((part) => !/^https?:\/\//i.test(part));
+  if (!compactParts.length) return "";
+  const shortlist = [];
+  for (const part of compactParts) {
+    const next = shortlist.length ? `${shortlist.join(" · ")} · ${part}` : part;
+    if (next.length > 92) break;
+    shortlist.push(part);
+    if (shortlist.length === 3) break;
+  }
+  return shortlist.join(" · ");
+}
+
+function extraSpecKeys(type = "") {
+  const extras = {
+    laptop: [
+      "Battery",
+      "Weight",
+      "Panel type",
+      "Refresh Rate",
+      "Display resolution",
+      "Dimensions",
+      "Keyboard and Touchpad",
+      "I/O Ports",
+      "Network and Communication",
+    ],
+    gpu: ["Graphics card memory type", "Memory bus", "HDMI ports quantity", "DisplayPorts quantity", "Cooling type"],
+    monitor: ["Panel type", "Maximum refresh rate", "Response time", "Display brightness"],
+    storage: ["Interface", "SSD form factor", "Sequential read speed", "Sequential write speed", "NVMe"],
+    ram: ["Internal memory type", "Memory clock speed", "Memory layout", "CAS latency"],
+    motherboard: ["Processor socket", "Motherboard chipset", "Motherboard form factor", "Supported memory types"],
+  };
+  return extras[type] || [];
+}
+
 function getKeySpecEntries(product) {
   const fields = window.catalogSpecFields ? window.catalogSpecFields(product.type) : [];
   const entries = [];
   const seen = new Set();
+  const seenLabels = new Set();
   fields.forEach((field) => {
     const value = window.catalogPickSpec ? window.catalogPickSpec(product, field.keys) : "";
-    const valueText = String(value || "").trim();
+    const valueText = formatSpecValue(field.label, value);
     if (!valueText) return;
-    const fingerprint = `${normalizeText(field.label)}:${normalizeText(valueText)}`;
-    if (seen.has(fingerprint)) return;
+    const canonicalLabel = canonicalSpecLabel(field.label);
+    const normalizedValue = normalizeSpecValue(valueText);
+    const fingerprint = `${canonicalLabel}:${normalizedValue}`;
+    if (seen.has(fingerprint) || seenLabels.has(canonicalLabel)) return;
     seen.add(fingerprint);
+    seenLabels.add(canonicalLabel);
     entries.push({ label: field.label, value: valueText });
   });
   return entries;
@@ -115,25 +210,42 @@ function getKeySpecEntries(product) {
 function buildFullSpecs(product, keySpecEntries, warrantyLabel, titleNormalized) {
   const fullSpecs = [];
   const seen = new Set();
+  const seenLabels = new Set();
+  const seenValues = new Set();
+  const preferredLabels = [
+    ...(window.catalogSpecFields ? window.catalogSpecFields(product.type).map((field) => field.label) : []),
+    ...extraSpecKeys(product.type),
+    "Model",
+    "Warranty",
+  ];
+  const normalizedPreferred = preferredLabels.map(normalizeProductSpecLabel).filter(Boolean);
   const addSpec = (label, value) => {
-    const valueText = String(value || "").trim();
+    const valueText = formatSpecValue(label, value);
     if (!label || !valueText || valueText.toLowerCase() === titleNormalized) return;
     if (String(label).trim() === "sourceTitle") return;
-    const fingerprint = `${normalizeText(label)}:${normalizeText(valueText)}`;
-    if (seen.has(fingerprint)) return;
+    const canonicalLabel = canonicalSpecLabel(label);
+    const normalizedValue = normalizeSpecValue(valueText);
+    const fingerprint = `${canonicalLabel}:${normalizedValue}`;
+    if (seen.has(fingerprint) || seenLabels.has(canonicalLabel) || seenValues.has(normalizedValue)) return;
     seen.add(fingerprint);
+    seenLabels.add(canonicalLabel);
+    seenValues.add(normalizedValue);
     fullSpecs.push(renderSpec(label, valueText));
   };
 
   keySpecEntries.forEach((entry) => addSpec(entry.label, entry.value));
   if (product.specs && typeof product.specs === "object") {
-    Object.entries(product.specs).forEach(([label, value]) => addSpec(label, value));
+    Object.entries(product.specs).forEach(([label, value]) => {
+      const normalized = normalizeProductSpecLabel(label);
+      if (!normalizedPreferred.some((item) => normalized === item || normalized.includes(item) || item.includes(normalized))) {
+        return;
+      }
+      addSpec(label, value);
+    });
   }
   if (normalizeText(product.shortName) !== normalizeText(product.title)) {
     addSpec("Model", product.shortName);
   }
-  if (product.icecatId) addSpec("Icecat ID", product.icecatId);
-  if (product.price) addSpec("Reference Price", Number(product.price).toLocaleString());
   addSpec("Warranty", warrantyLabel);
   return fullSpecs;
 }
@@ -239,6 +351,19 @@ function initGallery() {
   });
 
   setIndex(0);
+
+  slider.querySelectorAll("img").forEach((img) => {
+    img.addEventListener(
+      "error",
+      () => {
+        const fallback = img.dataset.fallback;
+        if (fallback && img.src !== fallback) {
+          img.src = fallback;
+        }
+      },
+      { once: true }
+    );
+  });
 }
 
 function createRelatedCard(product) {
@@ -254,7 +379,7 @@ function createRelatedCard(product) {
   const summary = window.catalogSummary ? window.catalogSummary(product) : "";
   card.innerHTML = `
     <div class="product-media">
-      <img src="${image}" alt="${product.title}" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
+      <img src="${escapeHtml(image)}" alt="${escapeHtml(product.title)}" data-fallback="${escapeHtml(window.catalogPlaceholder ? window.catalogPlaceholder(typeLabel) : "https://placehold.co/600x450?text=Product")}" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
     </div>
     <div class="product-body">
       <span class="badge">${brandLabel} • ${typeLabel}</span>
@@ -262,6 +387,19 @@ function createRelatedCard(product) {
       ${summary ? `<p class="product-summary">${summary}</p>` : ""}
     </div>
   `;
+  const cardImage = card.querySelector("img");
+  if (cardImage) {
+    cardImage.addEventListener(
+      "error",
+      () => {
+        const fallback = cardImage.dataset.fallback;
+        if (fallback && cardImage.src !== fallback) {
+          cardImage.src = fallback;
+        }
+      },
+      { once: true }
+    );
+  }
   const detailUrl = `/product.html?id=${encodeURIComponent(product.id)}`;
   card.addEventListener("click", () => {
     window.location.href = detailUrl;

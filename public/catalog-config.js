@@ -27,14 +27,15 @@ window.getCatalogCategory = (type) => {
 window.catalogPlaceholder = (label = "Product") =>
   `https://placehold.co/600x450/e0e9f6/0a2e5d?text=${encodeURIComponent(label)}`;
 
-window.catalogImageUrl = (url, { width = 420, height = 315, quality = 68 } = {}) => {
+window.catalogImageUrl = (url) => {
   if (!url) return "";
   if (/placehold\.co/i.test(url)) return url;
   try {
     const parsed = new URL(url);
-    if (parsed.hostname.includes("images.weserv.nl")) return url;
-    const target = `${parsed.hostname}${parsed.pathname}${parsed.search}`;
-    return `https://images.weserv.nl/?url=${encodeURIComponent(target)}&w=${width}&h=${height}&fit=contain&output=webp&q=${quality}`;
+    if (parsed.protocol === "http:") {
+      parsed.protocol = "https:";
+    }
+    return parsed.toString();
   } catch (error) {
     return url;
   }

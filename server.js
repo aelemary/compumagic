@@ -37,6 +37,8 @@ if (!SUPABASE_URL || !SUPABASE_KEY) {
 }
 const SUPABASE_REST_URL = `${SUPABASE_URL}/rest/v1`;
 const SESSION_SECRET = process.env.SESSION_SECRET || SUPABASE_KEY;
+const ICECAT_API_URL = process.env.ICECAT_API_URL || "https://live.icecat.biz/api";
+const ICECAT_LANG = process.env.ICECAT_LANG || "EN";
 
 function sanitizeFilename(name) {
   return name
@@ -341,6 +343,194 @@ function normalizeSpecPrimitive(value) {
   return "";
 }
 
+function pickIcecatValue(value, depth = 0) {
+  if (depth > 4) return "";
+  const primitive = normalizeSpecPrimitive(value);
+  if (primitive) return primitive;
+  if (Array.isArray(value)) {
+    return value
+      .map((item) => pickIcecatValue(item, depth + 1))
+      .filter(Boolean)
+      .slice(0, 8)
+      .join(", ");
+  }
+  if (!value || typeof value !== "object") return "";
+  const priorityKeys = [
+    "Presentation_Value",
+    "PresentationValue",
+    "LocalValue",
+    "Value",
+    "value",
+    "DisplayValue",
+    "Name",
+    "Label",
+    "Text",
+    "text",
+  ];
+  for (const key of priorityKeys) {
+    if (value[key] !== undefined) {
+      const picked = pickIcecatValue(value[key], depth + 1);
+      if (picked) return picked;
+    }
+  }
+  for (const nested of Object.values(value)) {
+    const picked = pickIcecatValue(nested, depth + 1);
+    if (picked) return picked;
+  }
+  return "";
+}
+
+function humanizeSpecKey(value = "") {
+  return String(value || "")
+    .replace(/[_-]+/g, " ")
+    .replace(/([a-z])([A-Z])/g, "$1 $2")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function addFlatSpec(out, key, value) {
+  const cleanKey = humanizeSpecKey(key);
+  const cleanValue = normalizeSpecPrimitive(value);
+  if (!cleanKey || !cleanValue) return;
+  if (out[cleanKey]) {
+    if (!out[cleanKey].includes(cleanValue)) out[cleanKey] += ` | ${cleanValue}`;
+    return;
+  }
+  out[cleanKey] = cleanValue;
+}
+
+function flattenIcecatSpecs(node, out = {}, context = { count: 0 }, trail = [], depth = 0) {
+  if (context.count >= 450 || depth > 8 || node == null) return out;
+  const primitive = normalizeSpecPrimitive(node);
+  if (primitive) {
+    addFlatSpec(out, trail.join(" / "), primitive);
+    context.count += 1;
+    return out;
+  }
+  if (Array.isArray(node)) {
+    node.forEach((item) => flattenIcecatSpecs(item, out, context, trail, depth + 1));
+    return out;
+  }
+  if (typeof node !== "object") return out;
+
+  const nameCandidate =
+    pickIcecatValue(node.Name) ||
+    pickIcecatValue(node.Feature) ||
+    pickIcecatValue(node.FeatureName) ||
+    pickIcecatValue(node.Label);
+  const valueCandidate =
+    pickIcecatValue(node.Presentation_Value) ||
+    pickIcecatValue(node.PresentationValue) ||
+    pickIcecatValue(node.Value) ||
+    pickIcecatValue(node.LocalValue) ||
+    pickIcecatValue(node.DisplayValue);
+  if (nameCandidate && valueCandidate) {
+    addFlatSpec(out, nameCandidate, valueCandidate);
+    context.count += 1;
+  }
+
+  Object.entries(node).forEach(([key, value]) => {
+    if (context.count >= 450) return;
+    flattenIcecatSpecs(value, out, context, trail.concat([humanizeSpecKey(key)]), depth + 1);
+  });
+  return out;
+}
+
+function mapIcecatPayload(payload, fallbackId = "") {
+  const dataRoot = payload?.data || payload || {};
+  const data =
+    dataRoot?.Product ||
+    dataRoot?.product ||
+    dataRoot?.Data ||
+    dataRoot?.data ||
+    dataRoot ||
+    {};
+  const general =
+    data?.GeneralInfo || data?.generalInfo || data?.General || data?.general || {};
+  const flattened =
+    flattenIcecatSpecs(
+      data?.FeaturesGroups ||
+        data?.FeatureGroups ||
+        data?.featureGroups ||
+        data?.Features ||
+        data?.features ||
+        []
+    ) || {};
+  const fallbackSpecs = Object.keys(flattened).length
+    ? flattened
+    : flattenIcecatSpecs(general || data || {}) || {};
+  const mapped = {
+    id: String(general.IcecatId || data?.IcecatId || fallbackId || ""),
+    lang: ICECAT_LANG,
+    shopname: process.env.ICECAT_SHOPNAME || process.env.ICECAT_USERNAME || "openIcecat-live",
+    title: pickIcecatValue(data?.Title) || pickIcecatValue(general?.Title) || "",
+    brand: pickIcecatValue(general?.Brand) || "",
+    category: pickIcecatValue(general?.Category) || "",
+    productCode:
+      pickIcecatValue(general?.BrandPartCode) || pickIcecatValue(general?.ProductCode) || "",
+    summary:
+      pickIcecatValue(data?.SummaryDescription) || pickIcecatValue(data?.MarketingText) || "",
+    syncedAt: new Date().toISOString(),
+    specs: fallbackSpecs,
+  };
+  if (!mapped.id && payload?.id) mapped.id = String(payload.id);
+  return mapped;
+}
+
+async function fetchIcecatById(icecatId = "") {
+  const id = String(icecatId || "").trim();
+  if (!id) throw new Error("Icecat product ID is required.");
+  if (!process.env.ICECAT_API_TOKEN) throw new Error("ICECAT_API_TOKEN is not configured.");
+  const url = new URL(ICECAT_API_URL);
+  url.searchParams.set("lang", ICECAT_LANG);
+  url.searchParams.set("shopname", process.env.ICECAT_SHOPNAME || "openIcecat-live");
+  url.searchParams.set("username", process.env.ICECAT_SHOPNAME || "openIcecat-live");
+  url.searchParams.set("content", process.env.ICECAT_CONTENT_QUERY ?? "");
+  url.searchParams.set("icecat_id", id);
+  if (process.env.ICECAT_APP_KEY) {
+    url.searchParams.set("app_key", process.env.ICECAT_APP_KEY);
+  }
+
+  const response = await fetch(url, {
+    headers: {
+      Accept: "application/json",
+      "Api-Token": process.env.ICECAT_API_TOKEN,
+      ...(process.env.ICECAT_CONTENT_TOKEN
+        ? {
+            "Content-Token": process.env.ICECAT_CONTENT_TOKEN,
+          }
+        : {}),
+    },
+  });
+  const text = await response.text();
+  let payload = null;
+  try {
+    payload = text ? JSON.parse(text) : {};
+  } catch {
+    payload = {};
+  }
+  if (!response.ok) {
+    const error = new Error(
+      payload?.msg ||
+        payload?.Message ||
+        payload?.Error ||
+        text ||
+        `Icecat request failed ${response.status}`
+    );
+    error.status = response.status;
+    throw error;
+  }
+  if (payload?.msg && String(payload.msg).toLowerCase() !== "ok") {
+    throw new Error(payload.msg);
+  }
+  const mapped = mapIcecatPayload(payload, id);
+  const specCount = Object.keys(mapped.specs || {}).length;
+  if (!mapped.id && !mapped.title && specCount === 0) {
+    throw new Error("Icecat returned no usable product data");
+  }
+  return mapped;
+}
+
 function findSpecValue(specsRaw, candidates = []) {
   if (!specsRaw || typeof specsRaw !== "object") return "";
   const normalizedCandidates = candidates.map(normalizeSpecKey).filter(Boolean);
@@ -632,6 +822,8 @@ function buildSpecsPayload(body = {}, existingSpecs = {}) {
   const manual =
     existingSpecs.manual && typeof existingSpecs.manual === "object" ? existingSpecs.manual : {};
   const incomingManual = body.specs && typeof body.specs === "object" ? body.specs : {};
+  const existingIcecat =
+    existingSpecs.icecat && typeof existingSpecs.icecat === "object" ? existingSpecs.icecat : null;
   const specs = {
     ...existingSpecs,
     cpu: body.cpu || existingSpecs.cpu || "",
@@ -640,11 +832,19 @@ function buildSpecsPayload(body = {}, existingSpecs = {}) {
     storage: body.storage || existingSpecs.storage || "",
     display: body.display || existingSpecs.display || "",
   };
-  const nextManual = { ...manual, ...incomingManual };
+  if (existingIcecat) specs.icecat = existingIcecat;
+  if (body.icecatId) {
+    specs.icecat = {
+      ...(existingIcecat || {}),
+      id: String(body.icecatId).trim(),
+    };
+  }
+  const nextManual = body.replaceManualSpecs ? { ...incomingManual } : { ...manual, ...incomingManual };
   if (body.capacity) nextManual.capacity = body.capacity;
   if (body.memoryType) nextManual.memoryType = body.memoryType;
   if (body.chipset) nextManual.chipset = body.chipset;
   if (Object.keys(nextManual).length) specs.manual = nextManual;
+  else delete specs.manual;
   return specs;
 }
 
@@ -1027,6 +1227,35 @@ async function handleApi(req, res, pathname, searchParams) {
       case "products":
       case "laptops": {
         const forcedCategory = resource === "laptops" ? "laptop" : "";
+        const action = segments[3] || "";
+        if (method === "POST" && slug && action === "icecat") {
+          if (!requireAuth(req, res, session, { admin: true })) return;
+          const body = await parseBody(req);
+          const icecatId = String(body?.icecatId || "").trim();
+          if (!icecatId) {
+            reply(400, { error: "Icecat product ID is required." });
+            return;
+          }
+          const current = await sb("products", { params: { select: "id,type,specs_raw", id: `eq.${slug}` } });
+          if (!current.length) {
+            reply(404, { error: "Product not found" });
+            return;
+          }
+          const existingSpecs = normalizeSpecsRaw(current[0].specs_raw);
+          const icecat = await fetchIcecatById(icecatId);
+          const specsRaw = {
+            ...existingSpecs,
+            icecat,
+          };
+          const updated = await sb("products", {
+            method: "PATCH",
+            params: { id: `eq.${slug}` },
+            headers: { Prefer: "return=representation" },
+            body: { specs_raw: specsRaw },
+          });
+          reply(200, mapProduct(updated?.[0], current[0].type));
+          return;
+        }
         if (method === "GET" && slug) {
           const products = await fetchProducts({ ids: [slug], category: forcedCategory });
           const record = products?.[0];
