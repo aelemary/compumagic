@@ -78,23 +78,6 @@ function groupedProducts(products) {
   }, {});
 }
 
-function renderCategoryTiles(products) {
-  const container = document.getElementById("category-tiles");
-  if (!container) return;
-  const grouped = groupedProducts(products);
-  container.innerHTML = "";
-  CATEGORY_ORDER.forEach((type) => {
-    const items = grouped[type] || [];
-    if (!items.length) return;
-    const category = window.getCatalogCategory(type);
-    const tile = document.createElement("a");
-    tile.className = "category-tile";
-    tile.href = `/m/category.html?type=${encodeURIComponent(type)}`;
-    tile.innerHTML = `<span>${escapeHtml(category.label)}</span><strong>${items.length}</strong>`;
-    container.appendChild(tile);
-  });
-}
-
 function renderProducts(products) {
   const results = document.getElementById("results");
   const empty = document.getElementById("empty");
@@ -144,7 +127,6 @@ async function init() {
   setupHeaderSearch();
   try {
     state.catalog = await fetchJSON(`${API_BASE}/products`);
-    renderCategoryTiles(state.catalog);
     renderProducts(state.catalog);
   } catch (error) {
     console.error(error);

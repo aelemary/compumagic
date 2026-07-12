@@ -97,28 +97,6 @@ function groupedProducts(products) {
   }, {});
 }
 
-function renderCategoryTiles(products) {
-  const container = document.getElementById("category-tiles");
-  if (!container) return;
-  const grouped = groupedProducts(products);
-  container.innerHTML = "";
-  const fragment = document.createDocumentFragment();
-  CATEGORY_ORDER.forEach((type) => {
-    const items = grouped[type] || [];
-    if (!items.length) return;
-    const category = window.getCatalogCategory(type);
-    const tile = document.createElement("a");
-    tile.className = "category-tile";
-    tile.href = `/category.html?type=${encodeURIComponent(type)}`;
-    tile.innerHTML = `
-      <span>${escapeHtml(category.label)}</span>
-      <strong>${items.length}</strong>
-    `;
-    fragment.appendChild(tile);
-  });
-  container.appendChild(fragment);
-}
-
 function renderProductRails(products) {
   const results = document.getElementById("results");
   const empty = document.getElementById("empty");
@@ -175,7 +153,6 @@ async function init() {
     ]);
     state.catalog = inventory || [];
     state.companies = companies || [];
-    renderCategoryTiles(state.catalog);
     renderProductRails(state.catalog);
   } catch (error) {
     console.error(error);
